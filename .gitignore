@@ -1,0 +1,9 @@
+### IGNORE FILES FROM GIT ###
+
+### MAC OSX FILES ###
+*._*
+*.DS_STORE
+
+### PROJECT-SPECIFIC FILES ###
+/assets
+/node_modules

@@ -1,0 +1,25 @@
+@import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
+
+
+.app {
+  .btn-primary {
+    // FIXME: jansensan-styles lib should fix that
+    cursor: pointer;
+  }
+
+  .lang-sel-fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    .btn-primary {
+      padding-left: 12px;
+      padding-right: 12px;
+      line-height: 2;
+    }
+  }
+
+  .centered {
+    width: $tabletContentCol !important;
+  }
+}

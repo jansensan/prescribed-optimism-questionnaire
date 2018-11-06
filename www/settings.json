@@ -1,0 +1,249 @@
+{
+  "app": {
+    "title": {
+      "en": "Questionnaire",
+      "es": "Cuestionario",
+      "ca": "Qüestionari"
+    },
+    "description": {
+      "en": "Description",
+      "es": "Descripción",
+      "ca": "Descripció"
+    }
+  },
+  "demographics": [
+    {
+      "id": "gender",
+      "type": "select",
+      "label": {
+        "en": "What is your gender?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "female",
+          "label": {
+            "en": "Female",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "male",
+          "label": {
+            "en": "Male",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "other",
+          "label": {
+            "en": "Other",
+            "es": "",
+            "ca": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "type": "number",
+      "label": {
+        "en": "How old are you?",
+        "es": "",
+        "ca": ""
+      }
+    },
+    {
+      "id": "ethnicity",
+      "type": "select",
+      "label": {
+        "en": "To which ethnicity do you identify most?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "white",
+          "label": {
+            "en": "White",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "asian",
+          "label": {
+            "en": "Asian or Pacific Islander",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "black",
+          "label": {
+            "en": "Black",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "latino",
+          "label": {
+            "en": "Latino",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "indigenous",
+          "label": {
+            "en": "Indigenous from North/South American",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "other",
+          "label": {
+            "en": "Mixed/Other",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "noreply",
+          "label": {
+            "en": "Would rather not say",
+            "es": "",
+            "ca": ""
+          }
+        }
+      ]
+    }
+  ],
+  "vignettes": [
+    {
+      "id": "awardDecision",
+      "questions": [
+        {
+          "en": "Lisa has learned that her advisor is thinking about nominating her for a prestigious academic award. The application would require a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If her advisor nominates her, Lisa would not be allowed to revise her paper before submitting her application materials, so she could not do anything to improve her chances of receiving the award. At the moment, however, Lisa’s advisor is not sure whether to nominate her for the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor is thinking about nominating her for a prestigious academic award. The application requires a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If her advisor nominates her, Lisa would be allowed to revise her paper before submitting her application materials, so she could still work to improve her chances of receiving the award. At the moment, however, Lisa’s advisor is not sure whether to nominate her for the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. The application would require a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If she were to apply, she would not be allowed to revise her paper before submitting her application materials, so she could not do anything to improve her chances of receiving the award. At the moment, however, she is not sure whether she will apply for the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. The application would require a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If she were to apply, she would be allowed to revise her paper before submitting her application materials, so she could still work to improve her chances of receiving the award. At the moment, however, she is not sure whether she will apply for the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor has decided to nominate her for a prestigious academic award. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will not be allowed to revise her paper before submitting her application materials, so she cannot do anything to improve her chances of receiving the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor has decided to nominate her for a prestigious academic award. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will be allowed to revise to her paper before submitting her application materials, so she can still work to improve her chances of receiving the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. Today, Lisa has decided to apply. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will not be allowed to revise her paper before submitting her application materials, so she cannot do anything to improve her chances of receiving the award.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. Today, Lisa has decided to apply. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will be allowed to revise her paper before submitting her application materials, so she can still work to improve her chances of receiving the award.",
+          "es": "",
+          "ca": ""
+        }
+      ],
+      "responses": [
+        {
+          "label": {
+            "en": "Under the circumstances described in this story, would it be best for Lisa to be optimistic or pessimistic about the likelihood of winning the award? In other words, what is the ideal prediction for Lisa to make? In light of the situation that she is in, it would be best to be",
+            "es": "",
+            "ca": ""
+          },
+          "type": {
+            "scale": "likert",
+            "numSteps": "9",
+            "unit": "int"
+          }
+        },
+        {
+          "label": {
+            "en": "In this scenario, what do you think the probability is that Lisa would win the Award?",
+            "es": "",
+            "ca": ""
+          },
+          "type": {
+            "scale": "likert",
+            "numSteps": "11",
+            "unit": "percentage"
+          }
+        },
+        {
+          "label": {
+            "en": "From Lisa's perspective in this scenario, how desirable would it be for the award application to be a success?",
+            "es": "",
+            "ca": ""
+          },
+          "type": {
+            "scale": "likert",
+            "numSteps": "11",
+            "unit": "uint"
+          }
+        },
+        {
+          "label": {
+            "en": "In this scenario, to what extent has the decision to apply for the award already been made?",
+            "es": "",
+            "ca": ""
+          },
+          "type": {
+            "scale": "likert",
+            "numSteps": "11",
+            "unit": "percentage"
+          }
+        },
+        {
+          "label": {
+            "en": "In this scenario, to what extent would the chances of winning the award be under Lisa’s control?",
+            "es": "",
+            "ca": ""
+          },
+          "type": {
+            "scale": "likert",
+            "numSteps": "11",
+            "unit": "percentage"
+          }
+        },
+        {
+          "label": {
+            "en": "In this scenario, to what extent is the decision to apply for the award Lisa’s to make?",
+            "es": "",
+            "ca": ""
+          },
+          "type": {
+            "scale": "likert",
+            "numSteps": "11",
+            "unit": "percentage"
+          }
+        }
+      ]
+    }
+  ],
+  "lifeOrientation": []
+}
