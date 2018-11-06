@@ -2,6 +2,10 @@
 
 
 .app {
+  header {
+    margin-bottom: 48px;
+  }
+
   .btn-primary {
     // FIXME: jansensan-styles lib should fix that
     cursor: pointer;

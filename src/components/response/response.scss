@@ -1,8 +1,18 @@
 .response {
   position: relative;
-  margin: 32px 0 48px;
+  margin: 48px 0 64px;
 
   input[type=range] {
+    display: inline-block;
+    margin-left: 20px;
+    width: 600px;
+  }
+
+  .response-num-label {
     width: 100%;
+
+    td {
+      text-align: center;
+    }
   }
 }

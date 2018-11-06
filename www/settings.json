@@ -178,6 +178,7 @@
           },
           "type": {
             "step": "1",
+            "stepType": "int",
             "min": "-4",
             "max": "4",
             "initVal": "0"
@@ -191,6 +192,7 @@
           },
           "type": {
             "step": "10",
+            "stepType": "percentage",
             "min": "0",
             "max": "100",
             "initVal": "50"
@@ -204,6 +206,7 @@
           },
           "type": {
             "step": "1",
+            "stepType": "int",
             "min": "0",
             "max": "10",
             "initVal": "5"
@@ -217,6 +220,7 @@
           },
           "type": {
             "step": "10",
+            "stepType": "percentage",
             "min": "0",
             "max": "100",
             "initVal": "50"
@@ -230,6 +234,7 @@
           },
           "type": {
             "step": "10",
+            "stepType": "percentage",
             "min": "0",
             "max": "100",
             "initVal": "50"
@@ -243,6 +248,7 @@
           },
           "type": {
             "step": "10",
+            "stepType": "percentage",
             "min": "0",
             "max": "100",
             "initVal": "50"

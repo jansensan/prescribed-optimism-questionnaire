@@ -13,6 +13,30 @@ export default class Response extends Component {
 
   // react methods definitions
   render() {
+    // generate num labels cells
+    let cellWidth = Math.floor(100 / this.getNumSteps()) + '%';
+    let cells = [];
+    let label = '';
+    let type = _.get(this.props, 'type.stepType');
+    for (let i = 0; i < this.getNumSteps(); i++) {
+      switch(type) {
+        case 'int':
+          label = i + this.getMin();
+          break;
+        case 'percentage':
+          label = i * 10 + '%';
+          break;
+      }
+      cells.push(
+        // 
+        <td
+          style={{"width": cellWidth}}
+          key={i}
+        >{label}</td>
+      );
+    }
+
+    // return component
     return (
       <div className="response">
         <p>{this.getLabel()}</p>
@@ -26,6 +50,13 @@ export default class Response extends Component {
             value={this.state.value}
             onChange={this.onRangeChanged.bind(this)}
           />
+          <table className="response-num-label">
+            <tbody>
+              <tr>
+                {cells}
+              </tr>
+            </tbody>
+          </table>
         </form>
       </div>
     );
@@ -40,24 +71,40 @@ export default class Response extends Component {
 
   // methods definitions
   getInputName() {
-    var name = this.props.vignetteId + 'Range' + this.props.index;
-    return name;
+    return this.props.vignetteId + 'Range' + this.props.index;
   }
 
   getInitialValue() {
-    return _.get(this.props, 'type.initVal');
+    let val = _.get(this.props, 'type.initVal');
+    return parseInt(val, 10);
   }
 
   getLabel() {
     return _.get(this.props.label, this.props.lang);
   }
 
-  getMin() {
-    return _.get(this.props, 'type.min');
+  getNumSteps() {
+    let type = _.get(this.props, 'type.stepType');
+    let numSteps = -1;
+    switch(type) {
+      case 'int':
+        numSteps = this.getMax() - this.getMin() + 1;
+        break;
+      case 'percentage':
+        numSteps = 11;
+        break;
+    }
+    return parseInt(numSteps, 10);
   }
 
+  getMin() {
+    let min = _.get(this.props, 'type.min');
+    return parseInt(min, 10);
+  }
+  
   getMax() {
-    return _.get(this.props, 'type.max');
+    let max = _.get(this.props, 'type.max');
+    return parseInt(max, 10);
   }
 
   getStepSize() {
