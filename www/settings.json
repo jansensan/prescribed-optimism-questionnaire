@@ -202,7 +202,7 @@
           },
           "type": {
             "scale": "likert",
-            "numSteps": "11",
+            "numSteps": "10",
             "unit": "uint"
           }
         },

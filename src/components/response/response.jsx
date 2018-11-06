@@ -5,6 +5,10 @@ require('./response.scss');
 export default class Response extends Component {
   constructor(props) {
     super(props);
+    this.isComponentMounted = false;
+    this.state = {
+      value: -1
+    };
   }
 
   // react methods definitions
@@ -12,24 +16,30 @@ export default class Response extends Component {
     return (
       <div className="response">
         <p>{this.getLabel()}</p>
-        <p>{this.getInputName()}</p>
-        <p>From {this.getMin()} to {this.getMax()}</p>
-        <p>Step size of {this.getStepSize()}</p>
-        <p>Init value of {this.getInitialValue()}</p>
-        {
-          this.isLikertScale() &&
-            <input
-              type="range"
-              min={this.getMin()}
-              max={this.getMax()}
-              step={this.getStepSize()}
-            />
-        }
-
+        <form action="">
+          {
+            this.isLikertScale() &&
+              <input
+                type="range"
+                name={this.getInputName()}
+                min={this.getMin()}
+                max={this.getMax()}
+                step={this.getStepSize()}
+                value={this.state.value}
+                onChange={this.onRangeChanged.bind(this)}
+              />
+          }
+        </form>
       </div>
     );
   }
 
+  componentDidMount() { 
+    this.isComponentMounted = true;
+  }
+
+
+  // methods definitions
   getInputName() {
     var name = this.props.vignetteId + 'Range' + this.props.index;
     return name;
@@ -118,5 +128,23 @@ export default class Response extends Component {
 
   isLikertScale() {
     return _.get(this.props.type, 'scale') === 'likert';
+  }
+
+  setInitialValue() {
+    this.state.value = getInitialValue();
+    this.update();
+  }
+
+  onRangeChanged(event) {
+    this.state.value = event.target.value;
+    this.update();
+  }
+
+  update() {
+    if (!this.isComponentMounted) {
+      return;
+    }
+
+    this.forceUpdate();
   }
 }
