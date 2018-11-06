@@ -177,9 +177,10 @@
             "ca": ""
           },
           "type": {
-            "scale": "likert",
-            "numSteps": "9",
-            "unit": "int"
+            "step": "1",
+            "min": "-4",
+            "max": "4",
+            "initVal": "0"
           }
         },
         {
@@ -189,9 +190,10 @@
             "ca": ""
           },
           "type": {
-            "scale": "likert",
-            "numSteps": "11",
-            "unit": "percentage"
+            "step": "10",
+            "min": "0",
+            "max": "100",
+            "initVal": "50"
           }
         },
         {
@@ -201,9 +203,10 @@
             "ca": ""
           },
           "type": {
-            "scale": "likert",
-            "numSteps": "10",
-            "unit": "uint"
+            "step": "1",
+            "min": "0",
+            "max": "10",
+            "initVal": "5"
           }
         },
         {
@@ -213,9 +216,10 @@
             "ca": ""
           },
           "type": {
-            "scale": "likert",
-            "numSteps": "11",
-            "unit": "percentage"
+            "step": "10",
+            "min": "0",
+            "max": "100",
+            "initVal": "50"
           }
         },
         {
@@ -225,9 +229,10 @@
             "ca": ""
           },
           "type": {
-            "scale": "likert",
-            "numSteps": "11",
-            "unit": "percentage"
+            "step": "10",
+            "min": "0",
+            "max": "100",
+            "initVal": "50"
           }
         },
         {
@@ -237,9 +242,10 @@
             "ca": ""
           },
           "type": {
-            "scale": "likert",
-            "numSteps": "11",
-            "unit": "percentage"
+            "step": "10",
+            "min": "0",
+            "max": "100",
+            "initVal": "50"
           }
         }
       ]
