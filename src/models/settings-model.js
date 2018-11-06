@@ -1,8 +1,13 @@
 import _ from 'lodash';
 import signals from 'signals';
 
-import SettingsService from './../services/settings-service.js';
+// constants
 import { Languages } from '../constants/languages.js';
+
+// services
+import SettingsService from './../services/settings-service.js';
+
+// models
 import questionsModel from './questions-model.js';
 
 

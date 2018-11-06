@@ -181,7 +181,39 @@
             "stepType": "int",
             "min": "-4",
             "max": "4",
-            "initVal": "0"
+            "initVal": "0",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "extremely pessimistic",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 2,
+                "en": "moderately pessimistic",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 4,
+                "en": "accurate",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 6,
+                "en": "moderately optimistic",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 8,
+                "en": "extremely optimistic",
+                "es": "",
+                "ca": ""
+              }
+            ]
           }
         },
         {
@@ -195,7 +227,27 @@
             "stepType": "percentage",
             "min": "0",
             "max": "100",
-            "initVal": "50"
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "no chance at all (impossible)",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 5,
+                "en": "as likely as not",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 10,
+                "en": "guaranteed to be a success",
+                "es": "",
+                "ca": ""
+              }
+            ]
           }
         },
         {
@@ -209,7 +261,27 @@
             "stepType": "int",
             "min": "0",
             "max": "10",
-            "initVal": "5"
+            "initVal": "5",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 5,
+                "en": "moderately",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 10,
+                "en": "extremely",
+                "es": "",
+                "ca": ""
+              }
+            ]
           }
         },
         {
@@ -223,7 +295,21 @@
             "stepType": "percentage",
             "min": "0",
             "max": "100",
-            "initVal": "50"
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "completely undecided",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 10,
+                "en": "completely decided",
+                "es": "",
+                "ca": ""
+              }
+            ]
           }
         },
         {
@@ -237,7 +323,21 @@
             "stepType": "percentage",
             "min": "0",
             "max": "100",
-            "initVal": "50"
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all in Lisa's control",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 10,
+                "en": "completely in Lisa's control",
+                "es": "",
+                "ca": ""
+              }
+            ]
           }
         },
         {
@@ -251,7 +351,21 @@
             "stepType": "percentage",
             "min": "0",
             "max": "100",
-            "initVal": "50"
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all Lisa's decision",
+                "es": "",
+                "ca": ""
+              },
+              {
+                "index": 10,
+                "en": "completely Lisa's decision",
+                "es": "",
+                "ca": ""
+              }
+            ]
           }
         }
       ]

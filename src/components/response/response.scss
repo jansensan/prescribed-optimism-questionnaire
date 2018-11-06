@@ -12,6 +12,15 @@
     width: 100%;
 
     td {
+      vertical-align: top;
+    }
+
+    .numeric-label {
+      margin-top: -5px;
+      text-align: center;
+    }
+
+    .addit-label {
       text-align: center;
     }
   }

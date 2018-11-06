@@ -1,6 +1,12 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 
+// models
+import settingModel from '../../models/settings-model';
+
+// styles
 require('./response.scss');
+
 
 export default class Response extends Component {
   constructor(props) {
@@ -18,6 +24,7 @@ export default class Response extends Component {
     let cells = [];
     let label = '';
     let type = _.get(this.props, 'type.stepType');
+    let additionalLabels = _.get(this.props, 'type.additionalLabels');
     for (let i = 0; i < this.getNumSteps(); i++) {
       switch(type) {
         case 'int':
@@ -27,12 +34,26 @@ export default class Response extends Component {
           label = i * 10 + '%';
           break;
       }
+
+      // check if additional label
+      let additionalLabel = _.get(
+        _.find(additionalLabels, {index: i}),
+        settingModel.lang
+      );
+      let hasAdditLabel = !_.isUndefined(additionalLabel);
+
+      // add cell
       cells.push(
-        // 
         <td
           style={{"width": cellWidth}}
           key={i}
-        >{label}</td>
+        >
+          <p className="numeric-label">{label}</p>
+          {
+            hasAdditLabel &&
+            <p className="addit-label">{additionalLabel}</p>
+          }
+        </td>
       );
     }
 
