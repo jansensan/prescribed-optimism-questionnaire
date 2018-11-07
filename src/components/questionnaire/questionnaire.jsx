@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 // model
 import questionnaireModel from './questionnaire-model';
 import questionsModel from '../../models/questions-model';
-import settingsModel from '../../models/settings-model';
 
 // components
 import Question from '../question/question.jsx';
