@@ -54,7 +54,7 @@ export default class Questionnaire extends Component {
       return;
     }
 
-    this.state.setRandomSection();
+    this.state.setRandomVignette();
     this.state.setCurrentQuestion(0);
   }
 }

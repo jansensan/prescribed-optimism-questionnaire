@@ -7,7 +7,7 @@ import settingsModel from '../../models/settings-model';
 
 class QuestionnaireModel {
   constructor() {
-    this.currentSection = -1;
+    this.currentVignette = -1;
     this.currentQuestion = -1;
 
     // signals
@@ -43,14 +43,14 @@ class QuestionnaireModel {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  setRandomSection() {
+  setRandomVignette() {
     let numVignettes = questionsModel.vignettes.length;
     let randomIndex = this.getRandomInt(0, numVignettes - 1);
-    this.setCurrentSection(randomIndex);
+    this.setCurrentVignette(randomIndex);
   }
 
-  setCurrentSection(index) {
-    this.currentSection = index;
+  setCurrentVignette(index) {
+    this.currentVignette = index;
     this.updated.dispatch();
   }
 
