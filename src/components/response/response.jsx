@@ -19,7 +19,7 @@ export default class Response extends Component {
     this.state.setData(this.props);
 
     // listen to updates
-    this.state.updated.add(this.update, this);
+    this.state.updated.add(this.onModelUpdated, this);
   }
 
   // react methods definitions
@@ -94,7 +94,7 @@ export default class Response extends Component {
     this.state.setValue(event.target.value);
   }
 
-  update() {
+  onModelUpdated() {
     if (!this.isComponentMounted) {
       return;
     }
