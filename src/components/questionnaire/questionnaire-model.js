@@ -16,7 +16,7 @@ class QuestionnaireModel {
 
   getCurrentQuestionText() {
     let questionText = '';
-    let vignetteQuestions = _.get(questionsModel.vignettes[0], 'questions');
+    let vignetteQuestions = _.get(this.getCurrentVignette(), 'questions');
     if (vignetteQuestions) {
       questionText = _.get(vignetteQuestions[this.currentQuestion], settingsModel.lang);
     }
@@ -24,15 +24,19 @@ class QuestionnaireModel {
   }
 
   getCurrentResponses() {
-    let responses = _.get(questionsModel.vignettes[0], 'responses');
+    let responses = _.get(this.getCurrentVignette(), 'responses');
     if (!responses) {
       responses = [];
     }
     return responses;
   }
-  
+
+  getCurrentVignette() {
+    return questionsModel.vignettes[this.currentVignette];
+  }
+
   getCurrentVignetteId() {
-    return _.get(questionsModel.vignettes[0], 'id');
+    return _.get(this.getCurrentVignette(), 'id');
   }
 
   /**
