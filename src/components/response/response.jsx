@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 // models
-import settingModel from '../../models/settings-model';
 import ResponseModel from './response-model';
 
 // styles
