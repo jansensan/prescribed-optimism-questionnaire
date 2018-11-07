@@ -30,7 +30,10 @@ export default class Questionnaire extends Component {
           text={this.state.getCurrentQuestionText()}
           responses={this.state.getCurrentResponses()}
         ></Question>
-        <button className="btn-primary">Next</button>
+        <button
+          className="btn-primary"
+          onClick={this.onNextQuestionRequested.bind(this)}
+        >Next</button>
       </div>
     );
   }
@@ -46,6 +49,11 @@ export default class Questionnaire extends Component {
     }
 
     this.forceUpdate();
+  }
+
+  onNextQuestionRequested() {
+    questionnaireModel.gotoNextQuestion();
+    window.scrollTo(0, 0);
   }
 
   onQuestionsModelUpdated() {
