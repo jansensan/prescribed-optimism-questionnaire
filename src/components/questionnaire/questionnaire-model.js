@@ -35,6 +35,20 @@ class QuestionnaireModel {
     return _.get(questionsModel.vignettes[0], 'id');
   }
 
+  /**
+  * Returns a random integer between min (inclusive) and max (inclusive)
+  * Using Math.round() will give you a non-uniform distribution!
+  */
+  getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  setRandomSection() {
+    let numVignettes = questionsModel.vignettes.length;
+    let randomIndex = this.getRandomInt(0, numVignettes - 1);
+    this.setCurrentSection(randomIndex);
+  }
+
   setCurrentSection(index) {
     this.currentSection = index;
     this.updated.dispatch();

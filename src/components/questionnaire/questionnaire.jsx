@@ -19,10 +19,8 @@ export default class Questionnaire extends Component {
     this.state = questionnaireModel;
 
     // listen to updates
+    questionsModel.updated.add(this.onQuestionsModelUpdated, this);
     this.state.updated.add(this.onModelUpdated, this);
-
-    this.state.setCurrentSection(0);
-    this.state.setCurrentQuestion(0);
   }
 
   // react methods definitions
@@ -49,5 +47,14 @@ export default class Questionnaire extends Component {
     }
 
     this.forceUpdate();
+  }
+
+  onQuestionsModelUpdated() {
+    if (!questionsModel.isReady()) {
+      return;
+    }
+
+    this.state.setRandomSection();
+    this.state.setCurrentQuestion(0);
   }
 }
