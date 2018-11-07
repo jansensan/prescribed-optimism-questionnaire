@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 // models
 import questionnaireModel from '../questionnaire/questionnaire-model.js';
-import settingsModel from '../../models/settings-model.js';
 
 // components
 import Response from '../response/response.jsx';
@@ -23,7 +22,6 @@ export default class Question extends Component {
           // and create a component for each
           this.props.responses.map((response, i) => (
             <Response
-              lang={settingsModel.lang}
               vignetteId={questionnaireModel.getCurrentVignetteId()}
               label={response.label}
               type={response.type}

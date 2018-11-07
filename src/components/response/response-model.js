@@ -1,6 +1,9 @@
 import _ from 'lodash';
 import signals from 'signals';
 
+import settingsModel from '../../models/settings-model';
+
+
 export default class ResponseModel {
   constructor() {
     // properties
@@ -29,7 +32,7 @@ export default class ResponseModel {
 
     return _.get(
       _.find(this.getAdditionalLabels(), {index: index}),
-      this.data.lang
+      settingsModel.lang
     );
   }
 
@@ -54,7 +57,7 @@ export default class ResponseModel {
       return;
     }
 
-    return _.get(this.data.label, this.data.lang);
+    return _.get(this.data.label, settingsModel.lang);
   }
 
   getMax() {
