@@ -9,18 +9,36 @@ class QuestionnaireModel {
   constructor() {
     this.currentVignette = -1;
     this.currentQuestion = -1;
+    this.currentQuestionIndex = -1;
+    this.questionIndexes = [];
+    this.isInitQuestionSet = false;
 
     // signals
     this.updated = new signals.Signal();
   }
 
+  createRandomizedIndexArray(length) {
+    let arr = [];
+    for (let i = 0; i < length; i++) {
+      arr.push(i);
+    }
+    return _.shuffle(arr);
+  }
+
   getCurrentQuestionText() {
     let questionText = '';
-    let vignetteQuestions = _.get(this.getCurrentVignette(), 'questions');
+    let vignetteQuestions = this.getCurrentQuestions();
     if (vignetteQuestions) {
-      questionText = _.get(vignetteQuestions[this.currentQuestion], settingsModel.lang);
+      questionText = _.get(
+        vignetteQuestions[this.currentQuestion],
+        settingsModel.lang
+      );
     }
     return questionText;
+  }
+
+  getCurrentQuestions() {
+    return _.get(this.getCurrentVignette(), 'questions');
   }
 
   getCurrentResponses() {
@@ -37,6 +55,27 @@ class QuestionnaireModel {
 
   getCurrentVignetteId() {
     return _.get(this.getCurrentVignette(), 'id');
+  }
+
+  gotoFirstQuestion() {
+    this.currentQuestionIndex = 0;
+    this.setCurrentQuestion();
+  }
+  
+  gotoNextQuestion() {
+    this.currentQuestionIndex++;
+    if (this.currentQuestionIndex >= this.getCurrentQuestions().length) {
+      this.currentQuestionIndex = this.getCurrentQuestions().length - 1;
+    }
+    this.setCurrentQuestion();
+  }
+  
+  gotoPrevQuestion() {
+    this.currentQuestionIndex--;
+    if (this.currentQuestionIndex < 0) {
+      this.currentQuestionIndex = 0;
+    }
+    this.setCurrentQuestion();
   }
 
   /**
@@ -58,8 +97,20 @@ class QuestionnaireModel {
     this.updated.dispatch();
   }
 
-  setCurrentQuestion(index) {
-    this.currentQuestion = index;
+  setInitQuestion() {
+    if (this.isInitQuestionSet) {
+      return;
+    }
+
+    let numQuestions = this.getCurrentQuestions().length;
+    this.questionIndexes = this.createRandomizedIndexArray(numQuestions);
+    this.isInitQuestionSet = true;
+
+    this.gotoFirstQuestion();
+  }
+
+  setCurrentQuestion() {
+    this.currentQuestion = this.questionIndexes[this.currentQuestionIndex];
     this.updated.dispatch();
   }
 }
