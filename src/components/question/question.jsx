@@ -17,7 +17,7 @@ export default class Question extends Component {
   render() {
     return (
       <div className="question">
-        <p>{this.props.text}</p>
+        <p>{questionnaireModel.getQuestionNumber()}. {this.props.text}</p>
         {
           // go through all responses data
           // and create a component for each

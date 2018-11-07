@@ -57,6 +57,10 @@ class QuestionnaireModel {
     return _.get(this.getCurrentVignette(), 'id');
   }
 
+  getQuestionNumber() {
+    return this.currentQuestionIndex + 1;
+  }
+
   gotoFirstQuestion() {
     this.currentQuestionIndex = 0;
     this.setCurrentQuestion();
