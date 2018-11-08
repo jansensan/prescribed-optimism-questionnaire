@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // models
 import ResponseModel from './response-model';
+import questionnaireModel from '../questionnaire/questionnaire-model';
 
 // styles
 require('./response.scss');
@@ -20,6 +21,7 @@ export default class Response extends Component {
 
     // listen to updates
     this.state.updated.add(this.onModelUpdated, this);
+    questionnaireModel.questionChanged.add(this.onQuestionChanged, this);
   }
 
   // react methods definitions
@@ -103,5 +105,9 @@ export default class Response extends Component {
     }
 
     this.forceUpdate();
+  }
+
+  onQuestionChanged() {
+    this.state.setAsClean();
   }
 }

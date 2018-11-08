@@ -127,6 +127,12 @@ export default class ResponseModel {
     this.hasChanged = true;
   }
 
+  setAsClean() {
+    this.hasChanged = false;
+    this.setInitialValue();
+    this.updated.dispatch();
+  }
+
   setData(value) {
     this.data = value;
     this.hasData = true;

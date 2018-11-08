@@ -18,6 +18,7 @@ class QuestionnaireModel {
 
     // signals
     this.updated = new signals.Signal();
+    this.questionChanged = new signals.Signal();
   }
 
   createRandomizedIndexArray(length) {
@@ -75,6 +76,7 @@ class QuestionnaireModel {
       this.currentQuestionIndex = this.getCurrentQuestions().length - 1;
     }
     this.setCurrentQuestion();
+    this.questionChanged.dispatch();
   }
   
   gotoPrevQuestion() {
@@ -83,6 +85,7 @@ class QuestionnaireModel {
       this.currentQuestionIndex = 0;
     }
     this.setCurrentQuestion();
+    this.questionChanged.dispatch();
   }
 
   /**
