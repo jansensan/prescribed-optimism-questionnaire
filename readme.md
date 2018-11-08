@@ -2,6 +2,11 @@
 
 ![](https://img.shields.io/badge/Academic%20Project%20%E2%80%94%20Research%20Methodologies-In%20Progress-green.svg)
 
+A web questionnaire built for a research methodologies academic project.
+
+
+## Context
+
 In the context of the [Research Methodologies in Humanities and Science](https://academia.jansensan.net/category/30845/) course of the [Master in Cognitive Systems and Interactive Media](https://www.upf.edu/web/csim), we must attempt to prepare the replication of a research project chosen from the [Reproducibility Project](https://osf.io/ezcuj/) of the [Open Science Framework](https://osf.io/).
 
 We have chosen _Prescribed Optimism — Is it right to be wrong about the future?_ originally conducted by [Armor, Massey & Sackett (2008)](https://ir.stthomas.edu/ocbmktgpub/27/), and later reproduced by [Lassetter, Brandt & van 't Veer (2016)](https://osf.io/qlzap/).
