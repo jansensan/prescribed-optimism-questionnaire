@@ -12,9 +12,20 @@ We have chosen _Prescribed Optimism — Is it right to be wrong about the future
 See [our presentation slides](https://academia.jansensan.net/30845/presentation-for-replication-project/).
 
 
+## Usage
+
+- Open `www/index.html` in a browser
+- See the current state of the questionnaire 
+
+
 ## Collaborators
 
 - Dimitar KARAGEORGIEV
 - Mat JANSON BLANCHET
 - Pol RICART
 - Lida ZACHAROPOULOU
+
+
+## Contribution
+
+Read [contribution guidelines](./contribution.md).
