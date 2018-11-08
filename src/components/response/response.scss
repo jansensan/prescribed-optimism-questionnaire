@@ -1,6 +1,6 @@
 .response {
   position: relative;
-  margin: 48px 0 64px;
+  margin: 48px 0 128px;
 
   input[type=range] {
     display: inline-block;
@@ -12,6 +12,7 @@
     width: 100%;
 
     td {
+      position: relative;
       vertical-align: top;
     }
 
@@ -21,6 +22,9 @@
     }
 
     .addit-label {
+      position: absolute;
+      width: 100px;
+      margin-left: -50%;
       text-align: center;
     }
   }
