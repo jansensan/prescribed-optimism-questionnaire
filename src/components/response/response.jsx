@@ -61,24 +61,22 @@ export default class Response extends Component {
     return (
       <div className="response">
         <p>{this.state.getLabel()}</p>
-        <form action="">
-          <input
-            type="range"
-            name={this.state.getInputName()}
-            min={this.state.getMin()}
-            max={this.state.getMax()}
-            step={this.state.getStepSize()}
-            value={this.state.value}
-            onChange={this.onRangeChanged.bind(this)}
-          />
-          <table className="response-num-label">
-            <tbody>
-              <tr>
-                {cells}
-              </tr>
-            </tbody>
-          </table>
-        </form>
+        <input
+          type="range"
+          name={this.state.name}
+          min={this.state.getMin()}
+          max={this.state.getMax()}
+          step={this.state.getStepSize()}
+          value={this.state.value}
+          onChange={this.onRangeChanged.bind(this)}
+        />
+        <table className="response-num-label">
+          <tbody>
+            <tr>
+              {cells}
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
@@ -86,12 +84,17 @@ export default class Response extends Component {
   componentDidMount() { 
     this.isComponentMounted = true;
     this.state.setInitialValue();
+    this.state.setName();
   }
 
 
   // methods definitions
   onRangeChanged(event) {
+    this.state.setAsChanged();
     this.state.setValue(event.target.value);
+
+    let input = document.getElementsByName(this.state.name)[0];
+    input.setCustomValidity('');
   }
 
   onModelUpdated() {

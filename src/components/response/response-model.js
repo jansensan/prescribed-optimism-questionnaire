@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import signals from 'signals';
 
+// models
+import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
 
 
@@ -9,7 +11,9 @@ export default class ResponseModel {
     // properties
     this.data = {};
     this.value = -1;
+    this.name = ''; // TODO: use this prop in template?
     this.hasData = false;
+    this.hasChanged = false;
 
     // signals
     this.updated = new signals.Signal();
@@ -43,7 +47,9 @@ export default class ResponseModel {
     }
 
     return _.get(this.data, 'vignetteId') +
-      'Range' +
+      'Question' +
+      _.get(this.data, 'questionIndex') +
+      'Response' +
       _.get(this.data, 'index');
   }
 
@@ -117,9 +123,18 @@ export default class ResponseModel {
     return _.get(this.data, 'type.stepType');
   }
 
+  setAsChanged() {
+    this.hasChanged = true;
+  }
+
   setData(value) {
     this.data = value;
     this.hasData = true;
+
+    responsesModel.setSurveyResponseModel(
+      'question' + _.get(this.data, 'questionIndex'),
+      this
+    );
   }
 
   setInitialValue() {
@@ -134,6 +149,10 @@ export default class ResponseModel {
 
     let val = _.get(this.data, 'type.initVal');
     this.setValue(val);
+  }
+
+  setName() {
+    this.name = this.getInputName();
   }
 
   setValue(val) {

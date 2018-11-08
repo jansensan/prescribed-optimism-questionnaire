@@ -26,10 +26,13 @@ export default class Questionnaire extends Component {
   render() {
     return (
       <div className="questionnaire">
-        <Question
-          text={this.state.getCurrentQuestionText()}
-          responses={this.state.getCurrentResponses()}
-        ></Question>
+        <form id="questionnaire">
+          <Question
+            index={this.state.currentQuestion}
+            text={this.state.getCurrentQuestionText()}
+            responses={this.state.getCurrentResponses()}
+          ></Question>
+        </form>
         <button
           className="btn-primary"
           onClick={this.onNextQuestionRequested.bind(this)}
@@ -52,7 +55,14 @@ export default class Questionnaire extends Component {
   }
 
   onNextQuestionRequested() {
-    questionnaireModel.gotoNextQuestion();
+    var formElement = document.getElementById("questionnaire");
+    questionnaireModel.validateForm(formElement);
+
+    if (formElement.checkValidity()) {
+      questionnaireModel.gotoNextQuestion();
+      questionnaireModel.setFormAsValid(formElement);
+    }
+
     window.scrollTo(0, 0);
   }
 

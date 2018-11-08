@@ -1,7 +1,9 @@
 import _ from 'lodash';
 import signals from 'signals';
 
+// models
 import questionsModel from '../../models/questions-model';
+import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
 
 
@@ -12,6 +14,7 @@ class QuestionnaireModel {
     this.currentQuestionIndex = -1;
     this.questionIndexes = [];
     this.isInitQuestionSet = false;
+    this.formState = 'not submitted';
 
     // signals
     this.updated = new signals.Signal();
@@ -108,6 +111,12 @@ class QuestionnaireModel {
 
     let numQuestions = this.getCurrentQuestions().length;
     this.questionIndexes = this.createRandomizedIndexArray(numQuestions);
+
+    responsesModel.initSurveyResponses(
+      this.getCurrentVignette().id,
+      this.questionIndexes
+    );
+
     this.isInitQuestionSet = true;
 
     this.gotoFirstQuestion();
@@ -115,6 +124,31 @@ class QuestionnaireModel {
 
   setCurrentQuestion() {
     this.currentQuestion = this.questionIndexes[this.currentQuestionIndex];
+    this.updated.dispatch();
+  }
+
+  setFormAsValid(formElement) {
+    this.formState = 'valid';
+    for (let i = 0; i < formElement.length; i++) {
+      let input = formElement[i];
+      input.setCustomValidity('');
+    }
+    this.updated.dispatch();
+  }
+
+  validateForm(formElement) {
+    let r = responsesModel.getSurveyResponsesForQuestion(this.currentQuestion);
+    this.formState = 'valid';
+    for (let i = 0; i < r.responses.length; i++) {
+      let response = r.responses[i];
+      if (!response.hasChanged) {
+        // set form state
+        this.formState = 'invalid';
+        // set input as invalid
+        let input = _.find(formElement, {name: response.name});
+        input.setCustomValidity('Required');
+      }
+    }
     this.updated.dispatch();
   }
 }

@@ -1,5 +1,6 @@
 import signals from 'signals';
 
+
 class QuestionsModel {
   constructor() {
     // properties
