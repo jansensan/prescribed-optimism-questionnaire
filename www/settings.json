@@ -173,8 +173,8 @@
         {
           "label": {
             "en": "Under the circumstances described in this story, would it be best for Lisa to be optimistic or pessimistic about the likelihood of winning the award? In other words, what is the ideal prediction for Lisa to make? In light of the situation that she is in, it would be best to be",
-            "es": "",
-            "ca": ""
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
           },
           "type": {
             "step": "1",
@@ -186,32 +186,32 @@
               {
                 "index": 0,
                 "en": "extremely pessimistic",
-                "es": "",
-                "ca": ""
+                "es": "extremadamente pesimista",
+                "ca": "extremadament pessimista"
               },
               {
                 "index": 2,
                 "en": "moderately pessimistic",
-                "es": "",
-                "ca": ""
+                "es": "moderadamente pesimista",
+                "ca": "moderadament pessimista"
               },
               {
                 "index": 4,
                 "en": "accurate",
-                "es": "",
-                "ca": ""
+                "es": "preciso",
+                "ca": "precís"
               },
               {
                 "index": 6,
                 "en": "moderately optimistic",
-                "es": "",
-                "ca": ""
+                "es": "moderadamente optimista",
+                "ca": "moderadament optimista"
               },
               {
                 "index": 8,
                 "en": "extremely optimistic",
-                "es": "",
-                "ca": ""
+                "es": "extremadamente optimista",
+                "ca": "extremadament optimista"
               }
             ]
           }
@@ -219,8 +219,8 @@
         {
           "label": {
             "en": "In this scenario, what do you think the probability is that Lisa would win the Award?",
-            "es": "",
-            "ca": ""
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
           },
           "type": {
             "step": "10",
@@ -232,20 +232,20 @@
               {
                 "index": 0,
                 "en": "no chance at all (impossible)",
-                "es": "",
-                "ca": ""
+                "es": "Ninguna opción (imposible)",
+                "ca": "Cap opció (impossible)"
               },
               {
                 "index": 5,
                 "en": "as likely as not",
-                "es": "",
-                "ca": ""
+                "es": "tan probable como no",
+                "ca": "tant probable com no"
               },
               {
                 "index": 10,
                 "en": "guaranteed to be a success",
-                "es": "",
-                "ca": ""
+                "es": "éxito garantizado",
+                "ca": "èxit garantit"
               }
             ]
           }
@@ -253,8 +253,8 @@
         {
           "label": {
             "en": "From Lisa's perspective in this scenario, how desirable would it be for the award application to be a success?",
-            "es": "",
-            "ca": ""
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
           },
           "type": {
             "step": "1",
@@ -266,20 +266,20 @@
               {
                 "index": 0,
                 "en": "not at all",
-                "es": "",
-                "ca": ""
+                "es": "para nada",
+                "ca": "no"
               },
               {
                 "index": 5,
                 "en": "moderately",
-                "es": "",
-                "ca": ""
+                "es": "moderadamente",
+                "ca": "moderadament"
               },
               {
                 "index": 10,
                 "en": "extremely",
-                "es": "",
-                "ca": ""
+                "es": "extremadamente",
+                "ca": "extremadament"
               }
             ]
           }
@@ -287,8 +287,8 @@
         {
           "label": {
             "en": "In this scenario, to what extent has the decision to apply for the award already been made?",
-            "es": "",
-            "ca": ""
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
           },
           "type": {
             "step": "10",
@@ -300,14 +300,14 @@
               {
                 "index": 0,
                 "en": "completely undecided",
-                "es": "",
-                "ca": ""
+                "es": "completamente indeciso",
+                "ca": "completament indecís"
               },
               {
                 "index": 10,
                 "en": "completely decided",
-                "es": "",
-                "ca": ""
+                "es": "completamente decidido",
+                "ca": "completament decidit"
               }
             ]
           }
@@ -315,8 +315,8 @@
         {
           "label": {
             "en": "In this scenario, to what extent would the chances of winning the award be under Lisa’s control?",
-            "es": "",
-            "ca": ""
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
           },
           "type": {
             "step": "10",
@@ -327,15 +327,15 @@
             "additionalLabels": [
               {
                 "index": 0,
-                "en": "not at all in Lisa's control",
-                "es": "",
-                "ca": ""
+                "en": "not at all in lisa's control",
+                "es": "para nada está bajo el control de Lisa",
+                "ca": "no està sota el control de Lisa"
               },
               {
                 "index": 10,
-                "en": "completely in Lisa's control",
-                "es": "",
-                "ca": ""
+                "en": "completely in lisa's control",
+                "es": "está completamente bajo el control de Lisa",
+                "ca": "està completament sota el control de Lisa"
               }
             ]
           }
@@ -343,8 +343,8 @@
         {
           "label": {
             "en": "In this scenario, to what extent is the decision to apply for the award Lisa’s to make?",
-            "es": "",
-            "ca": ""
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
           },
           "type": {
             "step": "10",
@@ -356,14 +356,14 @@
               {
                 "index": 0,
                 "en": "not at all Lisa's decision",
-                "es": "",
-                "ca": ""
+                "es": "para nada es la decisión de Lisa",
+                "ca": "no és la decisió de Lisa"
               },
               {
                 "index": 10,
-                "en": "completely Lisa's decision",
-                "es": "",
-                "ca": ""
+                "en": "completely lisa's decision",
+                "es": "es completamente la decisión de Lisa",
+                "ca": "es completament la decisió de Lisa"
               }
             ]
           }
