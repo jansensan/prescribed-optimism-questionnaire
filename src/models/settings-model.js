@@ -47,6 +47,10 @@ class SettingsModel {
     return _.get(this.data, 'description.' + this.lang);
   }
 
+  isDebugMode() {
+    return _.get(this.data, 'debug');
+  }
+
   setLanguage(newLanguage) {
     this.lang = newLanguage;
     this.updated.dispatch();

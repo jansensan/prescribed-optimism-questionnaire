@@ -9,7 +9,8 @@
       "en": "Description",
       "es": "Descripción",
       "ca": "Descripció"
-    }
+    },
+    "debug": true
   },
   "demographics": [
     {

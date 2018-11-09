@@ -19,6 +19,10 @@ class ResponsesModel {
     }
   }
 
+  getResponsesJSON() {
+    return JSON.stringify(this.surveyResponses);
+  }
+
   getSurveyResponsesForQuestion(questionId) {
     // error check
     if (_.isNumber(questionId)) {

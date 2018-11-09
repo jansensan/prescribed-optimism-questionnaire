@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
-// model
+// models
 import questionnaireModel from './questionnaire-model';
 import questionsModel from '../../models/questions-model';
+import responsesModel from '../../models/responses-model';
+import settingsModel from '../../models/settings-model';
 
 // components
 import Question from '../question/question.jsx';
@@ -33,10 +35,19 @@ export default class Questionnaire extends Component {
             responses={this.state.getCurrentResponses()}
           ></Question>
         </form>
-        <button
-          className="btn-primary"
-          onClick={this.onNextQuestionRequested.bind(this)}
-        >Next</button>
+        <div className="buttons-wrapper">
+          <button
+            className="btn-primary next-btn"
+            onClick={this.onNextQuestionRequested.bind(this)}
+          >Next</button>
+          {
+            (settingsModel.isDebugMode()) &&
+            <button
+              className="btn-primary download-btn"
+              onClick={this.onDownloadRequested.bind(this)}
+            >Download</button>
+          }
+        </div>
       </div>
     );
   }
@@ -46,6 +57,13 @@ export default class Questionnaire extends Component {
   }
 
   // methods definitions
+  onDownloadRequested() {
+    window.open(
+      'data:text/json;charset=utf-8,' +
+      responsesModel.getResponsesJSON()
+    );
+  }
+
   onModelUpdated() {
     if (!this.isComponentMounted) {
       return;
