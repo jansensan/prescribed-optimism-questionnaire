@@ -12,13 +12,21 @@ class QuestionnaireModel {
     this.currentVignette = -1;
     this.currentQuestion = -1;
     this.currentQuestionIndex = -1;
+
     this.questionIndexes = [];
     this.isInitQuestionSet = false;
+
+    this.responseModels = [];
+
     this.formState = 'not submitted';
 
     // signals
     this.updated = new signals.Signal();
     this.questionChanged = new signals.Signal();
+  }
+
+  addResponseModel(model) {
+    this.responseModels.push(model);
   }
 
   createRandomizedIndexArray(length) {
@@ -96,6 +104,24 @@ class QuestionnaireModel {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
+  isFormValid() {
+    return this.formState === 'valid';
+  }
+
+  saveResponses() {
+    if (this.isFormValid()) {
+      let responses = [];
+      for (let i = 0; i < this.responseModels.length; i++) {
+        responses.push(this.responseModels[i].value);
+      }
+
+      responsesModel.saveSurveyResponses(
+        this.currentQuestion,
+        responses
+      );
+    }
+  }
+
   setRandomVignette() {
     let numVignettes = questionsModel.vignettes.length;
     let randomIndex = this.getRandomInt(0, numVignettes - 1);
@@ -140,18 +166,19 @@ class QuestionnaireModel {
   }
 
   validateForm(formElement) {
-    let r = responsesModel.getSurveyResponsesForQuestion(this.currentQuestion);
     this.formState = 'valid';
-    for (let i = 0; i < r.responses.length; i++) {
-      let response = r.responses[i];
-      if (!response.hasChanged) {
+
+    for (let i = 0; i < this.responseModels.length; i++) {
+      let model = this.responseModels[i];
+      if (!model.hasChanged) {
         // set form state
         this.formState = 'invalid';
         // set input as invalid
-        let input = _.find(formElement, {name: response.name});
+        let input = _.find(formElement, {name: model.name});
         input.setCustomValidity('Required');
       }
     }
+
     this.updated.dispatch();
   }
 }

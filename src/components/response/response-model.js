@@ -2,7 +2,7 @@ import _ from 'lodash';
 import signals from 'signals';
 
 // models
-import responsesModel from '../../models/responses-model';
+import questionnaireModel from '../questionnaire/questionnaire-model';
 import settingsModel from '../../models/settings-model';
 
 
@@ -137,10 +137,7 @@ export default class ResponseModel {
     this.data = value;
     this.hasData = true;
 
-    responsesModel.setSurveyResponseModel(
-      'question' + _.get(this.data, 'questionIndex'),
-      this
-    );
+    questionnaireModel.addResponseModel(this);
   }
 
   setInitialValue() {

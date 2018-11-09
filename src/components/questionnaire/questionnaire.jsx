@@ -55,12 +55,13 @@ export default class Questionnaire extends Component {
   }
 
   onNextQuestionRequested() {
-    var formElement = document.getElementById("questionnaire");
+    var formElement = document.getElementById('questionnaire');
     questionnaireModel.validateForm(formElement);
 
     if (formElement.checkValidity()) {
-      questionnaireModel.gotoNextQuestion();
+      questionnaireModel.saveResponses();
       questionnaireModel.setFormAsValid(formElement);
+      questionnaireModel.gotoNextQuestion();
     }
 
     window.scrollTo(0, 0);

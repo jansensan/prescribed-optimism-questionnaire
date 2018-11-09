@@ -12,7 +12,7 @@ class ResponsesModel {
       let question = {
         vignetteId: vignetteId,
         questionId: 'question' + questionIndexes[i],
-        responses: []
+        responses: Array(this.NUM_RESPONSES)
       };
 
       this.surveyResponses.push(question);
@@ -24,22 +24,17 @@ class ResponsesModel {
     if (_.isNumber(questionId)) {
       questionId = 'question' + questionId;
     }
-
     return _.find(
       this.surveyResponses,
       {questionId: questionId}
     );
   }
 
-  setSurveyResponseModel(questionId, model) {
-    let r = this.getSurveyResponsesForQuestion(questionId);
-
-    // prevent adding responses if there are already
-    if (r.responses.length >= this.NUM_RESPONSES) {
-      return;
+  saveSurveyResponses(questionId, responses) {
+    let q = this.getSurveyResponsesForQuestion(questionId);
+    for (let i = 0; i < responses.length; i++) {
+      q.responses[i] = responses[i];
     }
-
-    r.responses.push(model);
   }
 }
 
