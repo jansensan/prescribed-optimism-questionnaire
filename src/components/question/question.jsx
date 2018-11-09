@@ -19,7 +19,8 @@ export default class Question extends Component {
   render() {
     return (
       <div className="question">
-        <p>{questionnaireModel.getQuestionNumber()}. {this.props.text}</p>
+        <h1>Question {questionnaireModel.getQuestionNumber()}</h1>
+        <p>{this.props.text}</p>
         <p className={this.getFormClasses()}>Please ensure to respond to all the questions below.</p>
         {
           // only render once the question index is se

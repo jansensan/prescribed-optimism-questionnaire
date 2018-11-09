@@ -1,5 +1,14 @@
+@import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
+
+
 .question {
   position: relative;
+
+  h1 {
+    font-size: 2em;
+    padding-top: 24px;
+    border-top: 1px solid $paleGrey;
+  }
 
   .fix-form-errors {
     text-align: center;
