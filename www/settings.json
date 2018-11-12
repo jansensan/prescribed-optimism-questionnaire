@@ -172,6 +172,7 @@
       ],
       "responses": [
         {
+          "id": 0,
           "label": {
             "en": "Under the circumstances described in this story, would it be best for Lisa to be optimistic or pessimistic about the likelihood of winning the award? In other words, what is the ideal prediction for Lisa to make? In light of the situation that she is in, it would be best to be",
             "es": "[TODO: ES]",
@@ -218,6 +219,7 @@
           }
         },
         {
+          "id": 1,
           "label": {
             "en": "In this scenario, what do you think the probability is that Lisa would win the Award?",
             "es": "[TODO: ES]",
@@ -252,6 +254,7 @@
           }
         },
         {
+          "id": 2,
           "label": {
             "en": "From Lisa's perspective in this scenario, how desirable would it be for the award application to be a success?",
             "es": "[TODO: ES]",
@@ -286,6 +289,7 @@
           }
         },
         {
+          "id": 3,
           "label": {
             "en": "In this scenario, to what extent has the decision to apply for the award already been made?",
             "es": "[TODO: ES]",
@@ -314,6 +318,7 @@
           }
         },
         {
+          "id": 4,
           "label": {
             "en": "In this scenario, to what extent would the chances of winning the award be under Lisa’s control?",
             "es": "[TODO: ES]",
@@ -342,6 +347,7 @@
           }
         },
         {
+          "id": 5,
           "label": {
             "en": "In this scenario, to what extent is the decision to apply for the award Lisa’s to make?",
             "es": "[TODO: ES]",
