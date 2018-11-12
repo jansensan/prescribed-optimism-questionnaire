@@ -54,13 +54,8 @@ class QuestionnaireModel {
   }
 
   getCurrentResponses() {
-    console.info('--- getCurrentResponses ---');
     let v = this.getCurrentVignette();
-    console.table(v);
-
     let responses = _.get(v, 'responses');
-    console.table(responses);
-
     if (!responses) {
       responses = [];
     }
