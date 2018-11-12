@@ -26,6 +26,38 @@ export default class Response extends Component {
 
   // react methods definitions
   render() {
+    return (
+      <div className="response">
+        <p>{this.state.getLabel()}</p>
+        <input
+          type="range"
+          name={this.state.name}
+          min={this.state.getMin()}
+          max={this.state.getMax()}
+          step={this.state.getStepSize()}
+          value={this.state.value}
+          onChange={this.onRangeChanged.bind(this)}
+        />
+        <table className="response-num-label">
+          <tbody>
+            <tr>
+              {this.getNumericLabelCells()}
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+
+  componentDidMount() { 
+    this.isComponentMounted = true;
+    this.state.setInitialValue();
+    this.state.setName();
+  }
+
+
+  // methods definitions
+  getNumericLabelCells() {
     // generate num labels cells
     let cellWidth = Math.floor(100 / this.state.getNumSteps()) + '%';
     let cells = [];
@@ -59,38 +91,9 @@ export default class Response extends Component {
       );
     }
 
-    // return component
-    return (
-      <div className="response">
-        <p>{this.state.getLabel()}</p>
-        <input
-          type="range"
-          name={this.state.name}
-          min={this.state.getMin()}
-          max={this.state.getMax()}
-          step={this.state.getStepSize()}
-          value={this.state.value}
-          onChange={this.onRangeChanged.bind(this)}
-        />
-        <table className="response-num-label">
-          <tbody>
-            <tr>
-              {cells}
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    );
+    return cells;
   }
 
-  componentDidMount() { 
-    this.isComponentMounted = true;
-    this.state.setInitialValue();
-    this.state.setName();
-  }
-
-
-  // methods definitions
   onRangeChanged(event) {
     this.state.setAsChanged();
     this.state.setValue(event.target.value);
