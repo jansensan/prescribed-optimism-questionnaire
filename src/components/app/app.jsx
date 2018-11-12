@@ -23,6 +23,10 @@ export default class App extends Component {
 
     settingsModel.updated.add(this.onSettingsUpdated, this);
     settingsModel.init();
+
+    window.onbeforeunload = function () {
+      return 'You are about to quit the questionnaire. Are you sure you want to leave?';
+    };
   }
 
   // react methods definitions
