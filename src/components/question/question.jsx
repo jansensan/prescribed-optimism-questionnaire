@@ -13,6 +13,12 @@ require('./question.scss');
 export default class Question extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isComponentMounted: false
+    };
+
+    // listen to updates
+    questionnaireModel.updated.add(this.onModelUpdated, this);
   }
 
   // react methods definitions
@@ -28,6 +34,7 @@ export default class Question extends Component {
 
             // go through all responses data
             // and create a component for each
+
             this.props.responses.map((response, i) => (
               <Response
                 key={i}
@@ -38,12 +45,19 @@ export default class Question extends Component {
                 type={response.type}
               ></Response>
             ))
-          : <p className="fix-form-errors">An error occured, please refresh the page.</p>
+          : <p className="fix-form-errors">An error occured, please <button className="refresh-btn" onClick={this.onUpdateRequested.bind(this)}>refresh the page</button>.</p>
         }
       </div>
     );
   }
 
+  componentDidMount() {
+    this.setState({
+      isComponentMounted: true
+    });
+  }
+
+  // methods definitions
   getFormClasses() {
     let classes = ['fix-form-errors'];
     switch(questionnaireModel.formState) {
@@ -60,5 +74,21 @@ export default class Question extends Component {
         break;
     }
     return classes.join(' ');
+  }
+
+  onModelUpdated() {
+    this.update();
+  }
+
+  onUpdateRequested() {
+    this.update();
+  }
+
+  update() {
+    if (!this.state.isComponentMounted) {
+      return;
+    }
+
+    this.forceUpdate();
   }
 }

@@ -28,4 +28,21 @@
       display: none;
     }
   }
+
+  .refresh-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+    color: #fff;
+
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
 }

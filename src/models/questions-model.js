@@ -22,13 +22,20 @@ class QuestionsModel {
     this.updated.dispatch();
   }
 
-  setVignettes(value) {
-    this.vignettes = value;
+  setInitialValues(vignettes, demographics, lifeOrientation) {
+    this.vignettes = vignettes;
+    this.demographics = demographics;
+    this.lifeOrientation = lifeOrientation;
     this.updated.dispatch();
   }
 
   setLifeOrientation(value) {
     this.lifeOrientation = value;
+    this.updated.dispatch();
+  }
+
+  setVignettes(value) {
+    this.vignettes = value;
     this.updated.dispatch();
   }
 }

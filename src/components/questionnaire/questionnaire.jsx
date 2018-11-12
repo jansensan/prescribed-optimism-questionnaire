@@ -16,7 +16,9 @@ require('./questionnaire.scss');
 export default class Questionnaire extends Component {
   constructor(props) {
     super(props);
-    this.isComponentMounted = false;
+    this.state = {
+      isComponentMounted: false
+    };
 
     // listen to updates
     questionnaireModel.updated.add(this.onModelUpdated, this);
@@ -52,7 +54,10 @@ export default class Questionnaire extends Component {
   }
 
   componentDidMount() { 
-    this.isComponentMounted = true;
+    this.setState({
+      isComponentMounted: true
+    });
+    this.forceUpdate();
   }
 
   // methods definitions
@@ -64,7 +69,7 @@ export default class Questionnaire extends Component {
   }
 
   onModelUpdated() {
-    if (!this.isComponentMounted) {
+    if (!this.state.isComponentMounted) {
       return;
     }
 

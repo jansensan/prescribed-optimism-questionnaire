@@ -26,9 +26,11 @@ class SettingsModel {
     SettingsService.fetch()
       .then(response => {
         this.data = _.get(response, 'app');
-        questionsModel.setVignettes(_.get(response, 'vignettes'));
-        questionsModel.setDemographics(_.get(response, 'demographics'));
-        questionsModel.setLifeOrientation(_.get(response, 'lifeOrientation'));
+        questionsModel.setInitialValues(
+          _.get(response, 'vignettes'),
+          _.get(response, 'demographics'),
+          _.get(response, 'lifeOrientation')
+        );
         this.updated.dispatch();
       })
       .catch(error => {
