@@ -110,17 +110,15 @@ class QuestionnaireModel {
   }
 
   saveResponses() {
-    if (this.isFormValid()) {
-      let responses = [];
-      for (let i = 0; i < this.responseModels.length; i++) {
-        responses.push(this.responseModels[i].value);
+    this.responseModels.forEach((response) => {
+      if (response.hasChanged) {
+        responsesModel.saveSurveyResponseAt(
+          this.currentQuestion,
+          response.getOrderIndex(),
+          response.value
+        )
       }
-
-      responsesModel.saveSurveyResponses(
-        this.currentQuestion,
-        responses
-      );
-    }
+    });
   }
 
   setRandomVignette() {

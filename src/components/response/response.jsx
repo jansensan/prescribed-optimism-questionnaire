@@ -98,6 +98,8 @@ export default class Response extends Component {
     this.state.setAsChanged();
     this.state.setValue(event.target.value);
 
+    questionnaireModel.saveResponses();
+
     let input = document.getElementsByName(this.state.name)[0];
     input.setCustomValidity('');
   }

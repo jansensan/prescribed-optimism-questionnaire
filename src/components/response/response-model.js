@@ -105,6 +105,10 @@ export default class ResponseModel {
     return parseInt(numSteps, 10);
   }
 
+  getOrderIndex() {
+    return _.get(this.data, 'orderIndex');
+  }
+
   getStepSize() {
     // error checking
     if (!this.hasData) {

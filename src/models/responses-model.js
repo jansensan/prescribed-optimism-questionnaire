@@ -34,11 +34,9 @@ class ResponsesModel {
     );
   }
 
-  saveSurveyResponses(questionId, responses) {
+  saveSurveyResponseAt(questionId, orderIndex, value) {
     let q = this.getSurveyResponsesForQuestion(questionId);
-    for (let i = 0; i < responses.length; i++) {
-      q.responses[i] = responses[i];
-    }
+    q.responses[orderIndex] = value;
   }
 }
 
