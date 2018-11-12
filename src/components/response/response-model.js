@@ -138,6 +138,8 @@ export default class ResponseModel {
     this.hasData = true;
 
     questionnaireModel.addResponseModel(this);
+
+    this.updated.dispatch();
   }
 
   setInitialValue() {

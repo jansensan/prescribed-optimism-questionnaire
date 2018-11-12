@@ -1,4 +1,6 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
+
 
 // models
 import questionnaireModel from '../questionnaire/questionnaire-model.js';
@@ -35,10 +37,11 @@ export default class Question extends Component {
             // go through all responses data
             // and create a component for each
 
-            this.props.responses.map((response, i) => (
+            this.getShuffledResponses().map((response, i) => (
               <Response
                 key={i}
                 index={i}
+                orderIndex={response.id}
                 questionIndex={this.props.index}
                 vignetteId={questionnaireModel.getCurrentVignetteId()}
                 label={response.label}
@@ -74,6 +77,10 @@ export default class Question extends Component {
         break;
     }
     return classes.join(' ');
+  }
+
+  getShuffledResponses() {
+    return _.shuffle(this.props.responses);
   }
 
   onModelUpdated() {
