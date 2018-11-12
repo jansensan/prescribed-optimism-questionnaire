@@ -23,8 +23,8 @@ export default class Question extends Component {
         <p>{this.props.text}</p>
         <p className={this.getFormClasses()}>Please ensure to respond to all the questions below.</p>
         {
-          // only render once the question index is se
-          (this.props.index > 0) &&
+          // only render once the question index is set
+          (this.props.index > 0) ?
 
             // go through all responses data
             // and create a component for each
@@ -38,6 +38,7 @@ export default class Question extends Component {
                 type={response.type}
               ></Response>
             ))
+          : <p className="fix-form-errors">An error occured, please refresh the page.</p>
         }
       </div>
     );
