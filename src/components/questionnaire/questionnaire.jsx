@@ -17,11 +17,10 @@ export default class Questionnaire extends Component {
   constructor(props) {
     super(props);
     this.isComponentMounted = false;
-    this.state = questionnaireModel;
 
     // listen to updates
+    questionnaireModel.updated.add(this.onModelUpdated, this);
     questionsModel.updated.add(this.onQuestionsModelUpdated, this);
-    this.state.updated.add(this.onModelUpdated, this);
   }
 
   // react methods definitions
@@ -30,9 +29,9 @@ export default class Questionnaire extends Component {
       <div className="questionnaire">
         <form id="questionnaire">
           <Question
-            index={this.state.currentQuestion}
-            text={this.state.getCurrentQuestionText()}
-            responses={this.state.getCurrentResponses()}
+            index={questionnaireModel.currentQuestion}
+            text={questionnaireModel.getCurrentQuestionText()}
+            responses={questionnaireModel.getCurrentResponses()}
           ></Question>
         </form>
         <div className="buttons-wrapper">
@@ -86,11 +85,9 @@ export default class Questionnaire extends Component {
   }
 
   onQuestionsModelUpdated() {
-    if (!questionsModel.isReady()) {
-      return;
+    if (questionsModel.isReady()) {
+      questionnaireModel.setRandomVignette();
+      questionnaireModel.setInitQuestion();
     }
-
-    this.state.setRandomVignette();
-    this.state.setInitQuestion();
   }
 }
