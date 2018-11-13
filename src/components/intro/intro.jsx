@@ -42,6 +42,6 @@ export default class Intro extends Component {
   }
 
   onBeginRequested() {
-    questionnaireModel.gotoSurvey();
+    questionnaireModel.gotoLifeOrientationTest();
   }
 }

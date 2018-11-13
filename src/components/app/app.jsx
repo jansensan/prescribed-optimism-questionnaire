@@ -10,6 +10,7 @@ import settingsModel from '../../models/settings-model';
 // components
 import Intro from '../intro/intro.jsx';
 import Survey from '../survey/survey.jsx';
+import LifeOrientationTest from '../life-orientation-test/life-orientation-test.jsx';
 
 // styles
 require('./app.scss');
@@ -58,7 +59,10 @@ export default class App extends Component {
 
           <Intro
             isVisible={questionnaireModel.isIntro()}
-            ></Intro>
+          ></Intro>
+          <LifeOrientationTest
+            isVisible={questionnaireModel.isLifeOrientationTest()}
+          ></LifeOrientationTest>
           <Survey
             isVisible={questionnaireModel.isSurvey()}
           ></Survey>
