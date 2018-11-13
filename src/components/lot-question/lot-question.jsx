@@ -25,7 +25,7 @@ export default class LOTQuestion extends Component {
   render() {
     return (
       <div className="lot-question">
-        <p>{this.getLabel()}</p>
+        <p>{this.props.index + 1}. {this.getLabel()}</p>
         <LOTResponse
           index={this.props.index}
           ratingResponses={this.getResponses()}
