@@ -5,6 +5,7 @@ import settingsModel from '../../models/settings-model.js';
 
 // components
 import LOTResponse from '../lot-response/lot-response.jsx';
+import lotModel from '../life-orientation-test/life-orientation-test-model.js';
 
 // styles
 require('./lot-question.scss');
@@ -26,6 +27,7 @@ export default class LOTQuestion extends Component {
       <div className="lot-question">
         <p>{this.getLabel()}</p>
         <LOTResponse
+          index={this.props.index}
           ratingResponses={this.getResponses()}
         ></LOTResponse>
       </div>

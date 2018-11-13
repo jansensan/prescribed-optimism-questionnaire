@@ -1,10 +1,21 @@
 class ResponsesModel {
   constructor() {
-    this.NUM_RESPONSES = 6;
+    this.NUM_LOT_RESPONSES = 10;
+    this.NUM_SURVEY_RESPONSES = 6;
 
     this.lotResponses = [];
     this.surveyResponses = [];
     this.demographicsResponses = [];
+  }
+
+  initLOTResponses() {
+    for (let i = 0; i < this.NUM_LOT_RESPONSES; i++) {
+      let question = {
+        id: 'lotQuestion' + i,
+        response: null
+      };
+      this.lotResponses.push(question);
+    }
   }
 
   initSurveyResponses(vignetteId, questionIndexes) {
@@ -12,9 +23,8 @@ class ResponsesModel {
       let question = {
         vignetteId: vignetteId,
         questionId: 'question' + questionIndexes[i],
-        responses: Array(this.NUM_RESPONSES)
+        responses: Array(this.NUM_SURVEY_RESPONSES)
       };
-
       this.surveyResponses.push(question);
     }
   }
@@ -32,6 +42,10 @@ class ResponsesModel {
       this.surveyResponses,
       {questionId: questionId}
     );
+  }
+
+  saveLOTResponseAt(index, value) {
+    this.lotResponses[index].response = value;
   }
 
   saveSurveyResponseAt(questionId, orderIndex, value) {

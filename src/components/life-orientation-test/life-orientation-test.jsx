@@ -20,6 +20,7 @@ export default class LifeOrientationTest extends Component {
 
     // listen to updates
     questionnaireModel.updated.add(this.update, this);
+    lotModel.updated.add(this.update, this);
   }
 
   // react methods definitions</div>
@@ -28,11 +29,13 @@ export default class LifeOrientationTest extends Component {
       <div className={this.getComponentCSSClasses()}>
         <h1>Life Orientation Test</h1>
         <p>{lotModel.getText()}</p>
+        <p className={this.getFormWarningClasses()}>Please ensure to respond to all the questions below.</p>
         <form id="lotForm">
           {
             lotModel.getQuestions().map((question, i) => (
               <LOTQuestion
                 key={i}
+                index={i}
                 label={question}
                 responses={lotModel.getResponses()}
               ></LOTQuestion>
@@ -57,6 +60,24 @@ export default class LifeOrientationTest extends Component {
 
 
   // methods definitions
+  getFormWarningClasses() {
+    let classes = ['fix-form-errors'];
+    switch(lotModel.formState) {
+      case 'not submitted':
+        classes.push('not-submitted');
+        break;
+
+      case 'invalid':
+        classes.push('invalid');
+        break;
+
+      case 'valid':
+        classes.push('valid');
+        break;
+    }
+    return classes.join(' ');
+  }
+
   getComponentCSSClasses() {
     let classes = ['life-orientation-test'];
     if (!this.props.isVisible) {
@@ -66,7 +87,16 @@ export default class LifeOrientationTest extends Component {
   }
 
   onSurveyRequested() {
-    questionnaireModel.gotoSurvey();
+    var formElement = document.getElementById('lotForm');
+    lotModel.validateForm(formElement);
+
+    if (formElement.checkValidity()) {
+      // surveyModel.saveResponses();
+      lotModel.setFormAsValid(formElement);
+      questionnaireModel.gotoSurvey();
+    }
+
+    window.scrollTo(0, 0);
   }
 
   update() {

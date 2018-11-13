@@ -15,6 +15,25 @@
     border-top: 1px solid $paleGrey;
   }
 
+  .fix-form-errors {
+    text-align: center;
+    padding: 8px 0;
+    background-color: #990000;
+    color: #fff;
+
+    &.not-submitted, {
+      display: none;
+    }
+
+    &.invalid {
+      display: block;
+    }
+
+    &.valid {
+      display: none;
+    }
+  }
+
   .buttons-wrapper {
     border-top: 1px solid $paleGrey;
     padding: 32px 0;

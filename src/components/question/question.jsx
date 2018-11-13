@@ -29,7 +29,7 @@ export default class Question extends Component {
       <div className="question">
         <h1>Question {surveyModel.getQuestionNumber()}</h1>
         <p>{this.props.text}</p>
-        <p className={this.getFormClasses()}>Please ensure to respond to all the questions below.</p>
+        <p className={this.getFormWarningClasses()}>Please ensure to respond to all the questions below.</p>
         {
           // only render once the question index is set
           (this.props.index > -1) ?
@@ -62,7 +62,7 @@ export default class Question extends Component {
   }
 
   // methods definitions
-  getFormClasses() {
+  getFormWarningClasses() {
     let classes = ['fix-form-errors'];
     switch(surveyModel.formState) {
       case 'not submitted':

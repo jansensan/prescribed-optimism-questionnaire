@@ -1,4 +1,5 @@
 import signals from 'signals';
+import lotModel from '../life-orientation-test/life-orientation-test-model';
 
 
 export default class LOTResponseModel {
@@ -6,16 +7,12 @@ export default class LOTResponseModel {
     // properties
     this.data = {};
     this.value = -1;
+    this.name = ''; // TODO: use this prop in template?
     this.hasData = false;
     this.hasChanged = false;
 
     // signals
     this.updated = new signals.Signal();
-  }
-
-  getName() {
-    // TODO
-    return 'asdf';
   }
 
   getRatingResponseAt(index) {
@@ -35,11 +32,19 @@ export default class LOTResponseModel {
     this.data = value;
     this.hasData = true;
 
+    // needed for validation
+    // TODO: investigate if doubling from responsesModel
+    lotModel.addResponseModel(this);
+
     this.updated.dispatch();
   }
 
   setInitialValue() {
     this.setValue(3);
+  }
+
+  setName() {
+    this.name = 'lotQuestion' + this.data.index;
   }
 
   setValue(val) {

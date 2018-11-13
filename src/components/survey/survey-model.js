@@ -1,11 +1,13 @@
 import _ from 'lodash';
 import signals from 'signals';
 
+// constants
+import { FormStates } from '../../constants/form-states';
+
 // models
 import questionsModel from '../../models/questions-model';
 import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
-import { FormStates } from '../../constants/form-states';
 
 
 class SurveyModel {

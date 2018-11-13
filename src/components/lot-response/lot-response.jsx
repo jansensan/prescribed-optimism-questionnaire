@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // models
 import LOTResponseModel from './lot-response-model.js';
+import responsesModel from '../../models/responses-model.js';
 
 // styles
 require('./lot-response.scss');
@@ -20,6 +21,14 @@ export default class LOTResponse extends Component {
     // properties
     this.state = new LOTResponseModel();
     this.state.setData(this.props);
+
+    responsesModel.saveLOTResponseAt(
+      this.props.index,
+      this.state
+    );
+
+    // listen to updates
+    this.state.updated.add(this.onModelUpdated, this);
   }
 
   // react methods definitions
@@ -28,7 +37,7 @@ export default class LOTResponse extends Component {
       <div className="lot-response">
         <input
           type="range"
-          name={this.state.getName()}
+          name={this.state.name}
           min="1"
           max="5"
           step="1"
@@ -49,6 +58,7 @@ export default class LOTResponse extends Component {
   componentDidMount() { 
     this.isComponentMounted = true;
     this.state.setInitialValue();
+    this.state.setName();
   }
 
 
@@ -70,10 +80,21 @@ export default class LOTResponse extends Component {
     return cells;
   }
 
-  onRangeChanged() {
+  onRangeChanged(event) {
     this.state.setAsChanged();
     this.state.setValue(event.target.value);
 
     // TODO: save lot response to model. see response.jsx
+
+    let input = document.getElementsByName(this.state.name)[0];
+    input.setCustomValidity('');
+  }
+
+  onModelUpdated() {
+    if (!this.isComponentMounted) {
+      return;
+    }
+
+    this.forceUpdate();
   }
 }
