@@ -1,3 +1,6 @@
+@import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
+
+
 .response {
   position: relative;
   margin: 48px 0 128px;
@@ -14,6 +17,9 @@
     td {
       position: relative;
       vertical-align: top;
+      font-family: $ffSerif;
+      font-style: italic;
+      color: $darkerGrey;
     }
 
     .numeric-label {

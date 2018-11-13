@@ -1,11 +1,14 @@
+@import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
+
+
 .lot-response {
   position: relative;
   margin: 24px 0 48px;
 
   input[type=range] {
     display: inline-block;
-    margin-left: 20px;
-    width: 600px;
+    margin-left: 50px;
+    width: 550px;
   }
 
   .response-num-label {
@@ -14,6 +17,9 @@
     td {
       position: relative;
       vertical-align: top;
+      font-family: $ffSerif;
+      font-style: italic;
+      color: $darkerGrey;
     }
 
     .numeric-label {
@@ -23,7 +29,7 @@
 
     .addit-label {
       text-align: center;
-      padding: 0 12px;
+      padding: 0 16px;
     }
   }
 }
