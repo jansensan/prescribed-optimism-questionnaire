@@ -12,14 +12,6 @@ class QuestionsModel {
     this.updated = new signals.Signal();
   }
 
-  isReady() {
-    // TODO: add demographics
-    return (
-      this.vignettes.length > 0 &&
-      this.lifeOrientation.length > 0
-    );
-  }
-
   setDemographics(value) {
     this.demographics = value;
     this.updated.dispatch();
