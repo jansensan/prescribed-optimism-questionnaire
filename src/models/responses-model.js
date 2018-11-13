@@ -19,13 +19,17 @@ class ResponsesModel {
   }
 
   initSurveyResponses(vignetteId, questionIndexes) {
+    this.surveyResponses = {
+      vignetteId: vignetteId,
+      responses: []
+    };
+
     for (let i = 0; i < questionIndexes.length; i++) {
       let question = {
-        vignetteId: vignetteId,
         questionId: 'question' + questionIndexes[i],
         responses: Array(this.NUM_SURVEY_RESPONSES)
       };
-      this.surveyResponses.push(question);
+      this.surveyResponses.responses.push(question);
     }
   }
 
@@ -42,7 +46,7 @@ class ResponsesModel {
       questionId = 'question' + questionId;
     }
     return _.find(
-      this.surveyResponses,
+      this.surveyResponses.responses,
       {questionId: questionId}
     );
   }
