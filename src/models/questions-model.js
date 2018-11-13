@@ -30,7 +30,6 @@ class QuestionsModel {
     this.demographics = demographics;
     this.lifeOrientation = lifeOrientation;
     this.updated.dispatch();
-    console.log(this.lifeOrientation.intro);
   }
 
   setLifeOrientation(value) {
