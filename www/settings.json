@@ -15,8 +15,8 @@
   "lifeOrientation": {
     "intro": {
       "en": "Please indicate the extent to which you agree with each of the statements listed below. Please be as accurate and as honest as possible when completing this scale, and try not to let your response to one statement influence your responses to other statements.",
-      "es": "",
-      "ca": ""
+      "es": "Por favor indica hasta que punto estás de acuerdo con cada uno de los siguientes enunciados. Por favor, sé lo más honesto posible al completar el formulario, e intenta que tu respuesta en un enunciado no influence tus otras respuestas.",
+      "ca": "Si us plau indica fins a quin punt estàs d'acord amb cadascun dels següents enunciats. Si us plau, sigues el més honest possible al completar el formulari, i intenta que la teva resposta en un enunciat no influencïi les altres respostes."
     },
     "questions": [
       {
@@ -73,28 +73,28 @@
     "responses": [
       {
         "en": "strongly disagree",
-        "es": "",
-        "ca": ""
+        "es": "estoy en muy desacuerdo",
+        "ca": "estic molt en desacord"
       },
       {
         "en": "disagree",
-        "es": "",
-        "ca": ""
+        "es": "estoy en desacuerdo",
+        "ca": "estic en desacord"
       },
       {
         "en": "neutral",
-        "es": "",
-        "ca": ""
+        "es": "neutral",
+        "ca": "neutral"
       },
       {
         "en": "agree",
-        "es": "",
-        "ca": ""
+        "es": "estoy de acuerdo",
+        "ca": "estoy d'acord"
       },
       {
         "en": "strongly agree",
-        "es": "",
-        "ca": ""
+        "es": "estoy muy de acuerdo",
+        "ca": "estic molt d'acord"
       }
     ]
   },
@@ -306,13 +306,13 @@
             "additionalLabels": [
               {
                 "index": 0,
-                "en": "not at all in lisa's control",
+                "en": "not at all in Lisa's control",
                 "es": "para nada está bajo el control de Lisa",
                 "ca": "no està sota el control de Lisa"
               },
               {
                 "index": 10,
-                "en": "completely in lisa's control",
+                "en": "completely in Lisa's control",
                 "es": "está completamente bajo el control de Lisa",
                 "ca": "està completament sota el control de Lisa"
               }
@@ -341,7 +341,7 @@
               },
               {
                 "index": 10,
-                "en": "completely lisa's decision",
+                "en": "completely Lisa's decision",
                 "es": "es completamente la decisión de Lisa",
                 "ca": "es completament la decisió de Lisa"
               }
