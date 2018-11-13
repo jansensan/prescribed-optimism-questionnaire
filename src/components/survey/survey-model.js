@@ -109,6 +109,10 @@ class SurveyModel {
     return this.formState === 'valid';
   }
 
+  isLastQuestion() {
+    return this.currentQuestionIndex === this.questionIndexes.length - 1;
+  }
+
   saveResponses() {
     this.responseModels.forEach((response) => {
       if (response.hasChanged) {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 // models
+import questionnaireModel from '../../models/questionnaire-model';
 import questionsModel from '../../models/questions-model';
 import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
@@ -91,7 +92,13 @@ export default class Survey extends Component {
     if (formElement.checkValidity()) {
       surveyModel.saveResponses();
       surveyModel.setFormAsValid(formElement);
-      surveyModel.gotoNextQuestion();
+      
+      if (!surveyModel.isLastQuestion()) {
+        surveyModel.gotoNextQuestion();
+
+      } else {
+        questionnaireModel.gotoDemographics();
+      }
     }
 
     window.scrollTo(0, 0);
