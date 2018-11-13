@@ -7,7 +7,7 @@ import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
 
 
-class QuestionnaireModel {
+class SurveyModel {
   constructor() {
     this.currentVignette = -1;
     this.currentQuestion = -1;
@@ -184,5 +184,5 @@ class QuestionnaireModel {
 
 
 // create and export singleton
-let questionnaireModel = new QuestionnaireModel();
-export default questionnaireModel;
+let surveyModel = new SurveyModel();
+export default surveyModel;

@@ -7,7 +7,7 @@ import { Languages } from '../../constants/languages';
 import settingsModel from '../../models/settings-model';
 
 // components
-import Questionnaire from '../questionnaire/questionnaire.jsx';
+import Survey from '../survey/survey.jsx';
 
 // styles
 require('./app.scss');
@@ -47,7 +47,7 @@ export default class App extends Component {
             <button onClick={this.onCatalanSelected} className="btn-primary">CA</button>
           </fieldset>
 
-          <Questionnaire></Questionnaire>
+          <Survey></Survey>
         </div>
 
         <footer>

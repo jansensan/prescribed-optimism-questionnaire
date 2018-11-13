@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
 // models
-import questionnaireModel from './questionnaire-model';
 import questionsModel from '../../models/questions-model';
 import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
+import surveyModel from './survey-model';
 
 // components
 import Question from '../question/question.jsx';
 
 // styles
-require('./questionnaire.scss');
+require('./survey.scss');
 
 
-export default class Questionnaire extends Component {
+export default class Survey extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,19 +21,19 @@ export default class Questionnaire extends Component {
     };
 
     // listen to updates
-    questionnaireModel.updated.add(this.onModelUpdated, this);
+    surveyModel.updated.add(this.onModelUpdated, this);
     questionsModel.updated.add(this.onQuestionsModelUpdated, this);
   }
 
   // react methods definitions
   render() {
     return (
-      <div className="questionnaire">
-        <form id="questionnaire">
+      <div className="survey">
+        <form id="surveyForm">
           <Question
-            index={questionnaireModel.currentQuestion}
-            text={questionnaireModel.getCurrentQuestionText()}
-            responses={questionnaireModel.getCurrentResponses()}
+            index={surveyModel.currentQuestion}
+            text={surveyModel.getCurrentQuestionText()}
+            responses={surveyModel.getCurrentResponses()}
           ></Question>
         </form>
         <div className="buttons-wrapper">
@@ -77,13 +77,13 @@ export default class Questionnaire extends Component {
   }
 
   onNextQuestionRequested() {
-    var formElement = document.getElementById('questionnaire');
-    questionnaireModel.validateForm(formElement);
+    var formElement = document.getElementById('surveyForm');
+    surveyModel.validateForm(formElement);
 
     if (formElement.checkValidity()) {
-      questionnaireModel.saveResponses();
-      questionnaireModel.setFormAsValid(formElement);
-      questionnaireModel.gotoNextQuestion();
+      surveyModel.saveResponses();
+      surveyModel.setFormAsValid(formElement);
+      surveyModel.gotoNextQuestion();
     }
 
     window.scrollTo(0, 0);
@@ -91,8 +91,8 @@ export default class Questionnaire extends Component {
 
   onQuestionsModelUpdated() {
     if (questionsModel.isReady()) {
-      questionnaireModel.setRandomVignette();
-      questionnaireModel.setInitQuestion();
+      surveyModel.setRandomVignette();
+      surveyModel.setInitQuestion();
     }
   }
 }

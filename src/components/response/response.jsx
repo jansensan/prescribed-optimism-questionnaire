@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // models
 import ResponseModel from './response-model';
-import questionnaireModel from '../questionnaire/questionnaire-model';
+import surveyModel from '../survey/survey-model';
 
 // styles
 require('./response.scss');
@@ -21,7 +21,7 @@ export default class Response extends Component {
 
     // listen to updates
     this.state.updated.add(this.onModelUpdated, this);
-    questionnaireModel.questionChanged.add(this.onQuestionChanged, this);
+    surveyModel.questionChanged.add(this.onQuestionChanged, this);
   }
 
   // react methods definitions
@@ -98,7 +98,7 @@ export default class Response extends Component {
     this.state.setAsChanged();
     this.state.setValue(event.target.value);
 
-    questionnaireModel.saveResponses();
+    surveyModel.saveResponses();
 
     let input = document.getElementsByName(this.state.name)[0];
     input.setCustomValidity('');
