@@ -22,8 +22,9 @@ export default class Survey extends Component {
     };
 
     // listen to updates
-    surveyModel.updated.add(this.onModelUpdated, this);
-    questionsModel.updated.add(this.onQuestionsModelUpdated, this);
+    questionnaireModel.updated.add(this.onQuestionnaireModelUpdated, this);
+    questionsModel.updated.add(this.update, this);
+    surveyModel.updated.add(this.update, this);
   }
 
   // react methods definitions
@@ -77,14 +78,6 @@ export default class Survey extends Component {
     );
   }
 
-  onModelUpdated() {
-    if (!this.state.isComponentMounted) {
-      return;
-    }
-
-    this.forceUpdate();
-  }
-
   onNextQuestionRequested() {
     var formElement = document.getElementById('surveyForm');
     surveyModel.validateForm(formElement);
@@ -104,10 +97,22 @@ export default class Survey extends Component {
     window.scrollTo(0, 0);
   }
 
-  onQuestionsModelUpdated() {
-    if (questionsModel.isReady()) {
+  onQuestionnaireModelUpdated() {
+    if (questionnaireModel.isSurvey()) {
+      // set initial content for survey
       surveyModel.setRandomVignette();
       surveyModel.setInitQuestion();
+
+      // update component display
+      this.update();
     }
+  }
+
+  update() {
+    if (!this.state.isComponentMounted) {
+      return;
+    }
+
+    this.forceUpdate();
   }
 }
