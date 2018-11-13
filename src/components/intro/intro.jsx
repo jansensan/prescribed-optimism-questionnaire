@@ -43,5 +43,6 @@ export default class Intro extends Component {
 
   onBeginRequested() {
     questionnaireModel.gotoLifeOrientationTest();
+    window.scrollTo(0, 0);
   }
 }
