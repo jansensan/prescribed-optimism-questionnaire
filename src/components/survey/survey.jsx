@@ -28,7 +28,7 @@ export default class Survey extends Component {
   // react methods definitions
   render() {
     return (
-      <div className="survey">
+      <div className={this.getComponentCSSClasses()}>
         <form id="surveyForm">
           <Question
             index={surveyModel.currentQuestion}
@@ -61,6 +61,14 @@ export default class Survey extends Component {
   }
 
   // methods definitions
+  getComponentCSSClasses() {
+    let classes = ['survey'];
+    if (!this.props.isVisible) {
+      classes.push('hidden');
+    }
+    return classes.join(' ');
+  }
+
   onDownloadRequested() {
     window.open(
       'data:text/json;charset=utf-8,' +
