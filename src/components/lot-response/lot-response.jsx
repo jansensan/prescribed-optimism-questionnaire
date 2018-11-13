@@ -24,7 +24,7 @@ export default class LOTResponse extends Component {
 
     responsesModel.saveLOTResponseAt(
       this.props.index,
-      this.state
+      this.state.value
     );
 
     // listen to updates
