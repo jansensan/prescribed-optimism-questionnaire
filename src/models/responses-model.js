@@ -30,7 +30,10 @@ class ResponsesModel {
   }
 
   getResponsesJSON() {
-    return JSON.stringify(this.surveyResponses);
+    return JSON.stringify({
+      lifeOrientationTest: this.lotResponses,
+      survey: this.surveyResponses
+    });
   }
 
   getSurveyResponsesForQuestion(questionId) {
