@@ -14,8 +14,22 @@ class LifeOrientationTestModel {
     return _.get(questionsModel, 'lifeOrientation.intro.' + settingsModel.lang);
   }
 
+  getQuestions() {
+    let questions = [];
+    let lot = _.get(questionsModel, 'lifeOrientation');
+    if (lot && lot.hasOwnProperty('questions')) {
+      questions = lot.questions;
+    }
+    return questions;
+  }
+
   getResponses() {
-    return [];
+    let responses = [];
+    let lot = _.get(questionsModel, 'lifeOrientation');
+    if (lot && lot.hasOwnProperty('responses')) {
+      responses = lot.responses;
+    }
+    return responses;
   }
 }
 

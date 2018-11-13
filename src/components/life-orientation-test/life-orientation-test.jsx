@@ -5,6 +5,7 @@ import lotModel from './life-orientation-test-model';
 import questionnaireModel from '../../models/questionnaire-model';
 
 // components
+import LOTQuestion from '../lot-question/lot-question.jsx';
 
 // styles
 require('./life-orientation-test.scss');
@@ -26,12 +27,17 @@ export default class LifeOrientationTest extends Component {
     return (
       <div className={this.getComponentCSSClasses()}>
         <h1>Life Orientation Test</h1>
-        <form id="surveyForm">
-          {/* <Question
-            index={-1}
-            text={lotModel.getText()}
-            responses={lotModel.getResponses()}
-          ></Question> */}
+        <p>{lotModel.getText()}</p>
+        <form id="lotForm">
+          {
+            lotModel.getQuestions().map((question, i) => (
+              <LOTQuestion
+                key={i}
+                label={question}
+                responses={lotModel.getResponses()}
+              ></LOTQuestion>
+            ))
+          }
         </form>
         <div className="buttons-wrapper">
           <button

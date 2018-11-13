@@ -141,7 +141,7 @@ export default class ResponseModel {
     this.data = value;
     this.hasData = true;
 
-    surveyModel.addResponseModel(this);
+    // surveyModel.addResponseModel(this);
 
     this.updated.dispatch();
   }

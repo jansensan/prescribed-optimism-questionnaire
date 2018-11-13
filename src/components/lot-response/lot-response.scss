@@ -1,0 +1,29 @@
+.lot-response {
+  position: relative;
+  margin: 24px 0 48px;
+
+  input[type=range] {
+    display: inline-block;
+    margin-left: 20px;
+    width: 600px;
+  }
+
+  .response-num-label {
+    width: 100%;
+
+    td {
+      position: relative;
+      vertical-align: top;
+    }
+
+    .numeric-label {
+      margin-top: -5px;
+      text-align: center;
+    }
+
+    .addit-label {
+      text-align: center;
+      padding: 0 12px;
+    }
+  }
+}
