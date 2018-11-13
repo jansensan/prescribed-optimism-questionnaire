@@ -32,7 +32,7 @@ export default class Question extends Component {
         <p className={this.getFormClasses()}>Please ensure to respond to all the questions below.</p>
         {
           // only render once the question index is set
-          (this.props.index > 0) ?
+          (this.props.index > -1) ?
 
             // go through all responses data
             // and create a component for each
