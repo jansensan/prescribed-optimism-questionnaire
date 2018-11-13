@@ -5,6 +5,7 @@ import signals from 'signals';
 import questionsModel from '../../models/questions-model';
 import responsesModel from '../../models/responses-model';
 import settingsModel from '../../models/settings-model';
+import { FormStates } from '../../constants/form-states';
 
 
 class SurveyModel {
@@ -18,7 +19,7 @@ class SurveyModel {
 
     this.responseModels = [];
 
-    this.formState = 'not submitted';
+    this.formState = FormStates.NOT_SUBMITTED;
 
     // signals
     this.updated = new signals.Signal();
@@ -106,7 +107,7 @@ class SurveyModel {
   }
 
   isFormValid() {
-    return this.formState === 'valid';
+    return this.formState === FormStates.VALID;
   }
 
   isLastQuestion() {
@@ -160,7 +161,7 @@ class SurveyModel {
   }
 
   setFormAsValid(formElement) {
-    this.formState = 'valid';
+    this.formState = FormStates.VALID;
     for (let i = 0; i < formElement.length; i++) {
       let input = formElement[i];
       input.setCustomValidity('');
@@ -169,13 +170,13 @@ class SurveyModel {
   }
 
   validateForm(formElement) {
-    this.formState = 'valid';
+    this.formState = FormStates.VALID;
 
     for (let i = 0; i < this.responseModels.length; i++) {
       let model = this.responseModels[i];
       if (!model.hasChanged) {
         // set form state
-        this.formState = 'invalid';
+        this.formState = FormStates.INVALID;
         // set input as invalid
         let input = _.find(formElement, {name: model.name});
         input.setCustomValidity('Required');
