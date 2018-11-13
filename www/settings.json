@@ -12,119 +12,92 @@
     },
     "debug": true
   },
-  "demographics": [
-    {
-      "id": "gender",
-      "type": "select",
-      "label": {
-        "en": "What is your gender?",
+  "lifeOrientation": {
+    "intro": {
+      "en": "Please indicate the extent to which you agree with each of the statements listed below. Please be as accurate and as honest as possible when completing this scale, and try not to let your response to one statement influence your responses to other statements.",
+      "es": "",
+      "ca": ""
+    },
+    "questions": [
+      {
+        "en": "In uncertain times, I usually expect the best.",
+        "es": "En tiempos inciertos, suelo esperar que ocurra lo mejor.",
+        "ca": "En temps incerts, acostumo a esperar que passarà el millor."
+      },
+      {
+        "en": "It's easy for me to relax.",
+        "es": "Me relajo con facilidad.",
+        "ca": "Em relaxo amb facilitat."
+      },
+      {
+        "en": "If something can go wrong for me, it will.",
+        "es": "Si algo me puede ir mal, me va a ir mal.",
+        "ca": "Si quelcom em pot anar malament, m'anirà malament."
+      },
+      {
+        "en": "I'm always optimistic about my future.",
+        "es": "Siempre soy optimista sobre mi futuro.",
+        "ca": "Sempre soc optimista sobre el meu futur."
+      },
+      {
+        "en": "I enjoy my friends a lot.",
+        "es": "Disfruto mucho de mis amigos.",
+        "ca": "Disfruto molt dels meus amics."
+      },
+      {
+        "en": "It's important for me to keep busy.",
+        "es": "Es importante que me mantenga ocupado.",
+        "ca": "És important que em mantingui ocupat."
+      },
+      {
+        "en": "I hardly ever expect things to go my way.",
+        "es": "Casi nunca espero que las cosas me vayan según lo esperado.",
+        "ca": "Qüasi mai espero que les coses em vagin segons l'esperat."
+      },
+      {
+        "en": "I don't get upset too easily.",
+        "es": "No suelo entristecer con facilidad.",
+        "ca": "No acostumo a entristir amb facilitat."
+      },
+      {
+        "en": "I rarely count on good things happening to me.",
+        "es": "Casi nunca espero que me ocurran cosas buenas.",
+        "ca": "Qüasi mai espero que em passin coses bones."
+      },
+      {
+        "en": "Overall, I expect more good things to happen to me than bad.",
+        "es": "En general, espero que me van a ocurrir más cosas buenas que malas.",
+        "ca": "En general, espero que em passaràn més coses bones que dolentes."
+      }
+    ],
+    "responses": [
+      {
+        "en": "strongly disagree",
         "es": "",
         "ca": ""
       },
-      "options": [
-        {
-          "id": "female",
-          "label": {
-            "en": "Female",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "male",
-          "label": {
-            "en": "Male",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "other",
-          "label": {
-            "en": "Other",
-            "es": "",
-            "ca": ""
-          }
-        }
-      ]
-    },
-    {
-      "id": "age",
-      "type": "number",
-      "label": {
-        "en": "How old are you?",
+      {
+        "en": "disagree",
+        "es": "",
+        "ca": ""
+      },
+      {
+        "en": "neutral",
+        "es": "",
+        "ca": ""
+      },
+      {
+        "en": "agree",
+        "es": "",
+        "ca": ""
+      },
+      {
+        "en": "strongly agree",
         "es": "",
         "ca": ""
       }
-    },
-    {
-      "id": "ethnicity",
-      "type": "select",
-      "label": {
-        "en": "To which ethnicity do you identify most?",
-        "es": "",
-        "ca": ""
-      },
-      "options": [
-        {
-          "id": "white",
-          "label": {
-            "en": "White",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "asian",
-          "label": {
-            "en": "Asian or Pacific Islander",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "black",
-          "label": {
-            "en": "Black",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "latino",
-          "label": {
-            "en": "Latino",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "indigenous",
-          "label": {
-            "en": "Indigenous from North/South American",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "other",
-          "label": {
-            "en": "Mixed/Other",
-            "es": "",
-            "ca": ""
-          }
-        },
-        {
-          "id": "noreply",
-          "label": {
-            "en": "Would rather not say",
-            "es": "",
-            "ca": ""
-          }
-        }
-      ]
-    }
-  ],
+    ]
+  },
   "vignettes": [
     {
       "id": "awardDecision",
@@ -378,5 +351,117 @@
       ]
     }
   ],
-  "lifeOrientation": []
+  "demographics": [
+    {
+      "id": "gender",
+      "type": "select",
+      "label": {
+        "en": "What is your gender?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "female",
+          "label": {
+            "en": "Female",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "male",
+          "label": {
+            "en": "Male",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "other",
+          "label": {
+            "en": "Other",
+            "es": "",
+            "ca": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "age",
+      "type": "number",
+      "label": {
+        "en": "How old are you?",
+        "es": "",
+        "ca": ""
+      }
+    },
+    {
+      "id": "ethnicity",
+      "type": "select",
+      "label": {
+        "en": "To which ethnicity do you identify most?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "white",
+          "label": {
+            "en": "White",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "asian",
+          "label": {
+            "en": "Asian or Pacific Islander",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "black",
+          "label": {
+            "en": "Black",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "latino",
+          "label": {
+            "en": "Latino",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "indigenous",
+          "label": {
+            "en": "Indigenous from North/South American",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "other",
+          "label": {
+            "en": "Mixed/Other",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "noreply",
+          "label": {
+            "en": "Would rather not say",
+            "es": "",
+            "ca": ""
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -13,8 +13,11 @@ class QuestionsModel {
   }
 
   isReady() {
-    // TODO: consider demographics and lifeOrientation
-    return this.vignettes.length > 0;
+    // TODO: add demographics
+    return (
+      this.vignettes.length > 0 &&
+      this.lifeOrientation.length > 0
+    );
   }
 
   setDemographics(value) {
@@ -27,6 +30,7 @@ class QuestionsModel {
     this.demographics = demographics;
     this.lifeOrientation = lifeOrientation;
     this.updated.dispatch();
+    console.log(this.lifeOrientation.intro);
   }
 
   setLifeOrientation(value) {
