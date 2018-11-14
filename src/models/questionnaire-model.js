@@ -7,9 +7,14 @@ import { QuestionnaireSections } from '../constants/questionnaire-sections.js';
 class QuestionnaireModel {
   constructor() {
     this.state = QuestionnaireSections.INTRO;
+    this.isCompleted = false;
 
     // signals
     this.updated = new signals.Signal();
+  }
+
+  gotoConclusion() {
+    this.setState(QuestionnaireSections.CONCLUSION);
   }
 
   gotoDemographics() {
@@ -26,6 +31,10 @@ class QuestionnaireModel {
 
   gotoSurvey() {
     this.setState(QuestionnaireSections.SURVEY);
+  }
+
+  isConclusion() {
+    return this.state === QuestionnaireSections.CONCLUSION;
   }
 
   isDemographics() {

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // models
 import demoResponsesModel from './demographics-responses-model';
 import demoQuestionsModel from './demographics-questions-model';
+import questionnaireModel from '../../models/questionnaire-model';
 
 // components
 import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
@@ -419,10 +420,7 @@ export default class DemographicsQuestions extends Component {
     demoQuestionsModel.validateForm();
 
     if (formElement.checkValidity()) {
-      console.log('valid! show conclusion page!');
-      // surveyModel.saveResponses();
-      // lotModel.setFormAsValid(formElement);
-      // questionnaireModel.gotoSurvey();
+      questionnaireModel.gotoConclusion();
     }
 
     window.scrollTo(0, 0);

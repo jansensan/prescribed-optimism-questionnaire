@@ -1,0 +1,17 @@
+@import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
+
+
+.conclusion {
+  display: block;
+  position: relative;
+
+  &.hidden {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding-top: 24px;
+    border-top: 1px solid $paleGrey;
+  }
+}
