@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-// constants
-import { Languages } from '../../constants/languages';
-
 // models
 import questionnaireModel from '../../models/questionnaire-model';
 import settingsModel from '../../models/settings-model';
 
 // components
+import TranslationSelection from '../translation-selection/translation-selection.jsx';
 import Intro from '../intro/intro.jsx';
 import LifeOrientationTest from '../life-orientation-test/life-orientation-test.jsx';
 import Survey from '../survey/survey.jsx';
@@ -53,11 +51,7 @@ export default class App extends Component {
         </header>
 
         <div className="centered">
-          <fieldset className="lang-sel-fieldset">
-            <button onClick={this.onEnglishSelected} className="btn-primary">EN</button>
-            <button onClick={this.onSpanishSelected} className="btn-primary">ES</button>
-            <button onClick={this.onCatalanSelected} className="btn-primary">CA</button>
-          </fieldset>
+          <TranslationSelection />
 
           <Intro
             isVisible={questionnaireModel.isIntro()}
@@ -94,18 +88,6 @@ export default class App extends Component {
 
 
   // methods definitions
-  onCatalanSelected() {
-    settingsModel.setLanguage(Languages.CA);
-  }
-  
-  onEnglishSelected() {
-    settingsModel.setLanguage(Languages.EN);
-  }
-  
-  onSpanishSelected() {
-    settingsModel.setLanguage(Languages.ES);
-  }
-
   onSettingsUpdated() {
     // assign values obtained to state
     this.state.title = settingsModel.getQuestionnaireTitle();

@@ -14,9 +14,9 @@ import questionsModel from './questions-model.js';
 class SettingsModel {
   constructor() {
     // properties
-    this.hasFetched = false;
     this.data = [];
     this.lang = Languages.EN;
+    this.hasFetched = false;
 
     // signals
     this.updated = new signals.Signal();
@@ -39,6 +39,10 @@ class SettingsModel {
         console.table(error);
         this.updated.dispatch();
       });
+  }
+
+  areTranslationsReady() {
+    return _.get(this.data, 'translationsReady');
   }
 
   getQuestionnaireTitle() {
