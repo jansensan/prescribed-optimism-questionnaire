@@ -33,6 +33,10 @@ class DemographicsQuestionsModel {
     this.updated.dispatch();
   }
 
+  isFormValid() {
+    return this.formState === FormStates.VALID;
+  }
+
   validateForm() {
     // gender
     this.setElementsValidity(

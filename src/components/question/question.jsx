@@ -7,6 +7,7 @@ import surveyModel from '../survey/survey-model.js';
 
 // components
 import Response from '../response/response.jsx';
+import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
 
 // styles
 require('./question.scss');
@@ -29,7 +30,9 @@ export default class Question extends Component {
       <div className="question">
         <h1>Question {surveyModel.getQuestionNumber()}</h1>
         <p>{this.props.text}</p>
-        <p className={this.getFormWarningClasses()}>Please ensure to respond to all the questions below.</p>
+        <FormErrorsWarning
+          isVisible={surveyModel.isFormValid()}
+        ></FormErrorsWarning>
         {
           // only render once the question index is set
           (this.props.index > -1) ?
@@ -49,7 +52,7 @@ export default class Question extends Component {
             ))
 
           // show an error if question index is not set
-          : <p className="fix-form-errors">An error occured, please <button className="refresh-btn" onClick={this.onUpdateRequested.bind(this)}>refresh the page</button>.</p>
+          : <p className="page-error-warning">An error occured, please <button className="refresh-btn" onClick={this.onUpdateRequested.bind(this)}>refresh the page</button>.</p>
         }
       </div>
     );
@@ -62,24 +65,6 @@ export default class Question extends Component {
   }
 
   // methods definitions
-  getFormWarningClasses() {
-    let classes = ['fix-form-errors'];
-    switch(surveyModel.formState) {
-      case 'not submitted':
-        classes.push('not-submitted');
-        break;
-
-      case 'invalid':
-        classes.push('invalid');
-        break;
-
-      case 'valid':
-        classes.push('valid');
-        break;
-    }
-    return classes.join(' ');
-  }
-
   getShuffledResponses() {
     return _.shuffle(this.props.responses);
   }

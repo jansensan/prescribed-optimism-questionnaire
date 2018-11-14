@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-// constants
-import { FormStates } from '../../constants/form-states';
-
 // models
 import demoResponsesModel from './demographics-responses-model';
 import demoQuestionsModel from './demographics-questions-model';
+
+// components
+import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
 
 // styles
 require('./demographics-questions.scss');
@@ -23,13 +23,14 @@ export default class DemographicsQuestions extends Component {
     demoQuestionsModel.updated.add(this.update, this);
   }
 
-  // react methods definitions</div>
+  // react methods definitions
   render() {
     return (
       <div className={this.getComponentCSSClasses()}>
         <h1>Background Questions</h1>
-        <p className={this.getFormWarningClasses()}>Please ensure to respond to all the questions below.</p>
-
+        <FormErrorsWarning
+          isVisible={demoQuestionsModel.isFormValid()}
+        ></FormErrorsWarning>
         <form id="demographicsForm">
           <section className="form-section gender-section">
             <p>1. What is your gender?</p>
@@ -286,24 +287,6 @@ export default class DemographicsQuestions extends Component {
 
 
   // methods definitions
-  getFormWarningClasses() {
-    let classes = ['fix-form-errors'];
-    switch(demoQuestionsModel.formState) {
-      case FormStates.NOT_SUBMITTED:
-      classes.push('not-submitted');
-      break;
-      
-      case FormStates.INVALID:
-      classes.push('invalid');
-      break;
-      
-      case FormStates.VALID:
-        classes.push('valid');
-        break;
-    }
-    return classes.join(' ');
-  }
-
   getComponentCSSClasses() {
     let classes = ['demographics-questions'];
     if (!this.props.isVisible) {
