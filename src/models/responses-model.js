@@ -1,3 +1,8 @@
+import _ from 'lodash';
+
+import demoResponsesModel from "../components/demographics-questions/demographics-responses-model";
+
+
 class ResponsesModel {
   constructor() {
     this.NUM_LOT_RESPONSES = 10;
@@ -34,9 +39,35 @@ class ResponsesModel {
   }
 
   getResponsesJSON() {
+    // timestamp
+    let now = new Date();
+
+    // format survey responses for json
+    let surveyForJSON = {
+      vignette: this.surveyResponses.vignetteId,
+      responses: Array(this.NUM_SURVEY_RESPONSES)
+    };
+    this.surveyResponses.responses.forEach((q, i) => {
+      let index = parseInt(q.questionId.split('question')[1], 10);
+      surveyForJSON.responses[index] = q.responses;
+    });
+
+    // format demographics responses for json
+    let demographicsForJSON = {
+      gender: demoResponsesModel.gender,
+      age: demoResponsesModel.age,
+      ethnicity: demoResponsesModel.ethnicity,
+      education: demoResponsesModel.education,
+      isWorking: demoResponsesModel.isWorking,
+      isStudying: demoResponsesModel.isStudying,
+    };
+
     return JSON.stringify({
+      time: now,
+      timestamp: now.getTime(),
       lifeOrientationTest: this.lotResponses,
-      survey: this.surveyResponses
+      survey: surveyForJSON,
+      demographics: demographicsForJSON
     });
   }
 
@@ -51,8 +82,8 @@ class ResponsesModel {
     );
   }
 
-  saveLOTResponseAt(index, value) {
-    this.lotResponses[index].response = value;
+  saveLOTResponses(responses) {
+    this.lotResponses = responses;
   }
 
   saveSurveyResponseAt(questionId, orderIndex, value) {

@@ -50,6 +50,14 @@ class LifeOrientationTestModel {
     return this.formState === FormStates.INVALID;
   }
 
+  saveResponses() {
+    let responseValues = []
+    this.responseModels.forEach(model => {
+      responseValues.push(model.value);
+    });
+    responsesModel.saveLOTResponses(responseValues);
+  }
+
   setFormAsValid(formElement) {
     this.formState = FormStates.VALID;
     for (let i = 0; i < formElement.length; i++) {

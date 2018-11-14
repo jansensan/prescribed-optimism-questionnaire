@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 // models
+import lotModel from '../life-orientation-test/life-orientation-test-model.js';
 import LOTResponseModel from './lot-response-model.js';
-import responsesModel from '../../models/responses-model.js';
 
 // styles
 require('./lot-response.scss');
@@ -21,11 +21,6 @@ export default class LOTResponse extends Component {
     // properties
     this.state = new LOTResponseModel();
     this.state.setData(this.props);
-
-    responsesModel.saveLOTResponseAt(
-      this.props.index,
-      this.state.value
-    );
 
     // listen to updates
     this.state.updated.add(this.onModelUpdated, this);
@@ -84,7 +79,7 @@ export default class LOTResponse extends Component {
     this.state.setAsChanged();
     this.state.setValue(event.target.value);
 
-    // TODO: save lot response to model. see response.jsx
+    lotModel.saveResponses();
 
     let input = document.getElementsByName(this.state.name)[0];
     input.setCustomValidity('');
