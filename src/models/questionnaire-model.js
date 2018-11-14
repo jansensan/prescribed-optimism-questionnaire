@@ -7,6 +7,8 @@ import { QuestionnaireSections } from '../constants/questionnaire-sections.js';
 class QuestionnaireModel {
   constructor() {
     this.state = QuestionnaireSections.INTRO;
+
+    this.startTime = null;
     this.isCompleted = false;
 
     // signals
@@ -26,6 +28,7 @@ class QuestionnaireModel {
   }
 
   gotoLifeOrientationTest() {
+    this.startTime = new Date();
     this.setState(QuestionnaireSections.LIFE_ORIENTATION_TEST);
   }
 

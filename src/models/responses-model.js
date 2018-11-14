@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 import demoResponsesModel from "../components/demographics-questions/demographics-responses-model";
+import questionnaireModel from './questionnaire-model';
 
 
 class ResponsesModel {
@@ -63,8 +64,14 @@ class ResponsesModel {
     };
 
     return JSON.stringify({
-      time: now,
-      timestamp: now.getTime(),
+      time: {
+        start: questionnaireModel.startTime,
+        end: now,
+      },
+      timestamp: {
+        start: questionnaireModel.startTime.getTime(),
+        end: now.getTime(),
+      },
       lifeOrientationTest: this.lotResponses,
       survey: surveyForJSON,
       demographics: demographicsForJSON
