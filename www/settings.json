@@ -601,6 +601,257 @@
           }
         }
       ]
+    },
+    {
+      "id": "partyDecision",
+      "questions": [
+        {
+          "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party. If the group’s President chooses Joe to host the party, Joe would have to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator would be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, and Joe would not be responsible for how this money was used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party. If the group’s President chooses Joe to host the party, Joe would have to reserve the courtyard behind his apartment. He would also be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, but Joe would be responsible for how this money was used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, but Joe has not yet decided whether he will agree to do so. If Joe ultimately agrees to host the party, he would have to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator would be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, and Joe would not be responsible for how this money was used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, but Joe has not yet decided whether he will agree to do so. If Joe ultimately agrees to host the party, he would have to reserve the courtyard behind his apartment. He would also be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, but Joe would be responsible for how this money was used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party, and the group’s President ultimately chose Joe to host the party. Joe now has to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator is responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, and Joe will not be responsible for how this money is used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party, and the group’s President ultimately chose Joe to host the party. Joe now has to reserve the courtyard behind his apartment. He is also responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, but Joe will be responsible for how this money is used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, and Joe has agreed to do so. Joe now has to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator is responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, and Joe will not be responsible for how this money is used.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, and Joe has agreed to do so. Joe now has to reserve the courtyard behind his apartment. He is also responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, but Joe will be responsible for how this money is used.",
+          "es": "",
+          "ca": ""
+        }
+      ],
+      "responses": [
+        {
+          "id": 0,
+          "label": {
+            "en": "Under the circumstances described in this story, would it be best for Joe to be optimistic or pessimistic about the likelihood of the party’s success? In other words, what is the ideal prediction for Joe to make? In light of the situation that he is in, it would be best to be:",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "1",
+            "stepType": "int",
+            "min": "-4",
+            "max": "4",
+            "initVal": "0",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "extremely pessimistic",
+                "es": "extremadamente pesimista",
+                "ca": "extremadament pessimista"
+              },
+              {
+                "index": 2,
+                "en": "moderately pessimistic",
+                "es": "moderadamente pesimista",
+                "ca": "moderadament pessimista"
+              },
+              {
+                "index": 4,
+                "en": "accurate",
+                "es": "preciso",
+                "ca": "precís"
+              },
+              {
+                "index": 6,
+                "en": "moderately optimistic",
+                "es": "moderadamente optimista",
+                "ca": "moderadament optimista"
+              },
+              {
+                "index": 8,
+                "en": "extremely optimistic",
+                "es": "extremadamente optimista",
+                "ca": "extremadament optimista"
+              }
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "label": {
+            "en": "In this scenario, what do you think the probability is that the party would be a success?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "no chance at all (impossible)",
+                "es": "Ninguna opción (imposible)",
+                "ca": "Cap opció (impossible)"
+              },
+              {
+                "index": 5,
+                "en": "as likely as not",
+                "es": "tan probable como no",
+                "ca": "tant probable com no"
+              },
+              {
+                "index": 10,
+                "en": "guaranteed to be a success",
+                "es": "éxito garantizado",
+                "ca": "èxit garantit"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "label": {
+            "en": "From Joe's perspective in this scenario, how desirable would it be for the party to be a success?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "1",
+            "stepType": "int",
+            "min": "0",
+            "max": "10",
+            "initVal": "5",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all",
+                "es": "para nada",
+                "ca": "no"
+              },
+              {
+                "index": 5,
+                "en": "moderately",
+                "es": "moderadamente",
+                "ca": "moderadament"
+              },
+              {
+                "index": 10,
+                "en": "extremely",
+                "es": "extremadamente",
+                "ca": "extremadament"
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "label": {
+            "en": "In this scenario, to what extent has the decision to host the dinner party already been made?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "completely undecided",
+                "es": "completamente indeciso",
+                "ca": "completament indecís"
+              },
+              {
+                "index": 10,
+                "en": "completely decided",
+                "es": "completamente decidido",
+                "ca": "completament decidit"
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "label": {
+            "en": "In this scenario, to what extent would the success of the dinner party be under Joe’s control?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all in Joe's control",
+                "es": "para nada está bajo el control de Joe",
+                "ca": "no està sota el control de Joe"
+              },
+              {
+                "index": 10,
+                "en": "completely in Joe's control",
+                "es": "está completamente bajo el control de Joe",
+                "ca": "està completament sota el control de Joe"
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "en": "In this scenario, to what extent is the decision to host the dinner party Joe’s to make?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all Joe's decision",
+                "es": "para nada es la decisión de Joe",
+                "ca": "no és la decisió de Joe"
+              },
+              {
+                "index": 10,
+                "en": "completely Joe's decision",
+                "es": "es completamente la decisión de Joe",
+                "ca": "es completament la decisió de Joe"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "demographics": [
