@@ -852,6 +852,257 @@
           }
         }
       ]
+    },
+    {
+      "id": "surgeryDecision",
+      "questions": [
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C would have little control over the outcome. At the moment, the doctor is unsure whether to pursue surgery.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C would have substantial control over the outcome. At the moment, the doctor is unsure whether to pursue surgery.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C would have little control over the outcome. At the moment, Mr. C. is unsure whether to pursue surgery.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C would have substantial control over the outcome. At the moment, Mr. C. is unsure whether to pursue surgery.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C will have little control over the outcome.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C will have substantial control over the outcome.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C will have little control over the outcome.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C will have substantial control over the outcome.",
+          "es": "",
+          "ca": ""
+        }
+      ],
+      "responses": [
+        {
+          "id": 0,
+          "label": {
+            "en": "Under the circumstances described in this story, would it be best for Mr. C to be optimistic or pessimistic about the likelihood of the surgery’s success? In other words, what is the ideal prediction for Mr. C to make? In light of the situation that he is in, it would be best for him to be:",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "1",
+            "stepType": "int",
+            "min": "-4",
+            "max": "4",
+            "initVal": "0",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "extremely pessimistic",
+                "es": "extremadamente pesimista",
+                "ca": "extremadament pessimista"
+              },
+              {
+                "index": 2,
+                "en": "moderately pessimistic",
+                "es": "moderadamente pesimista",
+                "ca": "moderadament pessimista"
+              },
+              {
+                "index": 4,
+                "en": "accurate",
+                "es": "preciso",
+                "ca": "precís"
+              },
+              {
+                "index": 6,
+                "en": "moderately optimistic",
+                "es": "moderadamente optimista",
+                "ca": "moderadament optimista"
+              },
+              {
+                "index": 8,
+                "en": "extremely optimistic",
+                "es": "extremadamente optimista",
+                "ca": "extremadament optimista"
+              }
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "label": {
+            "en": "In this scenario, what do you think the probability is that the surgery would be a success?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "no chance at all (impossible)",
+                "es": "Ninguna opción (imposible)",
+                "ca": "Cap opció (impossible)"
+              },
+              {
+                "index": 5,
+                "en": "as likely as not",
+                "es": "tan probable como no",
+                "ca": "tant probable com no"
+              },
+              {
+                "index": 10,
+                "en": "guaranteed to be a success",
+                "es": "éxito garantizado",
+                "ca": "èxit garantit"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "label": {
+            "en": "From Mr. C's perspective in this scenario, how desirable would it be for the surgery to be a success?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "1",
+            "stepType": "int",
+            "min": "0",
+            "max": "10",
+            "initVal": "5",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all",
+                "es": "para nada",
+                "ca": "no"
+              },
+              {
+                "index": 5,
+                "en": "moderately",
+                "es": "moderadamente",
+                "ca": "moderadament"
+              },
+              {
+                "index": 10,
+                "en": "extremely",
+                "es": "extremadamente",
+                "ca": "extremadament"
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "label": {
+            "en": "In this scenario, to what extent has the decision to pursue open-heart surgery already been made?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "completely undecided",
+                "es": "completamente indeciso",
+                "ca": "completament indecís"
+              },
+              {
+                "index": 10,
+                "en": "completely decided",
+                "es": "completamente decidido",
+                "ca": "completament decidit"
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "label": {
+            "en": "In this scenario, to what extent would the success of the procedure be under Mr. C.’s control?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all in Mr. C's control",
+                "es": "para nada está bajo el control de Mr. C",
+                "ca": "no està sota el control de Mr. C"
+              },
+              {
+                "index": 10,
+                "en": "completely in Mr. C's control",
+                "es": "está completamente bajo el control de Mr. C",
+                "ca": "està completament sota el control de Mr. C"
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "en": "In this scenario, to what extent is the decision to undergo surgery Mr. C.’s to make?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all Mr. C's decision",
+                "es": "para nada es la decisión de Mr. C",
+                "ca": "no és la decisió de Mr. C"
+              },
+              {
+                "index": 10,
+                "en": "completely Mr. C's decision",
+                "es": "es completamente la decisión de Mr. C",
+                "ca": "es completament la decisió de Mr. C"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "demographics": [
