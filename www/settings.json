@@ -350,6 +350,257 @@
           }
         }
       ]
+    },
+    {
+      "id": "investmentDecision",
+      "questions": [
+        {
+          "en": "Jane has received an inheritance, and one of the decisions that must be made is whether to invest the inheritance in a new business or to pursue alternative investments.  (The decision of whether to invest in this business will be made by the executor of the estate.)  If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely.  Jane’s role in the business would be passive – she would remain a silent investor without influence over the business.  At the moment, however, the executor has not decided whether to invest in the new business.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions that must be made is whether to invest the inheritance in a new business or to pursue alternative investments. (The decision of whether to invest in this business will be made by the executor of the estate.) If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely. Jane’s role in the business would be active – she would have a seat on the board of directors and would have considerable influence over how the business was run. At the moment, however, the executor has not decided whether to invest in the new business.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions she must make is whether to invest the inheritance in a new business or to pursue alternative investments. (The decision of whether to invest in this business is Jane’s to make.)  If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely. Jane’s role in the business would be passive – she would remain a silent investor without influence over the business. At the moment, however, Jane has not decided whether she will invest in the new business.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions she must make is whether to invest the inheritance in a new business or to pursue alternative investments. (The decision of whether to invest in this business is Jane’s to make.) If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely. Jane’s role in the business would be active – she would have a seat on the board of directors and would have considerable influence over how the business was run. At the moment, however, Jane has not decided whether she will invest in the new business.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions that has been made is to invest the inheritance in a new business. (The decision to invest in this business was made by the executor of the estate.) If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be passive – she will remain a silent investor without influence over the business.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions that has been made is to invest the inheritance in a new business. (The decision to invest in this business was made by the executor of the estate.) If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be active – she will have a seat on the board of directors and will have considerable influence over how the business is run.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions she has made is to invest the inheritance in a new business. (The decision to invest in this business was Jane’s to make.)  If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be passive – she will remain a silent investor without influence over the business.",
+          "es": "",
+          "ca": ""
+        },
+        {
+          "en": "Jane has received an inheritance, and one of the decisions she has made is to invest the inheritance in a new business. (The decision to invest in this business was Jane’s to make.) If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be active – she will have a seat on the board of directors and will have considerable influence over how the business is run.",
+          "es": "",
+          "ca": ""
+        }
+      ],
+      "responses": [
+        {
+          "id": 0,
+          "label": {
+            "en": "Under the circumstances described in this story, would it be best for Jane to be optimistic or pessimistic about the likelihood of the business succeeding? In other words, what is the ideal prediction for Jane to make? In light of the situation that she is in, it would be best to be:",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "1",
+            "stepType": "int",
+            "min": "-4",
+            "max": "4",
+            "initVal": "0",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "extremely pessimistic",
+                "es": "extremadamente pesimista",
+                "ca": "extremadament pessimista"
+              },
+              {
+                "index": 2,
+                "en": "moderately pessimistic",
+                "es": "moderadamente pesimista",
+                "ca": "moderadament pessimista"
+              },
+              {
+                "index": 4,
+                "en": "accurate",
+                "es": "preciso",
+                "ca": "precís"
+              },
+              {
+                "index": 6,
+                "en": "moderately optimistic",
+                "es": "moderadamente optimista",
+                "ca": "moderadament optimista"
+              },
+              {
+                "index": 8,
+                "en": "extremely optimistic",
+                "es": "extremadamente optimista",
+                "ca": "extremadament optimista"
+              }
+            ]
+          }
+        },
+        {
+          "id": 1,
+          "label": {
+            "en": "In this scenario, what do you think the probability is that the business would succeed?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "no chance at all (impossible)",
+                "es": "Ninguna opción (imposible)",
+                "ca": "Cap opció (impossible)"
+              },
+              {
+                "index": 5,
+                "en": "as likely as not",
+                "es": "tan probable como no",
+                "ca": "tant probable com no"
+              },
+              {
+                "index": 10,
+                "en": "guaranteed to be a success",
+                "es": "éxito garantizado",
+                "ca": "èxit garantit"
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "label": {
+            "en": "From Jane's perspective in this scenario, how desirable would it be for the investment to be a success?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "1",
+            "stepType": "int",
+            "min": "0",
+            "max": "10",
+            "initVal": "5",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all",
+                "es": "para nada",
+                "ca": "no"
+              },
+              {
+                "index": 5,
+                "en": "moderately",
+                "es": "moderadamente",
+                "ca": "moderadament"
+              },
+              {
+                "index": 10,
+                "en": "extremely",
+                "es": "extremadamente",
+                "ca": "extremadament"
+              }
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "label": {
+            "en": "In this scenario, to what extent has the decision to invest in the new business already been made?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "completely undecided",
+                "es": "completamente indeciso",
+                "ca": "completament indecís"
+              },
+              {
+                "index": 10,
+                "en": "completely decided",
+                "es": "completamente decidido",
+                "ca": "completament decidit"
+              }
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "label": {
+            "en": "In this scenario, to what extent would the success of the new business be under Jane’s control?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all in Jane's control",
+                "es": "para nada está bajo el control de Jane",
+                "ca": "no està sota el control de Jane"
+              },
+              {
+                "index": 10,
+                "en": "completely in Jane's control",
+                "es": "está completamente bajo el control de Jane",
+                "ca": "està completament sota el control de Jane"
+              }
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "label": {
+            "en": "In this scenario, to what extent is the decision to invest in the business Jane’s to make?",
+            "es": "[TODO: ES]",
+            "ca": "[TODO: CA]"
+          },
+          "type": {
+            "step": "10",
+            "stepType": "percentage",
+            "min": "0",
+            "max": "100",
+            "initVal": "50",
+            "additionalLabels": [
+              {
+                "index": 0,
+                "en": "not at all Jane's decision",
+                "es": "para nada es la decisión de Jane",
+                "ca": "no és la decisió de Jane"
+              },
+              {
+                "index": 10,
+                "en": "completely Jane's decision",
+                "es": "es completamente la decisión de Jane",
+                "ca": "es completament la decisió de Jane"
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "demographics": [
