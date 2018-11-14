@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
+// services
+import DatabaseService from '../../services/database-service';
+
 // models
-import demoResponsesModel from './demographics-responses-model';
 import demoQuestionsModel from './demographics-questions-model';
+import demoResponsesModel from './demographics-responses-model';
 import questionnaireModel from '../../models/questionnaire-model';
+import responsesModel from '../../models/responses-model';
+import settingsModel from '../../models/settings-model';
 
 // components
 import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
@@ -420,6 +425,10 @@ export default class DemographicsQuestions extends Component {
     demoQuestionsModel.validateForm();
 
     if (formElement.checkValidity()) {
+      DatabaseService.save(
+        settingsModel.baseURL,
+        responsesModel.getResponsesJSON()
+      );
       questionnaireModel.isCompleted = true;
       questionnaireModel.gotoConclusion();
     }

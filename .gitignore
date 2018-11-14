@@ -5,5 +5,7 @@
 *.DS_STORE
 
 ### PROJECT-SPECIFIC FILES ###
+.vscode
 /assets
 /node_modules
+/www/.htaccess

@@ -14,6 +14,7 @@ import questionsModel from './questions-model.js';
 class SettingsModel {
   constructor() {
     // properties
+    this.baseURL = document.URL;
     this.data = [];
     this.lang = Languages.EN;
     this.hasFetched = false;
