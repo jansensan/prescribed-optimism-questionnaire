@@ -82,6 +82,8 @@ export default class LifeOrientationTest extends Component {
     }
 
     window.scrollTo(0, 0);
+    let h1 = document.getElementsByTagName('h1')[0];
+    h1.focus();
   }
 
   update() {

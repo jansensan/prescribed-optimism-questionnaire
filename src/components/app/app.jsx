@@ -35,6 +35,9 @@ export default class App extends Component {
     // warn before quitting
     // TODO: add condition for if questionnaire is completed
     window.onbeforeunload = function () {
+      if (questionnaireModel.isCompleted) {
+        return;
+      }
       return 'You are about to quit the questionnaire. Are you sure you want to leave?';
     };
   }

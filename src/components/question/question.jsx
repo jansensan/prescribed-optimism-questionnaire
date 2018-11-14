@@ -28,7 +28,7 @@ export default class Question extends Component {
   render() {
     return (
       <div className="question">
-        <h1>Question {surveyModel.getQuestionNumber()}</h1>
+        <h1 tabIndex="0">Question {surveyModel.getQuestionNumber()}</h1>
         <p>{this.props.text}</p>
         <FormErrorsWarning
           isVisible={surveyModel.isFormInvalid()}

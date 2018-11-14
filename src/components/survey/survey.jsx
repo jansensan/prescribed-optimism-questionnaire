@@ -79,22 +79,23 @@ export default class Survey extends Component {
   }
 
   onNextQuestionRequested() {
-    var formElement = document.getElementById('surveyForm');
+    let formElement = document.getElementById('surveyForm');
     surveyModel.validateForm(formElement);
 
     if (formElement.checkValidity()) {
       surveyModel.saveResponses();
       surveyModel.setFormAsValid(formElement);
-      
+
       if (!surveyModel.isLastQuestion()) {
         surveyModel.gotoNextQuestion();
-
       } else {
         questionnaireModel.gotoDemographics();
       }
     }
 
     window.scrollTo(0, 0);
+    var h1 = document.getElementsByTagName('h1')[0];
+    h1.focus();
   }
 
   onQuestionnaireModelUpdated() {
