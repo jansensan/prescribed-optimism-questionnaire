@@ -108,8 +108,8 @@ class SurveyModel {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  isFormValid() {
-    return this.formState === FormStates.VALID;
+  isFormInvalid() {
+    return this.formState === FormStates.INVALID;
   }
 
   isLastQuestion() {

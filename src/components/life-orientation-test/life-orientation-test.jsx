@@ -31,7 +31,7 @@ export default class LifeOrientationTest extends Component {
         <h1>Life Orientation Test</h1>
         <p>{lotModel.getText()}</p>
         <FormErrorsWarning
-          isVisible={lotModel.isFormValid()}
+          isVisible={lotModel.isFormInvalid()}
         ></FormErrorsWarning>
         <form id="lotForm">
           {

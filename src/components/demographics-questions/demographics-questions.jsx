@@ -30,7 +30,7 @@ export default class DemographicsQuestions extends Component {
       <div className={this.getComponentCSSClasses()}>
         <h1>Background Questions</h1>
         <FormErrorsWarning
-          isVisible={demoQuestionsModel.isFormValid()}
+          isVisible={demoQuestionsModel.isFormInvalid()}
         ></FormErrorsWarning>
         <form id="demographicsForm">
           <section className="form-section gender-section">

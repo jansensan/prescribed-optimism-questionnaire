@@ -31,7 +31,7 @@ export default class Question extends Component {
         <h1>Question {surveyModel.getQuestionNumber()}</h1>
         <p>{this.props.text}</p>
         <FormErrorsWarning
-          isVisible={surveyModel.isFormValid()}
+          isVisible={surveyModel.isFormInvalid()}
         ></FormErrorsWarning>
         {
           // only render once the question index is set

@@ -33,8 +33,8 @@ class DemographicsQuestionsModel {
     this.updated.dispatch();
   }
 
-  isFormValid() {
-    return this.formState === FormStates.VALID;
+  isFormInvalid() {
+    return this.formState === FormStates.INVALID;
   }
 
   validateForm() {
