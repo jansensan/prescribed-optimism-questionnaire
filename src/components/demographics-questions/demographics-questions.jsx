@@ -420,6 +420,7 @@ export default class DemographicsQuestions extends Component {
     demoQuestionsModel.validateForm();
 
     if (formElement.checkValidity()) {
+      questionnaireModel.isCompleted = true;
       questionnaireModel.gotoConclusion();
     }
 
