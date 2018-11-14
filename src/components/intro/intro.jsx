@@ -42,7 +42,9 @@ export default class Intro extends Component {
   }
 
   onBeginRequested() {
-    questionnaireModel.gotoLifeOrientationTest();
+    // questionnaireModel.gotoLifeOrientationTest();
+    questionnaireModel.gotoDemographics();
+
     window.scrollTo(0, 0);
   }
 }
