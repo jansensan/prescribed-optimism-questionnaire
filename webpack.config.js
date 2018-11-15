@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './www'),
-    filename: 'prescribed-optimism-questionnaire.js',
+    filename: 'questionnaire.js',
   },
   watchOptions: {
     ignored: /node_modules/,
