@@ -1,0 +1,5 @@
+SetEnv DB_HOST db.domain.name
+SetEnv DB_NAME database_name
+SetEnv DB_USER user_name
+SetEnv DB_PASSWORD pass_word
+SetEnv RESPONSES_TABLE table_name
