@@ -37,16 +37,19 @@ export default class DemographicsQuestions extends Component {
         <FormErrorsWarning
           isVisible={demoQuestionsModel.isFormInvalid()}
         ></FormErrorsWarning>
+
         <form id="demographicsForm">
           <section className="form-section gender-section">
-            <p>1. What is your gender?</p>
+            <p>1. {demoQuestionsModel.getGenderQuestionLabel()}</p>
             <input
               type="radio"
               name="gender"
               id="genderFemaleRadio"
               onChange={this.onGenderUpdated.bind(this)}
             />
-            <label htmlFor="genderFemaleRadio">Female</label>
+            <label htmlFor="genderFemaleRadio">
+              {demoQuestionsModel.getGenderRadioLabel('female')}
+            </label>
 
             <input
               type="radio"
@@ -54,7 +57,9 @@ export default class DemographicsQuestions extends Component {
               id="genderMaleRadio"
               onChange={this.onGenderUpdated.bind(this)}
             />
-            <label htmlFor="genderMaleRadio">Male</label>
+            <label htmlFor="genderMaleRadio">
+              {demoQuestionsModel.getGenderRadioLabel('male')}
+            </label>
 
             <input
               type="radio"
@@ -62,11 +67,13 @@ export default class DemographicsQuestions extends Component {
               id="genderOtherRadio"
               onChange={this.onGenderUpdated.bind(this)}
             />
-            <label htmlFor="genderOtherRadio">Other</label>
+            <label htmlFor="genderOtherRadio">
+              {demoQuestionsModel.getGenderRadioLabel('other')}
+            </label>
           </section>
 
           <section className="form-section age-section">
-            <p>2. How old are you?</p>
+            <p>2. {demoQuestionsModel.getAgeQuestionLabel()}</p>
             <input
               id="ageInput"
               type="number"
@@ -79,7 +86,7 @@ export default class DemographicsQuestions extends Component {
           </section>
 
           <section className="form-section ethnicity-section">
-            <p>3. To which ethnicity do you identify most?</p>
+            <p>3. {demoQuestionsModel.getEthnicityQuestionLabel()}</p>
             <div className="radio-wrapper">
               <input
                 type="radio"
@@ -87,7 +94,9 @@ export default class DemographicsQuestions extends Component {
                 id="ethnicityAsian"
                 onChange={this.onEthnicityUpdated.bind(this)}
               />
-              <label htmlFor="ethnicityAsian">Asian or Pacific Islander</label>
+              <label htmlFor="ethnicityAsian">
+                {demoQuestionsModel.getEthnicityRadioLabel('asian')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -96,7 +105,9 @@ export default class DemographicsQuestions extends Component {
                 id="ethnicityBlack"
                 onChange={this.onEthnicityUpdated.bind(this)}
               />
-              <label htmlFor="ethnicityBlack">Black</label>
+              <label htmlFor="ethnicityBlack">
+                {demoQuestionsModel.getEthnicityRadioLabel('black')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -105,7 +116,9 @@ export default class DemographicsQuestions extends Component {
                 id="ethnicityIndigenous"
                 onChange={this.onEthnicityUpdated.bind(this)}
               />
-              <label htmlFor="ethnicityIndigenous">Indigenous from North/South American</label>
+              <label htmlFor="ethnicityIndigenous">
+                {demoQuestionsModel.getEthnicityRadioLabel('indigenous')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -114,7 +127,9 @@ export default class DemographicsQuestions extends Component {
                 id="ethnicityLatino"
                 onChange={this.onEthnicityUpdated.bind(this)}
               />
-              <label htmlFor="ethnicityLatino">Latino</label>
+              <label htmlFor="ethnicityLatino">
+                {demoQuestionsModel.getEthnicityRadioLabel('latino')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -123,7 +138,9 @@ export default class DemographicsQuestions extends Component {
                 id="ethnicityWhite"
                 onChange={this.onEthnicityUpdated.bind(this)}
               />
-              <label htmlFor="ethnicityWhite">White</label>
+              <label htmlFor="ethnicityWhite">
+                {demoQuestionsModel.getEthnicityRadioLabel('white')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -132,12 +149,14 @@ export default class DemographicsQuestions extends Component {
                 id="ethnicityOther"
                 onChange={this.onEthnicityUpdated.bind(this)}
               />
-              <label htmlFor="ethnicityOther">Mixed/Other</label>
+              <label htmlFor="ethnicityOther">
+                {demoQuestionsModel.getEthnicityRadioLabel('other')}
+              </label>
           </div>
           </section>
 
           <section className="form-section education-section">
-            <p>4. What is your level of education?</p>
+            <p>4. {demoQuestionsModel.getEducationQuestionLabel()}</p>
             <div className="radio-wrapper">
               <input
                 type="radio"
@@ -145,7 +164,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationElementary"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationElementary">Elementary school</label>
+              <label htmlFor="educationElementary">
+                {demoQuestionsModel.getEducationRadioLabel('elementary')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -154,7 +175,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationSomeHighSchool"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationSomeHighSchool">Some high school</label>
+              <label htmlFor="educationSomeHighSchool">
+                {demoQuestionsModel.getEducationRadioLabel('someHighSchool')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -163,7 +186,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationHighSchool"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationHighSchool">High school</label>
+              <label htmlFor="educationHighSchool">
+                {demoQuestionsModel.getEducationRadioLabel('highSchool')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -172,7 +197,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationSomeCollege"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationSomeCollege">Some college</label>
+              <label htmlFor="educationSomeCollege">
+                {demoQuestionsModel.getEducationRadioLabel('someCollege')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -181,7 +208,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationCollege"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationCollege">College</label>
+              <label htmlFor="educationCollege">
+                {demoQuestionsModel.getEducationRadioLabel('college')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -190,7 +219,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationSomeBA"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationSomeBA">Part of Bachelor's degree</label>
+              <label htmlFor="educationSomeBA">
+                {demoQuestionsModel.getEducationRadioLabel('someBA')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -199,7 +230,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationBA"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationBA">Bachelor's degree</label>
+              <label htmlFor="educationBA">
+                {demoQuestionsModel.getEducationRadioLabel('ba')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -208,7 +241,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationSomeMA"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationSomeMA">Part of Master's degree</label>
+              <label htmlFor="educationSomeMA">
+                {demoQuestionsModel.getEducationRadioLabel('someMA')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -217,7 +252,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationMA"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationMA">Master's degree</label>
+              <label htmlFor="educationMA">
+                {demoQuestionsModel.getEducationRadioLabel('ma')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -226,7 +263,9 @@ export default class DemographicsQuestions extends Component {
                 id="educationSomePhD"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationSomePhD">Part of PhD</label>
+              <label htmlFor="educationSomePhD">
+                {demoQuestionsModel.getEducationRadioLabel('somePhD')}
+              </label>
             </div>
             <div className="radio-wrapper">
               <input
@@ -235,12 +274,14 @@ export default class DemographicsQuestions extends Component {
                 id="educationPhD"
                 onChange={this.onEducationUpdated.bind(this)}
               />
-              <label htmlFor="educationPhD">PhD</label>
+              <label htmlFor="educationPhD">
+                {demoQuestionsModel.getEducationRadioLabel('phd')}
+              </label>
             </div>
           </section>
 
           <section className="form-section study-section">
-            <p>5. Are you currently studying?</p>
+            <p>5. {demoQuestionsModel.getStudiesQuestionLabel()}</p>
             <input
               type="radio"
               name="isStudying"
@@ -258,7 +299,7 @@ export default class DemographicsQuestions extends Component {
           </section>
 
           <section className="form-section work-section">
-            <p>5. Are you currently working/employed (whether full-time or part-time)?</p>
+            <p>5. {demoQuestionsModel.getWorkQuestionLabel()}</p>
             <input
               type="radio"
               name="isWorking"
@@ -275,6 +316,7 @@ export default class DemographicsQuestions extends Component {
             <label htmlFor="isWorkingNo">No</label>
           </section>
         </form>
+
         <div className="buttons-wrapper">
           <button
             className="btn-primary next-btn"

@@ -1216,6 +1216,159 @@
           }
         }
       ]
+    },
+    {
+      "id": "education",
+      "type": "select",
+      "label": {
+        "en": "What is your level of education?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "elementary",
+          "label": {
+            "en": "Elementary school",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "someHighSchool",
+          "label": {
+            "en": "Some high school",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "highSchool",
+          "label": {
+            "en": "High school",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "someCollege",
+          "label": {
+            "en": "Some college",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "college",
+          "label": {
+            "en": "College",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "someBA",
+          "label": {
+            "en": "Part of Bachelor's degree",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "ba",
+          "label": {
+            "en": "Bachelor's degree",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "someMA",
+          "label": {
+            "en": "Part of Master's degree",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "ma",
+          "label": {
+            "en": "Master's degree",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "somePhD",
+          "label": {
+            "en": "Part of PhD",
+            "es": "",
+            "ca": ""
+          }
+        },
+        {
+          "id": "phd",
+          "label": {
+            "en": "PhD",
+            "es": "",
+            "ca": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "studies",
+      "type": "select",
+      "label": {
+        "en": "Are you currently studying?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "isStudyingYes",
+          "label": {
+            "en": "Yes",
+            "es": "Sí",
+            "ca": "Sí"
+          }
+        },
+        {
+          "id": "isStudyingNo",
+          "label": {
+            "en": "No",
+            "es": "No",
+            "ca": "No"
+          }
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "type": "select",
+      "label": {
+        "en": "Are you currently working/employed (whether full-time or part-time)?",
+        "es": "",
+        "ca": ""
+      },
+      "options": [
+        {
+          "id": "isWorkingYes",
+          "label": {
+            "en": "Yes",
+            "es": "Sí",
+            "ca": "Sí"
+          }
+        },
+        {
+          "id": "isWorkingNo",
+          "label": {
+            "en": "No",
+            "es": "No",
+            "ca": "No"
+          }
+        }
+      ]
     }
   ]
 }
