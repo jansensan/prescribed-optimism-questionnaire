@@ -7,7 +7,6 @@ import settingsModel from '../../models/settings-model';
 // components
 import Conclusion from '../conclusion/conclusion.jsx';
 import DemographicsQuestions from '../demographics-questions/demographics-questions.jsx';
-import DownloadButton from '../download-button/download-button.jsx';
 import Intro from '../intro/intro.jsx';
 import LifeOrientationTest from '../life-orientation-test/life-orientation-test.jsx';
 import Survey from '../survey/survey.jsx';
@@ -72,8 +71,6 @@ export default class App extends Component {
           <Conclusion
             isVisible={questionnaireModel.isConclusion()}
           ></Conclusion>
-
-          <DownloadButton />
         </div>
 
         <footer>
