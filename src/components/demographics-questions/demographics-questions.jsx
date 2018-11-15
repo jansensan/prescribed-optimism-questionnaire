@@ -319,9 +319,13 @@ export default class DemographicsQuestions extends Component {
 
         <div className="buttons-wrapper">
           <button
-            className="btn-primary next-btn"
+            id="completeQuestionnaireButton"
+            className="btn-primary btn-complete-questionnaire"
             onClick={this.onQuestionnaireCompleted.bind(this)}
-          >Finish</button>
+          >
+            <span className="active-label">Finish</span>
+            <span className="disabled-label">⌛</span>
+          </button>
         </div>
       </div>
     );
@@ -467,12 +471,15 @@ export default class DemographicsQuestions extends Component {
     demoQuestionsModel.validateForm();
 
     if (formElement.checkValidity()) {
+      var btn = document.getElementById('completeQuestionnaireButton');
+      btn.disabled = true;
       DatabaseService.save(
         settingsModel.baseURL,
         responsesModel.getResponsesJSON()
-      );
-      questionnaireModel.isCompleted = true;
-      questionnaireModel.gotoConclusion();
+      ).then(() => {
+        questionnaireModel.isCompleted = true;
+        questionnaireModel.gotoConclusion();
+      });
     }
 
     window.scrollTo(0, 0);

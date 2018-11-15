@@ -77,4 +77,33 @@
     border-top: 1px solid $paleGrey;
     padding: 32px 0;
   }
+
+  .btn-complete-questionnaire {
+    width: 128px;
+    text-align: center;
+    cursor: pointer;
+
+    .active-label {
+      display: inline-block;
+    }
+
+    .disabled-label {
+      display: none;
+      position: relative;
+      top: 3px;
+    }
+
+    &:disabled {
+      background-color: $darkGrey;
+      cursor: default;
+
+      .active-label {
+        display: none;
+      }
+      
+      .disabled-label {
+        display: inline-block;
+      }
+    }
+  }
 }
