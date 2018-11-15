@@ -5,6 +5,7 @@ let DatabaseService = {
 };
 export default DatabaseService;
 
+
 // public methods definitions
 function save(baseURL, data) {
   let url = baseURL + 'services/save.php';
@@ -15,12 +16,20 @@ function save(baseURL, data) {
     xhr.timeout = 5000;
     xhr.url = url;
 
+    // send proper header info along with request
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
     xhr.onload = () => {
-      console.info(
-        'Data successfully saved. '
-        + xhr.responseText
-      );
-      resolve(xhr.responseText);
+      if (xhr.status === 200) {
+        console.info('Data successfully saved.');
+        resolve();
+      } else {
+        console.warn(
+          'Error: issue while attempting to save. '
+          + xhr.statusText
+        );
+        reject(xhr.statusText);
+      }
     };
     xhr.onerror = () => {
       console.warn(
