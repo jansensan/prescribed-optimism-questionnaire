@@ -8,7 +8,7 @@ export default DatabaseService;
 
 
 // public methods definitions
-function saveData(baseURL, data) {
+function saveData(baseURL, startTime, data) {
   let url = baseURL + 'services/save-data.php';
 
   return new Promise((resolve, reject) => {
@@ -47,7 +47,7 @@ function saveData(baseURL, data) {
       );
     };
 
-    let params = 'data=' + data;
+    let params = 'startTime=' + startTime + '&data=' + data;
     xhr.send(params);
   });
 }

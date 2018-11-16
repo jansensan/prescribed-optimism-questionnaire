@@ -480,6 +480,7 @@ export default class DemographicsQuestions extends Component {
       // send data to db
       DatabaseService.saveData(
         settingsModel.baseURL,
+        questionnaireModel.startTime.getTime(),
         responsesModel.getResponsesJSON()
       ).then(() => {
         // scroll to top

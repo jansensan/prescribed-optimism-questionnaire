@@ -16,8 +16,10 @@
 
   } else {
     // query to save to db
+    $start_time = $_POST["startTime"];
     $data = $_POST["data"];
-    $query_string = "INSERT INTO `" . $table . "`" . " (`data`) " . " VALUES ('" . $data . "')";
+    $query_string = "INSERT INTO `" . $table . "`"
+      . " (`start_time`, `data`) " . " VALUES ('" . $start_time . "','" . $data . "')";
     $result = $db->query($query_string);
 
     echo $result;
