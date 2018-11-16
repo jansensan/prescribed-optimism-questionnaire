@@ -36,6 +36,7 @@ export default class Response extends Component {
           max={this.state.getMax()}
           step={this.state.getStepSize()}
           value={this.state.value}
+          onFocus={this.onRangeChanged.bind(this)}
           onChange={this.onRangeChanged.bind(this)}
         />
         <table className="response-num-label">

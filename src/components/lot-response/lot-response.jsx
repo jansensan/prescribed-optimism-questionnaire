@@ -37,6 +37,7 @@ export default class LOTResponse extends Component {
           max="5"
           step="1"
           value={this.state.value}
+          onFocus={this.onRangeChanged.bind(this)}
           onChange={this.onRangeChanged.bind(this)}
         />
         <table className="response-num-label">
