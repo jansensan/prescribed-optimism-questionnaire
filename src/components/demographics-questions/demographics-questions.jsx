@@ -483,7 +483,7 @@ export default class DemographicsQuestions extends Component {
         responsesModel.getResponsesJSON()
       ).then(() => {
         // scroll to top
-        scrollToTop();
+        this.scrollToTop();
 
         // go to thank you page
         questionnaireModel.isCompleted = true;
@@ -492,7 +492,7 @@ export default class DemographicsQuestions extends Component {
 
     // form is invalid
     } else {
-      scrollToTop();
+      this.scrollToTop();
     }
   }
 
