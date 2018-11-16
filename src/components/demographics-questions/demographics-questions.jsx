@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 // services
 import DatabaseService from '../../services/database-service';
+import DOMService from '../../services/dom-service';
 
 // models
 import demoQuestionsModel from './demographics-questions-model';
@@ -33,7 +34,7 @@ export default class DemographicsQuestions extends Component {
   render() {
     return (
       <div className={this.getComponentCSSClasses()}>
-        <h1>Background Questions</h1>
+        <h1 tabIndex="-1">Background Questions</h1>
         <FormErrorsWarning
           isVisible={demoQuestionsModel.isFormInvalid()}
         ></FormErrorsWarning>
@@ -470,21 +471,29 @@ export default class DemographicsQuestions extends Component {
     let formElement = document.getElementById('demographicsForm');
     demoQuestionsModel.validateForm();
 
+    // form is valid
     if (formElement.checkValidity()) {
+      // disable button while saving to db
       var btn = document.getElementById('completeQuestionnaireButton');
       btn.disabled = true;
+
+      // send data to db
       DatabaseService.save(
         settingsModel.baseURL,
         responsesModel.getResponsesJSON()
       ).then(() => {
+        // scroll to top
+        scrollToTop();
+
+        // go to thank you page
         questionnaireModel.isCompleted = true;
         questionnaireModel.gotoConclusion();
       });
-    }
 
-    window.scrollTo(0, 0);
-    let h1 = document.getElementsByTagName('h1')[0];
-    h1.focus();
+    // form is invalid
+    } else {
+      scrollToTop();
+    }
   }
 
   onStudyStateUpdated(event) {
@@ -521,6 +530,15 @@ export default class DemographicsQuestions extends Component {
       event.target.name,
       demoResponsesModel.getWorkState()
     );
+  }
+
+  scrollToTop() {
+    DOMService.scrollToTop()
+      .then(() => {
+        DOMService.setFocus(
+          document.getElementsByTagName('h1')[0]
+        );
+      });
   }
 
   update() {

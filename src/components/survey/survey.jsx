@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// services
+import DOMService from '../../services/dom-service';
+
 // models
 import questionnaireModel from '../../models/questionnaire-model';
 import questionsModel from '../../models/questions-model';
@@ -85,9 +88,12 @@ export default class Survey extends Component {
       }
     }
 
-    window.scrollTo(0, 0);
-    var h1 = document.getElementsByTagName('h1')[0];
-    h1.focus();
+    DOMService.scrollToTop()
+      .then(() => {
+        DOMService.setFocus(
+          document.getElementsByTagName('h1')[0]
+        );
+      });
   }
 
   onQuestionnaireModelUpdated() {

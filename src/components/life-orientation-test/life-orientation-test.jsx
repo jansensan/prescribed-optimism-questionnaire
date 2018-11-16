@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+// services
+import DOMService from '../../services/dom-service';
+
 // models
 import lotModel from './life-orientation-test-model';
 import questionnaireModel from '../../models/questionnaire-model';
@@ -28,7 +31,7 @@ export default class LifeOrientationTest extends Component {
   render() {
     return (
       <div className={this.getComponentCSSClasses()}>
-        <h1>Life Orientation Test</h1>
+        <h1 tabIndex="-1">Life Orientation Test</h1>
         <p>{lotModel.getText()}</p>
         <FormErrorsWarning
           isVisible={lotModel.isFormInvalid()}
@@ -81,9 +84,12 @@ export default class LifeOrientationTest extends Component {
       questionnaireModel.gotoSurvey();
     }
 
-    window.scrollTo(0, 0);
-    let h1 = document.getElementsByTagName('h1')[0];
-    h1.focus();
+    DOMService.scrollToTop()
+      .then(() => {
+        DOMService.setFocus(
+          document.getElementsByTagName('h1')[0]
+        );
+      });
   }
 
   update() {
