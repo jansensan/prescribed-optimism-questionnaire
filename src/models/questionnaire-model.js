@@ -3,6 +3,12 @@ import signals from 'signals';
 // constants
 import { QuestionnaireSections } from '../constants/questionnaire-sections.js';
 
+// services
+import DatabaseService from '../services/database-service.js';
+
+// models
+import settingsModel from './settings-model.js';
+
 
 class QuestionnaireModel {
   constructor() {
@@ -29,6 +35,10 @@ class QuestionnaireModel {
 
   gotoLifeOrientationTest() {
     this.startTime = new Date();
+    DatabaseService.saveStartTime(
+      settingsModel.baseURL,
+      this.startTime.getTime()
+    );
     this.setState(QuestionnaireSections.LIFE_ORIENTATION_TEST);
   }
 

@@ -478,7 +478,7 @@ export default class DemographicsQuestions extends Component {
       btn.disabled = true;
 
       // send data to db
-      DatabaseService.save(
+      DatabaseService.saveData(
         settingsModel.baseURL,
         responsesModel.getResponsesJSON()
       ).then(() => {
