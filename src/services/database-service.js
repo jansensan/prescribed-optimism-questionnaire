@@ -1,6 +1,7 @@
 // public api
 let DatabaseService = {
   // methods
+  downloadAllData: downloadAllData,
   saveData: saveData,
   saveStartTime: saveStartTime,
 };
@@ -8,6 +9,45 @@ export default DatabaseService;
 
 
 // public methods definitions
+function downloadAllData(baseURL) {
+  let url = baseURL + 'services/download-data.php';
+
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.timeout = 5000;
+    xhr.url = url;
+
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        resolve(xhr.response);
+      } else {
+        warnAndReject(
+          reject,
+          'Error: issue while attempting to obtain data. ',
+          xhr.statusText
+        );
+      }
+    };
+    xhr.onerror = () => {
+      warnAndReject(
+        reject,
+        'Error: issue while attempting to obtain data. ',
+        xhr.statusText
+      );
+    };
+    xhr.ontimeout = () => {
+      warnAndReject(
+        reject,
+        'Warning: timeout while attempting to obtain data. ',
+        xhr.statusText
+      );
+    };
+
+    xhr.send();
+  });
+}
+
 function saveData(baseURL, startTime, data) {
   let url = baseURL + 'services/save-data.php';
 
