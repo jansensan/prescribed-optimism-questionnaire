@@ -15,6 +15,7 @@ class QuestionnaireModel {
     this.state = QuestionnaireSections.INTRO;
 
     this.startTime = null;
+    this.isStarted = false;
     this.isCompleted = false;
 
     // signals
@@ -34,6 +35,7 @@ class QuestionnaireModel {
   }
 
   gotoLifeOrientationTest() {
+    this.isStarted = true;
     this.startTime = new Date();
     DatabaseService.saveStartTime(
       settingsModel.baseURL,
