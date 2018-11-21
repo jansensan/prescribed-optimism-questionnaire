@@ -14,9 +14,16 @@ import questionsModel from './questions-model.js';
 class SettingsModel {
   constructor() {
     // get base url
-    let protocol = document.URL.split('//')[0];
-    this.baseURL = protocol + '//' + document.domain + '/';
-    
+    if (document.URL.indexOf('projects.jansensan.net') > 0) {
+      // prod url
+      this.baseURL = 'https://projects.jansensan.net/questionnaire/';
+      
+    } else {
+      // local url
+      let protocol = document.URL.split('//')[0];
+      this.baseURL = protocol + '//' + document.domain + '/';
+    }
+
     // properties
     this.data = [];
     this.lang = Languages.EN;
