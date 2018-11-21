@@ -35,7 +35,7 @@
 
         '"id": "' . $row['id'] . '",' .
         '"startTime": "' . $row['start_time'] . '",' .
-        '"data": "' . $row['data'] . '"';
+        '"data": ' . $row['data'];
 
       $json .= ($row_index < $last_index) ? '},' : '}';
     }
