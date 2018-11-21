@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-// components
-import DownloadButton from '../download-button/download-button.jsx';
-
 // styles
 require('./conclusion.scss');
 
@@ -15,9 +12,11 @@ export default class Intro extends Component {
   render() {
     return (
       <div className={this.getComponentCSSClasses()}>
-        <h1 tabIndex="-1">Thank you!</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <DownloadButton/>
+        <div lang="en">
+          <h1 tabIndex="-1">Thank you!</h1>
+          <p>Thank you for taking the time to complete our survey. We truly value the information you have provided, and you can rest assured that the answers you have submitted will remain anonymous.</p>
+          <p>If you have any comments on the survey or our research, please contact <a href="mailto:mathieu.jansonblanchet01@estudiant.upf.edu">Mat Janson Blanchet</a>.</p>
+        </div>
       </div>
     );
   }
