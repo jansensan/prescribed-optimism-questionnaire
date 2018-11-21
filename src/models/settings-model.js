@@ -13,8 +13,11 @@ import questionsModel from './questions-model.js';
 
 class SettingsModel {
   constructor() {
+    // get base url
+    let protocol = document.URL.split('//')[0];
+    this.baseURL = protocol + '//' + document.domain + '/';
+    
     // properties
-    this.baseURL = document.URL;
     this.data = [];
     this.lang = Languages.EN;
     this.hasFetched = false;

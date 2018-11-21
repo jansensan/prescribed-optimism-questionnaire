@@ -3,11 +3,12 @@ const path = require('path');
 module.exports = {
   context: path.resolve(__dirname, './src'),
   entry: {
-    index: './index.jsx'
+    questionnaire: './questionnaire.jsx',
+    admin: './admin.jsx'
   },
   output: {
-    path: path.resolve(__dirname, './www'),
-    filename: 'questionnaire.js',
+    filename: '[name].js',
+    path: __dirname + '/www/scripts'
   },
   watchOptions: {
     ignored: /node_modules/,

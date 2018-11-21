@@ -1,7 +1,13 @@
 @import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
 
 
-.app {
+.admin-app {
+  display: block;
+  position: relative;
+
+  // FIXME: doesnt work
+  min-height: 400px !important;
+
   background-color: #fff;
 
   header {

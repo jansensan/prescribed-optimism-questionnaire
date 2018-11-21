@@ -394,6 +394,9 @@ ol, ul {
   blockquote {
     border: none !important; } }
 
+body, html {
+  background-color: #272727; }
+
 .react-app-container {
   min-height: 400px; }
   .react-app-container button {

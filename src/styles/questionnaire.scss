@@ -1,6 +1,11 @@
 @import "../../node_modules/jansensan-stylesheets/src/sass/jansensan-stylesheet.scss";
 
 
+body, html {
+  background-color: $nearBlack;
+}
+
+
 .react-app-container {
   min-height: 400px;
 
