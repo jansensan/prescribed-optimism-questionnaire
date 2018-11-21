@@ -4,14 +4,16 @@
 .admin-app {
   display: block;
   position: relative;
-
-  // FIXME: doesnt work
-  min-height: 400px !important;
-
   background-color: #fff;
 
   header {
     margin-bottom: 48px;
+  }
+
+  h1 {
+    font-size: 2em;
+    padding-top: 24px;
+    border-top: 1px solid $paleGrey;
   }
 
   .btn-primary {
@@ -21,5 +23,9 @@
 
   .centered {
     width: $tabletContentCol !important;
+  }
+
+  .admin-content {
+    min-height: 380px;
   }
 }

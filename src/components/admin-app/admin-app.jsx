@@ -27,7 +27,7 @@ export default class AdminApp extends Component {
           </div>
         </header>
 
-        <div className="centered">
+        <div className="centered admin-content">
           <h1>Data</h1>
           <p>You can obtain the latest questionnaire data.</p>
           <button
