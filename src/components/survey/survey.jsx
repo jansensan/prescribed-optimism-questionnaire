@@ -44,7 +44,7 @@ export default class Survey extends Component {
           <button
             className="btn-primary next-btn"
             onClick={this.onNextQuestionRequested.bind(this)}
-          >Next</button>
+          >Continue</button>
         </div>
       </div>
     );
