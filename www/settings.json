@@ -1108,7 +1108,6 @@
   "demographics": [
     {
       "id": "gender",
-      "type": "select",
       "label": {
         "en": "What is your gender?",
         "es": "",
@@ -1143,7 +1142,6 @@
     },
     {
       "id": "age",
-      "type": "number",
       "label": {
         "en": "How old are you?",
         "es": "",
@@ -1152,7 +1150,6 @@
     },
     {
       "id": "ethnicity",
-      "type": "select",
       "label": {
         "en": "To which ethnicity do you identify most?",
         "es": "",
@@ -1219,7 +1216,6 @@
     },
     {
       "id": "education",
-      "type": "select",
       "label": {
         "en": "What is your level of education?",
         "es": "",
@@ -1318,7 +1314,6 @@
     },
     {
       "id": "studies",
-      "type": "select",
       "label": {
         "en": "Are you currently studying?",
         "es": "",
@@ -1345,7 +1340,6 @@
     },
     {
       "id": "work",
-      "type": "select",
       "label": {
         "en": "Are you currently working/employed (whether full-time or part-time)?",
         "es": "",
@@ -1372,7 +1366,6 @@
     },
     {
       "id": "income",
-      "type": "select",
       "label": {
         "en": "What is the approximate income of your household?",
         "es": "",
@@ -1428,7 +1421,6 @@
     },
     {
       "id": "numPeopleHousehold",
-      "type": "number",
       "label": {
         "en": "How many people live in your household?",
         "es": "How many people live in your household?",
