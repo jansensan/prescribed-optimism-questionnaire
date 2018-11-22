@@ -67,6 +67,8 @@ blockquote {
   color: #4a4a4a; }
   blockquote p {
     text-align: justify; }
+  blockquote em {
+    font-style: normal; }
 
 input[type="text"],
 textarea {
@@ -258,6 +260,24 @@ footer {
 ol, ul {
   padding: 0 0 0 20px; }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 8px 48px 8px 16px;
+  border: 1px solid #272727;
+  background-color: #f8f8f8;
+  background-image: linear-gradient(45deg, transparent 50%, #4a4a4a 50%), linear-gradient(135deg, #4a4a4a 50%, transparent 50%), linear-gradient(to right, #6d6d6d, #6d6d6d);
+  background-position: calc(100% - 19px) calc(1em + 2px), calc(100% - 14px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  color: #4a4a4a; }
+  select::-ms-expand {
+    display: none;
+    /* hide the default arrow in ie10 and ie11 */ }
+
 :focus {
   border-color: rgba(84, 116, 220, 0.666);
   box-shadow: 0 0 0 4px rgba(84, 116, 220, 0.666);
@@ -349,11 +369,12 @@ ol, ul {
     @media (min-width: 768px) {
       .caption-container.half-right {
         width: 50% !important; } }
-  .caption-container .captioned-text {
-    text-align: center;
-    font-family: "Poly", "Times New Roman", Times, serif;
-    font-style: italic;
-    color: #6d6d6d; }
+
+.captioned-text {
+  text-align: center;
+  font-family: "Poly", "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #6d6d6d; }
 
 .quote-author {
   text-align: right;
@@ -381,6 +402,31 @@ ol, ul {
   @media (min-width: 768px) {
     .mobile-hidden {
       display: block !important; } }
+
+.twitter-wrapper {
+  display: block;
+  width: 100% !important;
+  margin: 24px auto; }
+  @media (min-width: 768px) {
+    .twitter-wrapper {
+      margin: 32px auto;
+      width: 480px !important;
+      max-width: 480px !important; } }
+
+.twitter-tweet,
+.twitter-tweet-rendered {
+  width: 288px !important;
+  max-width: 288px !important; }
+  @media (min-width: 375px) {
+    .twitter-tweet,
+    .twitter-tweet-rendered {
+      width: 340px !important;
+      max-width: 340px !important; } }
+  @media (min-width: 768px) {
+    .twitter-tweet,
+    .twitter-tweet-rendered {
+      width: 480px !important;
+      max-width: 480px !important; } }
 
 @media print {
   body {
