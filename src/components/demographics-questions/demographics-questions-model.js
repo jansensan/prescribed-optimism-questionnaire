@@ -101,6 +101,13 @@ class DemographicsQuestionsModel {
     return options;
   }
 
+  getNumPeopleHouseholdLabel() {
+    return _.get(
+      this.getQuestionData('numPeopleHousehold'),
+      'label.' + settingsModel.lang
+    );
+  }
+
   getQuestionData(questionId) {
     let data = {};
     if (questionsModel.demographics.length > 0) {
@@ -190,6 +197,12 @@ class DemographicsQuestionsModel {
     this.setElementsValidity(
       'incomeOptions',
       demoResponsesModel.getIncomeState()
+    );
+
+    // numPeopleHousehold
+    this.setElementsValidity(
+      'numPeopleHousehold',
+      demoResponsesModel.getNumHouseholdPeopleState()
     );
   }
 }

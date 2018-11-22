@@ -1425,6 +1425,15 @@
           "ca": "Prefer to not respond / Unknown"
         }
       ]
+    },
+    {
+      "id": "numPeopleHousehold",
+      "type": "number",
+      "label": {
+        "en": "How many people live in your household?",
+        "es": "How many people live in your household?",
+        "ca": "How many people live in your household?"
+      }
     }
   ]
 }

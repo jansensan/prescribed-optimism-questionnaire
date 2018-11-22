@@ -327,6 +327,18 @@ export default class DemographicsQuestions extends Component {
               {this.renderIncomeOptions()}
             </select>
           </section>
+
+          <section className="form-section household-section">
+            <p>7. {demoQuestionsModel.getNumPeopleHouseholdLabel()}</p>
+            <input
+              id="numPeopleHousehold"
+              type="number"
+              name="numPeopleHousehold"
+              min="0"
+              value={demoResponsesModel.numPeopleHousehold}
+              onChange={this.onNumHouseholdPeopleUpdated.bind(this)}
+            />
+          </section>
         </form>
 
         <div className="buttons-wrapper">
@@ -480,6 +492,10 @@ export default class DemographicsQuestions extends Component {
 
   onIncomeUpdated(event) {
     demoResponsesModel.setIncome(event.target.value);
+  }
+
+  onNumHouseholdPeopleUpdated(value) {
+    demoResponsesModel.setNumHouseholdPeople(value);
   }
 
   onQuestionnaireCompleted() {

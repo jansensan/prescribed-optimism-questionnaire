@@ -10,6 +10,7 @@ class DemographicsResponsesModel {
     this.isWorking = null;
     this.isStudying = null;
     this.income = null;
+    this.numPeopleHousehold = 0;
 
     this.isGenderSet = false;
     this.isAgeSet = false;
@@ -18,6 +19,7 @@ class DemographicsResponsesModel {
     this.isStudyStateSet = false;
     this.isWorkStateSet = false;
     this.isIncomeOptionSet = false;
+    this.isNumPeopleHouseholdSet = false;
 
     // signals
     this.updated = new signals.Signal();
@@ -80,6 +82,16 @@ class DemographicsResponsesModel {
 
   getIncomeState() {
     return this.isIncomeOptionSet;
+  }
+
+  setNumHouseholdPeople(value) {
+    this.numPeopleHousehold = value;
+    this.isNumPeopleHouseholdSet = true;
+    this.updated.dispatch();
+  }
+
+  getNumHouseholdPeopleState() {
+    return this.isNumPeopleHouseholdSet;
   }
 
   setStudyState(value) {
