@@ -331,7 +331,7 @@ export default class DemographicsQuestions extends Component {
           <section className="form-section household-section">
             <p>8. {demoQuestionsModel.getNumPeopleHouseholdLabel()}</p>
             <input
-              id="numPeopleHousehold"
+              id="numPeopleHouseholdInput"
               type="number"
               name="numPeopleHousehold"
               min="0"
@@ -494,8 +494,8 @@ export default class DemographicsQuestions extends Component {
     demoResponsesModel.setIncome(event.target.value);
   }
 
-  onNumHouseholdPeopleUpdated(value) {
-    demoResponsesModel.setNumHouseholdPeople(value);
+  onNumHouseholdPeopleUpdated(event) {
+    demoResponsesModel.setNumHouseholdPeople(event.target.value);
   }
 
   onQuestionnaireCompleted() {
