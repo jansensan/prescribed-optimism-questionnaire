@@ -300,7 +300,7 @@ export default class DemographicsQuestions extends Component {
           </section>
 
           <section className="form-section work-section">
-            <p>5. {demoQuestionsModel.getWorkQuestionLabel()}</p>
+            <p>6. {demoQuestionsModel.getWorkQuestionLabel()}</p>
             <input
               type="radio"
               name="isWorking"
@@ -318,7 +318,7 @@ export default class DemographicsQuestions extends Component {
           </section>
 
           <section className="form-section income-section">
-            <p>6. {demoQuestionsModel.getIncomeQuestionLabel()}</p>
+            <p>7. {demoQuestionsModel.getIncomeQuestionLabel()}</p>
             <select
               id="incomeOptions"
               name="incomeOptions"
@@ -329,7 +329,7 @@ export default class DemographicsQuestions extends Component {
           </section>
 
           <section className="form-section household-section">
-            <p>7. {demoQuestionsModel.getNumPeopleHouseholdLabel()}</p>
+            <p>8. {demoQuestionsModel.getNumPeopleHouseholdLabel()}</p>
             <input
               id="numPeopleHousehold"
               type="number"
