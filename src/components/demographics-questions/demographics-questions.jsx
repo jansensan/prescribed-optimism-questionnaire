@@ -316,6 +316,17 @@ export default class DemographicsQuestions extends Component {
             />
             <label htmlFor="isWorkingNo">No</label>
           </section>
+
+          <section className="form-section income-section">
+            <p>6. {demoQuestionsModel.getIncomeQuestionLabel()}</p>
+            <select
+              id="incomeOptions"
+              name="incomeOptions"
+              onChange={this.onIncomeUpdated.bind(this)}
+            >
+              {this.renderIncomeOptions()}
+            </select>
+          </section>
         </form>
 
         <div className="buttons-wrapper">
@@ -467,6 +478,10 @@ export default class DemographicsQuestions extends Component {
     );
   }
 
+  onIncomeUpdated(event) {
+    demoResponsesModel.setIncome(event.target.value);
+  }
+
   onQuestionnaireCompleted() {
     let formElement = document.getElementById('demographicsForm');
     demoQuestionsModel.validateForm();
@@ -531,6 +546,17 @@ export default class DemographicsQuestions extends Component {
       event.target.name,
       demoResponsesModel.getWorkState()
     );
+  }
+
+  renderIncomeOptions() {
+    let options = [];
+    let optionsData = demoQuestionsModel.getIncomeOptions();
+    optionsData.forEach((option, i) => {
+      options.push(
+        <option key={i} value={i}>{option}</option>
+      );
+    });
+    return options;
   }
 
   scrollToTop() {

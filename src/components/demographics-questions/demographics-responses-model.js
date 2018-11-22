@@ -9,6 +9,7 @@ class DemographicsResponsesModel {
     this.education = null;
     this.isWorking = null;
     this.isStudying = null;
+    this.income = null;
 
     this.isGenderSet = false;
     this.isAgeSet = false;
@@ -16,6 +17,7 @@ class DemographicsResponsesModel {
     this.isEducationSet = false;
     this.isStudyStateSet = false;
     this.isWorkStateSet = false;
+    this.isIncomeOptionSet = false;
 
     // signals
     this.updated = new signals.Signal();
@@ -68,6 +70,12 @@ class DemographicsResponsesModel {
 
   getGenderState() {
     return this.isGenderSet;
+  }
+
+  setIncome(value) {
+    this.income = value;
+    this.isIncomeOptionSet = true;
+    this.updated.dispatch();
   }
 
   setStudyState(value) {
