@@ -78,6 +78,10 @@ class DemographicsResponsesModel {
     this.updated.dispatch();
   }
 
+  getIncomeState() {
+    return this.isIncomeOptionSet;
+  }
+
   setStudyState(value) {
     this.isStudying = value;
     this.isStudyStateSet = true;

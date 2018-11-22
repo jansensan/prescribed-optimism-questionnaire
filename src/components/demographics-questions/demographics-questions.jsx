@@ -549,13 +549,18 @@ export default class DemographicsQuestions extends Component {
   }
 
   renderIncomeOptions() {
+    // set initial options
     let options = [];
+    options.push(<option value="-1">———</option>);
+
+    // loop through data
     let optionsData = demoQuestionsModel.getIncomeOptions();
     optionsData.forEach((option, i) => {
       options.push(
         <option key={i} value={i}>{option}</option>
       );
     });
+
     return options;
   }
 

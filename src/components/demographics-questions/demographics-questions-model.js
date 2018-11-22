@@ -185,6 +185,12 @@ class DemographicsQuestionsModel {
       'isWorking',
       demoResponsesModel.getWorkState()
     );
+
+    // incomeOptions
+    this.setElementsValidity(
+      'incomeOptions',
+      demoResponsesModel.getIncomeState()
+    );
   }
 }
 
