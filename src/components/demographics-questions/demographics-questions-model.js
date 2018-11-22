@@ -79,6 +79,35 @@ class DemographicsQuestionsModel {
     );
   }
 
+  getIncomeQuestionLabel() {
+    return _.get(
+      this.getQuestionData('income'),
+      'label.' + settingsModel.lang
+    );
+  }
+
+  getIncomeOptions() {
+    let rawOptions = _.get(
+      this.getQuestionData('income'),
+      'options'
+    );
+    
+    let options = [];
+    if (rawOptions) {
+      rawOptions.forEach((option) => {
+        options.push(_.get(option, settingsModel.lang));
+      });
+    }
+    return options;
+  }
+
+  getNumPeopleHouseholdLabel() {
+    return _.get(
+      this.getQuestionData('numPeopleHousehold'),
+      'label.' + settingsModel.lang
+    );
+  }
+
   getQuestionData(questionId) {
     let data = {};
     if (questionsModel.demographics.length > 0) {
@@ -162,6 +191,18 @@ class DemographicsQuestionsModel {
     this.setElementsValidity(
       'isWorking',
       demoResponsesModel.getWorkState()
+    );
+
+    // incomeOptions
+    this.setElementsValidity(
+      'incomeOptions',
+      demoResponsesModel.getIncomeState()
+    );
+
+    // numPeopleHousehold
+    this.setElementsValidity(
+      'numPeopleHousehold',
+      demoResponsesModel.getNumHouseholdPeopleState()
     );
   }
 }

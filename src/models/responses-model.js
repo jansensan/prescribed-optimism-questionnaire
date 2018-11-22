@@ -61,6 +61,8 @@ class ResponsesModel {
       education: demoResponsesModel.education,
       isWorking: demoResponsesModel.isWorking,
       isStudying: demoResponsesModel.isStudying,
+      income: demoResponsesModel.income,
+      numPeopleHousehold: demoResponsesModel.numPeopleHousehold,
     };
 
     return JSON.stringify({
