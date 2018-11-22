@@ -42,7 +42,7 @@ export default class Response extends Component {
         <table className="response-num-label">
           <tbody>
             <tr>
-              {this.getNumericLabelCells()}
+              {this.renderNumericLabelCells()}
             </tr>
           </tbody>
         </table>
@@ -58,7 +58,7 @@ export default class Response extends Component {
 
 
   // methods definitions
-  getNumericLabelCells() {
+  renderNumericLabelCells() {
     // generate num labels cells
     let cellWidth = Math.floor(100 / this.state.getNumSteps()) + '%';
     let cells = [];
