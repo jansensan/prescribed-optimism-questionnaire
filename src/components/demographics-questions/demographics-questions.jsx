@@ -14,6 +14,7 @@ import settingsModel from '../../models/settings-model';
 
 // components
 import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
+import QuestionnaireProgressBar from '../questionnaire-progress-bar/questionnaire-progress-bar.jsx';
 
 // styles
 require('./demographics-questions.scss');
@@ -35,6 +36,10 @@ export default class DemographicsQuestions extends Component {
   render() {
     return (
       <div className={this.getComponentCSSClasses()} lang={settingsModel.lang}>
+        <QuestionnaireProgressBar
+          step="10"
+        ></QuestionnaireProgressBar>
+
         <h1 tabIndex="-1">Background Questions</h1>
         <FormErrorsWarning
           isVisible={demoQuestionsModel.isFormInvalid()}
