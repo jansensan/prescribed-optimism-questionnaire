@@ -27,7 +27,7 @@
         "ca": "Acabar"
       }
     },
-    "translationsReady": false,
+    "translationsReady": true,
     "debug": false
   },
   "lifeOrientation": {
@@ -880,43 +880,43 @@
       "questions": [
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C would have little control over the outcome. At the moment, the doctor is unsure whether to pursue surgery.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El doctor debe decidir si realizar una cirugía a corazón abierto, o si escoger otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía no depende de la rehabilitación, por lo que el Sr. C tendría muy poco control sobre los resultados. Por el momento, el doctor no está seguro de si realizar la cirugía.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El doctor ha de decidir si realitzar la cirugia a cor obert, o si escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia no depen de la rehabilitació, pel que el Sr. C tindria molt poc control sobre els resultats. De moment, el doctor no està segur de si realitzar la cirugia."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C would have substantial control over the outcome. At the moment, the doctor is unsure whether to pursue surgery.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El doctor debe decidir si realizar una cirugía a corazón abierto, o si escoger otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía depende, en gran medida, de la rehabilitación, por lo que el Sr. C tendría un importante control sobre los resultados. Por el momento, el doctor no está seguro de si realizar la cirugía.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El doctor ha de decidir si realitzar la cirugia a cor obert, o si escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia depen, en gran mesura, de la rehabilitació, pel que el Sr. C tindria un important control sobre els resultats. De moment, el doctor no està segur de si realitzar la cirugia."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C would have little control over the outcome. At the moment, Mr. C. is unsure whether to pursue surgery.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El Sr. C debe decidir si recibir la cirugía u otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía no depende de la rehabilitación, por lo que el Sr. C tendría muy poco control sobre los resultados. Por el momento, el Sr. C no está seguro de si recibir la cirugía.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El Sr. C ha de decidir si rebre la cirugia a cor obert, o si escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia no depen de la rehabilitació, pel que el Sr. C tindria molt poc control sobre els resultats. De moment, el Sr. C no està segur de si realitzar la cirugia."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C must decide whether to pursue open-heart surgery or to pursue alternative options. Even with surgery the outcome would not be certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C would have substantial control over the outcome. At the moment, Mr. C. is unsure whether to pursue surgery.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El Sr. C debe decidir si recibir la cirugía u otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía depende, en gran medida, de la rehabilitación, por lo que el Sr. C tendría un importante control sobre los resultados. Por el momento, el Sr. C no está seguro de si recibir la cirugía.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El Sr. C ha de decidir si rebre la cirugia a cor obert, o si escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia depen, en gran mesura, de la rehabilitació, pel que el Sr. C tindria un important control sobre els resultats. De moment, el Sr. C no està segur de si realitzar la cirugia."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C will have little control over the outcome.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El doctor ha decidido realizar la cirugía a corazón abierto, en vez de escoger otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía no depende de la rehabilitación, por lo que el Sr. C tendrá muy poco control sobre los resultados.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El doctor ha decidit realitzar la cirugia a cor obert, en contes d'escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia no depen de la rehabilitació, pel que el Sr. C tindrà molt poc control sobre els resultats."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. The doctor has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C will have substantial control over the outcome.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El doctor ha decidido realizar la cirugía a corazón abierto, en vez de escoger otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía depende, en gran medida, de la rehabilitación, por lo que el Sr. C tendrá un importante control sobre los resultados.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El doctor ha decidit realitzar la cirugia a cor obert, en contes d'escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia depen, en gran mesura, de la rehabilitació, pel que el Sr. C tindrà un important control sobre els resultats."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in no part on rehabilitation, so Mr. C will have little control over the outcome.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El Sr. C ha decidido recibir la cirugía a corazón abierto, en vez de escoger otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía no depende de la rehabilitación, por lo que el Sr. C tendrá muy poco control sobre los resultados.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El Sr. C ha decidit rebre la cirugia a cor obert, en contes d'escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia no depen de la rehabilitació, pel que el Sr. C tindrà molt poc control sobre els resultats."
         },
         {
           "en": "Mr. C has been diagnosed with a heart condition that impairs proper bloodflow. The condition needs to be treated but the options vary. Mr. C has decided to pursue open-heart surgery rather than to pursue alternative options. Even with surgery the outcome is not certain – sometimes the operation works and sometimes it does not. The success of the surgery depends in large part on rehabilitation, so Mr. C will have substantial control over the outcome.",
-          "es": "",
-          "ca": ""
+          "es": "El Sr. C ha sido diagnosticado con un problema cardíaco que impide el correcto flujo de sangre. El problema debe de ser tratado, pero las opciones varian. El Sr. C ha decidido recibir la cirugía a corazón abierto, en vez de escoger otras opciones. Incluso con la cirugía, los resultados son inciertos - la cirugía sólo funciona a veces. El éxito de la cirugía depende, en gran medida, de la rehabilitación, por lo que el Sr. C tendrá un importante control sobre los resultados.",
+          "ca": "El Sr. C ha estat diagnosticat amb un problema cardíac que impedeix el correcte fluxe de sang. El problema ha d'èsser tractat, però les opcions varien. El Sr. C ha decidit rebre la cirugia a cor obert, en contes d'escollir altres opcions. Inclús amb la cirugia, els resultats son incerts - la cirugia només funciona a vegades. L'èxit de la cirugia depen, en gran mesura, de la rehabilitació, pel que el Sr. C tindrà un important control sobre els resultats."
         }
       ],
       "responses": [
@@ -1248,8 +1248,8 @@
           "id": "elementary",
           "label": {
             "en": "Elementary school",
-            "es": "",
-            "ca": ""
+            "es": "Escuela primaria",
+            "ca": "Escola primària"
           }
         },
         {
@@ -1338,8 +1338,8 @@
       "id": "studies",
       "label": {
         "en": "Are you currently studying?",
-        "es": "",
-        "ca": ""
+        "es": "¿Estás estudiando actualmente?",
+        "ca": "Esteu estudiant actualment?"
       },
       "options": [
         {
@@ -1363,9 +1363,9 @@
     {
       "id": "work",
       "label": {
-        "en": "Are you currently working/employed (whether full-time or part-time)?",
-        "es": "",
-        "ca": ""
+        "en": "Are you currently working/employed (whether full-time, part-time, or self-employed)?",
+        "es": "¿Trabaja o está empleado actualmente (ya sea a tiempo completo, a tiempo parcial o por cuenta propia)?",
+        "ca": "Esteu treballant / treballant actualment (ja sigui a temps complet, a temps parcial o per compte propi)?"
       },
       "options": [
         {
