@@ -11,6 +11,7 @@ import settingsModel from '../../models/settings-model';
 // components
 import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
 import LOTQuestion from '../lot-question/lot-question.jsx';
+import QuestionnaireProgressBar from '../questionnaire-progress-bar/questionnaire-progress-bar.jsx';
 
 // styles
 require('./life-orientation-test.scss');
@@ -32,6 +33,10 @@ export default class LifeOrientationTest extends Component {
   render() {
     return (
       <div className={this.getComponentCSSClasses()} lang={settingsModel.lang}>
+        <QuestionnaireProgressBar
+          step="1"
+        ></QuestionnaireProgressBar>
+
         <h1 tabIndex="-1">{lotModel.getTitle()}</h1>
         <p>{lotModel.getText()}</p>
         <FormErrorsWarning

@@ -1,0 +1,30 @@
+@import "../../../node_modules/jansensan-stylesheets/src/sass/common/variables.scss";
+
+
+.questionnaire-progress-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: $paleGrey;
+  height: 24px;
+
+  .label {
+    z-index: 1;
+    position: relative;
+    top: 6px;
+    left: 8px;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 500;
+  }
+  
+  .progress {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 24px;
+    background-color: $blue;
+  }
+}

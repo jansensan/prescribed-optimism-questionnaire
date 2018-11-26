@@ -12,6 +12,7 @@ import surveyModel from './survey-model';
 
 // components
 import Question from '../question/question.jsx';
+import QuestionnaireProgressBar from '../questionnaire-progress-bar/questionnaire-progress-bar.jsx';
 
 // styles
 require('./survey.scss');
@@ -34,6 +35,9 @@ export default class Survey extends Component {
   render() {
     return (
       <div className={this.getComponentCSSClasses()} lang={settingsModel.lang}>
+        <QuestionnaireProgressBar
+          step={surveyModel.currentQuestionIndex + 2}
+        ></QuestionnaireProgressBar>
         <form id="surveyForm">
           <Question
             index={surveyModel.currentQuestion}
