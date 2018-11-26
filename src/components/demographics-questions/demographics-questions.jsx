@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 
 // services
@@ -572,11 +573,14 @@ export default class DemographicsQuestions extends Component {
 
     // loop through data
     let optionsData = demoQuestionsModel.getIncomeOptions();
-    optionsData.forEach((option, i) => {
-      options.push(
-        <option key={i} value={i}>{option}</option>
-      );
-    });
+    _.forEach(
+      optionsData,
+      (option, i) => {
+        options.push(
+          <option key={i} value={i}>{option}</option>
+        );
+      }
+    );
 
     return options;
   }

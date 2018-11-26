@@ -117,15 +117,18 @@ class SurveyModel {
   }
 
   saveResponses() {
-    this.responseModels.forEach((response) => {
-      if (response.hasChanged) {
-        responsesModel.saveSurveyResponseAt(
-          this.currentQuestion,
-          response.getOrderIndex(),
-          response.value
-        )
+    _.forEach(
+      this.responseModels,
+      (response) => {
+        if (response.hasChanged) {
+          responsesModel.saveSurveyResponseAt(
+            this.currentQuestion,
+            response.getOrderIndex(),
+            response.value
+          )
+        }
       }
-    });
+    );
   }
 
   setRandomVignette() {

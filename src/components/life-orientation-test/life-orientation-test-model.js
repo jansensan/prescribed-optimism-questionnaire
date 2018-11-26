@@ -47,9 +47,12 @@ class LifeOrientationTestModel {
 
   saveResponses() {
     let responseValues = []
-    this.responseModels.forEach(model => {
-      responseValues.push(model.value);
-    });
+    _.forEach(
+      this.responseModels,
+      (model) => {
+        responseValues.push(model.value);
+      }
+    );
     responsesModel.saveLOTResponses(responseValues);
   }
 

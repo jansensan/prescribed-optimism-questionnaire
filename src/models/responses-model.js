@@ -48,10 +48,13 @@ class ResponsesModel {
       vignette: this.surveyResponses.vignetteId,
       responses: Array(this.NUM_SURVEY_RESPONSES)
     };
-    this.surveyResponses.responses.forEach((q, i) => {
-      let index = parseInt(q.questionId.split('question')[1], 10);
-      surveyForJSON.responses[index] = q.responses;
-    });
+    _.forEach(
+      this.surveyResponses.responses,
+      (q, i) => {
+        let index = parseInt(q.questionId.split('question')[1], 10);
+        surveyForJSON.responses[index] = q.responses;
+      }
+    );
 
     // format demographics responses for json
     let demographicsForJSON = {

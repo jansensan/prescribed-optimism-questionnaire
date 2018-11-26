@@ -94,9 +94,12 @@ class DemographicsQuestionsModel {
     
     let options = [];
     if (rawOptions) {
-      rawOptions.forEach((option) => {
-        options.push(_.get(option, settingsModel.lang));
-      });
+      _.forEach(
+        rawOptions,
+        (option) => {
+          options.push(_.get(option, settingsModel.lang));
+        }
+      );
     }
     return options;
   }
@@ -145,9 +148,12 @@ class DemographicsQuestionsModel {
       validityMessage = '';
     }
 
-    elements.forEach(element => {
-      element.setCustomValidity(validityMessage);
-    });
+    _.forEach(
+      elements,
+      (element) => {
+        element.setCustomValidity(validityMessage);
+      }
+    );
 
     this.updated.dispatch();
   }
