@@ -512,7 +512,8 @@ export default class DemographicsQuestions extends Component {
       DatabaseService.saveData(
         settingsModel.baseURL,
         questionnaireModel.startTime.getTime(),
-        responsesModel.getResponsesJSON()
+        responsesModel.getResponsesJSON(),
+        settingsModel.isDebugMode
       ).then(() => {
         // scroll to top
         this.scrollToTop();
