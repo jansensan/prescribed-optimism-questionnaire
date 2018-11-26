@@ -197,6 +197,9 @@ export default class DemographicsQuestions extends Component {
                 {demoQuestionsModel.getEducationRadioLabel('highSchool')}
               </label>
             </div>
+
+            {/*
+            // college is an american concept, doesn't apply currently
             <div className="radio-wrapper">
               <input
                 type="radio"
@@ -219,6 +222,8 @@ export default class DemographicsQuestions extends Component {
                 {demoQuestionsModel.getEducationRadioLabel('college')}
               </label>
             </div>
+            */}
+
             <div className="radio-wrapper">
               <input
                 type="radio"
