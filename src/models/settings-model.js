@@ -24,6 +24,17 @@ class SettingsModel {
       this.baseURL = protocol + '//' + document.domain + '/';
     }
 
+    // parse url vars, if any
+    let queryString = document.URL.split('?')[1];
+    this.urlVars = {};
+    if (queryString) {
+      let temp = queryString.split('&');
+      for (let i = 0; i < temp.length; i++) {
+        let dict = temp[i].split('=');
+        this.urlVars[dict[0]] = dict[1];
+      }
+    }
+
     // properties
     this.data = [];
     this.lang = Languages.EN;
@@ -72,7 +83,14 @@ class SettingsModel {
   }
 
   isDebugMode() {
-    return _.get(this.data, 'debug');
+    let isDebug = _.get(this.data, 'debug');
+
+    // url variables precede over settings
+    if (this.urlVars.hasOwnProperty('debug')) {
+      isDebug = _.get(this.urlVars, 'debug') === 'true';
+    }
+
+    return isDebug;
   }
 
   isLanguageEnglish() {

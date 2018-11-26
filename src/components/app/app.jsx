@@ -6,6 +6,7 @@ import settingsModel from '../../models/settings-model';
 
 // components
 import Conclusion from '../conclusion/conclusion.jsx';
+import DebugBanner from '../debug-banner/debug-banner.jsx';
 import DemographicsQuestions from '../demographics-questions/demographics-questions.jsx';
 import Intro from '../intro/intro.jsx';
 import LifeOrientationTest from '../life-orientation-test/life-orientation-test.jsx';
@@ -46,6 +47,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
+        <DebugBanner/>
+
         <header>
           <div className="centered">
             <div className="title">{this.state.title}</div>
