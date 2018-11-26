@@ -6,6 +6,7 @@ import DOMService from '../../services/dom-service';
 // models
 import lotModel from './life-orientation-test-model';
 import questionnaireModel from '../../models/questionnaire-model';
+import settingsModel from '../../models/settings-model';
 
 // components
 import FormErrorsWarning from '../form-errors-warning/form-errors-warning.jsx';
@@ -30,8 +31,8 @@ export default class LifeOrientationTest extends Component {
   // react methods definitions</div>
   render() {
     return (
-      <div className={this.getComponentCSSClasses()}>
-        <h1 tabIndex="-1">Life Orientation Test</h1>
+      <div className={this.getComponentCSSClasses()} lang={settingsModel.lang}>
+        <h1 tabIndex="-1">{lotModel.getTitle()}</h1>
         <p>{lotModel.getText()}</p>
         <FormErrorsWarning
           isVisible={lotModel.isFormInvalid()}
@@ -43,7 +44,6 @@ export default class LifeOrientationTest extends Component {
                 key={i}
                 index={i}
                 label={question}
-                responses={lotModel.getResponses()}
               ></LOTQuestion>
             ))
           }
@@ -52,7 +52,7 @@ export default class LifeOrientationTest extends Component {
           <button
             className="btn-primary next-btn"
             onClick={this.onSurveyRequested.bind(this)}
-          >Continue</button>
+          >{settingsModel.getButtonLabel('continue')}</button>
         </div>
       </div>
     );

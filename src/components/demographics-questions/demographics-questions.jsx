@@ -33,7 +33,7 @@ export default class DemographicsQuestions extends Component {
   // react methods definitions
   render() {
     return (
-      <div className={this.getComponentCSSClasses()}>
+      <div className={this.getComponentCSSClasses()} lang={settingsModel.lang}>
         <h1 tabIndex="-1">Background Questions</h1>
         <FormErrorsWarning
           isVisible={demoQuestionsModel.isFormInvalid()}
@@ -347,7 +347,7 @@ export default class DemographicsQuestions extends Component {
             className="btn-primary btn-complete-questionnaire"
             onClick={this.onQuestionnaireCompleted.bind(this)}
           >
-            <span className="active-label">Finish</span>
+            <span className="active-label">{settingsModel.getButtonLabel('finish')}</span>
             <span className="disabled-label">⌛</span>
           </button>
         </div>

@@ -56,6 +56,13 @@ class SettingsModel {
     return _.get(this.data, 'translationsReady');
   }
 
+  getButtonLabel(labelName) {
+    return _.get(
+      _.get(this.data, 'buttonsLabels'),
+      labelName + '.' + this.lang
+    );
+  }
+
   getQuestionnaireTitle() {
     return _.get(this.data, 'title.' + this.lang);
   }
@@ -66,6 +73,18 @@ class SettingsModel {
 
   isDebugMode() {
     return _.get(this.data, 'debug');
+  }
+
+  isLanguageEnglish() {
+    return this.lang === Languages.EN;
+  }
+  
+  isLanguageCastillan() {
+    return this.lang === Languages.ES;
+  }
+  
+  isLanguageCatalan() {
+    return this.lang === Languages.CA;
   }
 
   setLanguage(newLanguage) {

@@ -1,5 +1,9 @@
 import signals from 'signals';
+
+// models
 import lotModel from '../life-orientation-test/life-orientation-test-model';
+import questionsModel from '../../models/questions-model';
+import settingsModel from '../../models/settings-model';
 
 
 export default class LOTResponseModel {
@@ -16,12 +20,17 @@ export default class LOTResponseModel {
   }
 
   getRatingResponseAt(index) {
-    let ratingResponses = _.get(this.data, 'ratingResponses');
+    let ratingResponses = _.get(
+      questionsModel.lifeOrientation,
+      'responses'
+    );
+
     let response = '';
     if (ratingResponses && ratingResponses.length > 0) {
       response = ratingResponses[index];
     }
-    return response;
+
+    return _.get(response, settingsModel.lang);
   }
 
   setAsChanged() {

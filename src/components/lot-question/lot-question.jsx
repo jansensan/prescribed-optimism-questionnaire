@@ -28,7 +28,6 @@ export default class LOTQuestion extends Component {
         <p>{this.props.index + 1}. {this.getLabel()}</p>
         <LOTResponse
           index={this.props.index}
-          ratingResponses={this.getResponses()}
         ></LOTResponse>
       </div>
     );
@@ -45,13 +44,5 @@ export default class LOTQuestion extends Component {
   // methods definitions
   getLabel() {
     return _.get(this.props.label, settingsModel.lang);
-  }
-
-  getResponses() {
-    let responses = [];
-    for (let i = 0; i < this.props.responses.length; i++) {
-      responses.push(_.get(this.props.responses[i], settingsModel.lang));
-    }
-    return responses;
   }
 }
