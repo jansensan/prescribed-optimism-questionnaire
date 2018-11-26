@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 
 // services
@@ -512,7 +513,8 @@ export default class DemographicsQuestions extends Component {
       DatabaseService.saveData(
         settingsModel.baseURL,
         questionnaireModel.startTime.getTime(),
-        responsesModel.getResponsesJSON()
+        responsesModel.getResponsesJSON(),
+        settingsModel.isDebugMode
       ).then(() => {
         // scroll to top
         this.scrollToTop();
@@ -571,11 +573,14 @@ export default class DemographicsQuestions extends Component {
 
     // loop through data
     let optionsData = demoQuestionsModel.getIncomeOptions();
-    optionsData.forEach((option, i) => {
-      options.push(
-        <option key={i} value={i}>{option}</option>
-      );
-    });
+    _.forEach(
+      optionsData,
+      (option, i) => {
+        options.push(
+          <option key={i} value={i}>{option}</option>
+        );
+      }
+    );
 
     return options;
   }
