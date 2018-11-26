@@ -7,6 +7,7 @@ import DOMService from '../../services/dom-service';
 import questionnaireModel from '../../models/questionnaire-model';
 import questionsModel from '../../models/questions-model';
 import responsesModel from '../../models/responses-model';
+import settingsModel from '../../models/settings-model';
 import surveyModel from './survey-model';
 
 // components
@@ -32,7 +33,7 @@ export default class Survey extends Component {
   // react methods definitions
   render() {
     return (
-      <div className={this.getComponentCSSClasses()}>
+      <div className={this.getComponentCSSClasses()} lang={settingsModel.lang}>
         <form id="surveyForm">
           <Question
             index={surveyModel.currentQuestion}
@@ -44,7 +45,7 @@ export default class Survey extends Component {
           <button
             className="btn-primary next-btn"
             onClick={this.onNextQuestionRequested.bind(this)}
-          >Continue</button>
+          >{settingsModel.getButtonLabel('begin')}</button>
         </div>
       </div>
     );

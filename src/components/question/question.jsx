@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 
 // models
+import settingsModel from '../../models/settings-model.js';
 import surveyModel from '../survey/survey-model.js';
 
 // components
@@ -28,7 +29,7 @@ export default class Question extends Component {
   render() {
     return (
       <div className="question">
-        <h1 tabIndex="-1">Question {surveyModel.getQuestionNumber()}</h1>
+        <h1 tabIndex="-1">{this.getHeading()}</h1>
         <p>{this.props.text}</p>
         <FormErrorsWarning
           isVisible={surveyModel.isFormInvalid()}
@@ -65,6 +66,19 @@ export default class Question extends Component {
   }
 
   // methods definitions
+  getHeading() {
+    // TODO: improve?
+    let heading = '';
+    if (settingsModel.isLanguageEnglish()) {
+      heading = 'Question ';
+    } else {
+      // ES and CA
+      heading = 'Pregunta ';
+    }
+    heading += surveyModel.getQuestionNumber();
+    return heading;
+  }
+
   getShuffledResponses() {
     return _.shuffle(this.props.responses);
   }

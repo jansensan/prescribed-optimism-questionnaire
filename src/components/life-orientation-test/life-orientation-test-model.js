@@ -28,6 +28,10 @@ class LifeOrientationTestModel {
     return _.get(questionsModel, 'lifeOrientation.intro.' + settingsModel.lang);
   }
 
+  getTitle() {
+    return _.get(questionsModel, 'lifeOrientation.title.' + settingsModel.lang);
+  }
+
   getQuestions() {
     let questions = [];
     let lot = _.get(questionsModel, 'lifeOrientation');
@@ -35,15 +39,6 @@ class LifeOrientationTestModel {
       questions = lot.questions;
     }
     return questions;
-  }
-
-  getResponses() {
-    let responses = [];
-    let lot = _.get(questionsModel, 'lifeOrientation');
-    if (lot && lot.hasOwnProperty('responses')) {
-      responses = lot.responses;
-    }
-    return responses;
   }
   
   isFormInvalid() {

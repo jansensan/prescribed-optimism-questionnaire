@@ -10,10 +10,32 @@
       "es": "Universitat Pompeu Fabra",
       "ca": "Universitat Pompeu Fabra"
     },
+    "buttonsLabels": {
+      "begin": {
+        "en": "Begin",
+        "es": "Empezar",
+        "ca": "Començar"
+      },
+      "continue": {
+        "en": "Continue",
+        "es": "Continuar",
+        "ca": "Continuar"
+      },
+      "finish": {
+        "en": "Finish",
+        "es": "Terminar",
+        "ca": "Acabar"
+      }
+    },
     "translationsReady": false,
-    "debug": true
+    "debug": false
   },
   "lifeOrientation": {
+    "title": {
+      "en": "Life Orientation Test",
+      "es": "Life Orientation Test",
+      "ca": "Life Orientation Test"
+    },
     "intro": {
       "en": "Please indicate the extent to which you agree with each of the statements listed below. Please be as accurate and as honest as possible when completing this scale, and try not to let your response to one statement influence your responses to other statements.",
       "es": "Por favor indica hasta que punto estás de acuerdo con cada uno de los siguientes enunciados. Por favor, sé lo más honesto posible al completar el formulario, e intenta que tu respuesta en un enunciado no influence tus otras respuestas.",
@@ -105,52 +127,52 @@
       "questions": [
         {
           "en": "Lisa has learned that her advisor is thinking about nominating her for a prestigious academic award. The application would require a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If her advisor nominates her, Lisa would not be allowed to revise her paper before submitting her application materials, so she could not do anything to improve her chances of receiving the award. At the moment, however, Lisa’s advisor is not sure whether to nominate her for the award.",
-          "es": "",
-          "ca": ""
+          "es": "Lisa se ha dado cuenta de que su tutor está pensando en nominarla a participar en una competición académica muy prestigiosa. La aplicación requiere realizar un pago, que Lisa deberá de pagar. También requiere la entrega de un artículo académico. Lisa no tiene un artículo que cumpla con los criterios de la competición, y su tutor piensa que, aunque hay mucha competición, Lisa tiene una oportunidad. Si su tutor la nominara, Lisa no tendría permiso para revisar su artículo antes de entregarlo, por lo que no podría hacer nada para mejorar sus posibilidades de ganar el premio. No obstante, por el momento, el tutor de Lisa no tiene aún claro si nominarla o no al premio.",
+          "ca": "La Lisa s'ha donat conta de que el seu tutor està pensant en nominarla a participar en una competició acadèmica molt prestigiosa. La aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa no te un article que compleixi amb tots els requisits de la competició, i el seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. Si el seu tutor la nomina, la Lisa no tindria permis per revisar el seu article abans d'entregarlo, pel que no podria fer rés per tal de millorar les seves posibilitats de guanyar el premi. No obstant, de moment, el tutor de la Lisa encara no te clar si nominarla o no al premi."
         },
         {
           "en": "Lisa’s advisor is thinking about nominating her for a prestigious academic award. The application requires a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If her advisor nominates her, Lisa would be allowed to revise her paper before submitting her application materials, so she could still work to improve her chances of receiving the award. At the moment, however, Lisa’s advisor is not sure whether to nominate her for the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa está considerando si nominarla a una competición académica muy prestigiosa. La aplicación requiere realizar un pago, que Lisa deberá de pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque hay mucha competición, Lisa tiene una oportunidad. Si su tutor la nomina, Lisa tendrá una oportunidad de revisar su artículo antes de entregarlo, por lo que aún podrá trabajar para mejorar sus probabilidades de ganar el premio. No obstante, por el momento, el tutor de Lisa no tiene aún claro si nominarla o no al premio.",
+          "ca": "El tutor de la Lisa està considerant si nominarla a participar a una competició acadèmica molt prestigiosa. La aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. Si el seu tutor la nomina, la Lisa tindrà la oportunitat de revisar el seu article abans d'entregar-lo, pel que podrà treballar en millorar les seves probabilitats de guanyar el premi. No obstant, de moment, el tutor de la Lisa encara no te clar si nominarla o no al premi."
         },
         {
           "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. The application would require a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If she were to apply, she would not be allowed to revise her paper before submitting her application materials, so she could not do anything to improve her chances of receiving the award. At the moment, however, she is not sure whether she will apply for the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa ha sugerido que ella debería considerar realizar la aplicación a una competición académica muy prestigiosa. La aplicación requiere realizar un pago, que Lisa deberá de pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque hay mucha competición, Lisa tiene una oportunidad. Si su tutor la nominara, Lisa no tendría permiso para revisar su artículo antes de entregarlo, por lo que no podría hacer nada para mejorar sus posibilidades de ganar el premio. No obstante, por el momento, Lisa no tiene aún claro si aplicará o no a la competición.",
+          "ca": "El tutor de la Lisa ha suggerit que ella hauria de considerar realitzar l'aplicació a una competició acadèmica molt prestigiosa. L'aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. Si el seu tutor la nomina, la Lisa no tindrà permis per revisar el seu article abans d'entregarlo, pel que no podria fer rés per tal de millorar les seves posibilitats de guanyar el premi. No obstant, de moment, la Lisa no te encara clar si aplicarà o no a la competició."
         },
         {
           "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. The application would require a submission fee, which Lisa would have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. If she were to apply, she would be allowed to revise her paper before submitting her application materials, so she could still work to improve her chances of receiving the award. At the moment, however, she is not sure whether she will apply for the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa ha sugerido que ella debería considerar realizar la aplicación a una competición académica muy prestigiosa. La aplicación requiere realizar un pago, que Lisa deberá de pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque hay mucha competición, Lisa tiene una oportunidad. Si su tutor la nominara, Lisa tendrá la oportunidad de revisar su artículo antes de entregarlo, por lo que aún podrá trabajar para mejorar sus probabilidades de ganar el premio. No obstante, por el momento, Lisa no tiene aún claro si aplicará o no a la competición.",
+          "ca": "El tutor de la Lisa ha suggerit que ella hauria de considerar realitzar l'aplicació a una competició acadèmica molt prestigiosa. L'aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. Si el seu tutor la nomina, la Lisa tindrà la oportunitat de revisar el seu article abans d'entregar-lo, pel que podrà treballar en millorar les seves probabilitats de guanyar el premi. No obstant, de moment, la Lsa no te encara clar si aplicarà o no a la competició."
         },
         {
           "en": "Lisa’s advisor has decided to nominate her for a prestigious academic award. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will not be allowed to revise her paper before submitting her application materials, so she cannot do anything to improve her chances of receiving the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa ha decidido nominarla a una competición académica muy prestigiosa. La aplicación requiere realizar un pago, que Lisa deberá de pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque haya mucha competición, Lisa tiene una oportunidad. Lisa no tendrá permiso para revisar su artículo antes de entregarlo, por lo que no podrá hacer nada para mejorar sus posibilidades de ganar el premio.",
+          "ca": "El tutor de la Lisa ha decidit nominarla a una competició acadèmica molt prestigiosa. L'aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. La Lisa no tindrà permís per revisar el seu article abans d'entregar-lo, pel que no podrà fer res per millorar les seves possibilitats de guanyar el premi."
         },
         {
           "en": "Lisa’s advisor has decided to nominate her for a prestigious academic award. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will be allowed to revise to her paper before submitting her application materials, so she can still work to improve her chances of receiving the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa ha decidido nominarla a una competición académica muy prestigiosa. La aplicación requiere realizar un pago, que Lisa deberá de pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque haya mucha competición, Lisa tiene una oportunidad. Lisa tendrá la oportunidad de revisar su artículo antes de entregarlo, por lo que aún podrá trabajar para mejorar sus probabilidades de ganar el premio.",
+          "ca": "El tutor de la Lisa ha decidit nominarla a una competició acadèmica molt prestigiosa. L'aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. La Lisa tindrà la oportunitat de revisar el seu article abans d'entregar-lo, pel que encara podrà treballar per millorar les seves probabilitats de guanyar el premi."
         },
         {
           "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. Today, Lisa has decided to apply. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will not be allowed to revise her paper before submitting her application materials, so she cannot do anything to improve her chances of receiving the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa ha sugerido que ella debería considerar realizar la aplicación a una competición muy prestigiosa. Hoy, Lisa ha decidido aplicar. La aplicación requiere realizar un pago, que Lisa deberá pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque hay mucha competición, Lisa tiene una oportunidad. Lisa no tendrá permiso para revisar su artículo antes de entregarlo, por lo que no podrá hacer nada para mejorar sus posibilidades de ganar el premio.",
+          "ca": "El tutor de la Lisa ha suggerit que ella hauria de considerar realitzar l'aplicació a una competició acadèmica molt prestigiosa. Avui, la Lisa ha decidit aplicar. L'aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. La Lisa no tindrà permís per revisar el seu article abans d'entregar-lo, pel que no podrà fer res per millorar les seves possibilitats de guanyar el premi."
         },
         {
           "en": "Lisa’s advisor has suggested that she consider applying for a prestigious academic award. Today, Lisa has decided to apply. The application requires a submission fee, which Lisa will have to pay, as well as a scholarly paper. Lisa does have a paper that meets the requirements of the award, and her advisor thinks it has a shot, but the award is very competitive. Lisa will be allowed to revise her paper before submitting her application materials, so she can still work to improve her chances of receiving the award.",
-          "es": "",
-          "ca": ""
+          "es": "El tutor de Lisa ha sugerido que ella debería considerar realizar la aplicación a una competición muy prestigiosa. Hoy, Lisa ha decidido aplicar. La aplicación requiere realizar un pago, que Lisa deberá pagar. También requiere la entrega de un artículo académico. Lisa tiene un artículo ya escrito que cumple todos los criterios de la competición. Su tutor piensa que, aunque hay mucha competición, Lisa tiene una oportunidad. Lisa tendrá la oportunidad de revisar su artículo antes de entregarlo, por lo que aún podrá trabajar para mejorar sus probabilidades de ganar el premio.",
+          "ca": "El tutor de la Lisa ha suggerit que ella hauria de considerar realitzar l'aplicació a una competició acadèmica molt prestigiosa. Avui, la Lisa ha decidit aplicar. L'aplicació requereix realitzar un pagament, que la Lisa haurà d'efectuar. També requereix l'entrega d'un article acadèmic. La Lisa te un article ja escrit que compleix amb tots els requisits de la competició. El seu tutor pensa que, tot i que hi ha molta competició, la Lisa te una oportunitat de guanyar. La Lisa tindrà la oportunitat de revisar el seu article abans d'entregar-lo, pel que encara podrà treballar per millorar les seves probabilitats de guanyar el premi."
         }
       ],
       "responses": [
         {
           "id": 0,
           "label": {
-            "en": "Under the circumstances described in this story, would it be best for Lisa to be optimistic or pessimistic about the likelihood of winning the award? In other words, what is the ideal prediction for Lisa to make? In light of the situation that she is in, it would be best to be",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "en": "Under the circumstances described in this story, would it be best for Lisa to be optimistic or pessimistic about the likelihood of winning the award? In other words, what is the ideal prediction for Lisa to make? In light of the situation that she is in, it would be best to be:",
+            "es": "Bajo las circunstancias describidas en esta historia: ¿Sería mejor que Lisa fuera optimista o pesimista acerca de la probabilidad de ganar el premio? En otras palabras, ¿Cuál es la mejor predicción que Lisa podría hacer? En su situación actual, sería mejor que Lisa fuera:",
+            "ca": "Sota les circumstàncies descrites en aquesta història: Seria millor que la Lisa fos optimista o pesimista respecte a la probabilitat de guanyar el premi? En altres paraules: Quina es la millor predicció que la Lisa podria fer? En la seva situació actual, seria millor que la Lisa fos:"
           },
           "type": {
             "step": "1",
@@ -196,8 +218,8 @@
           "id": 1,
           "label": {
             "en": "In this scenario, what do you think the probability is that Lisa would win the Award?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Cuáles crees que son las probabilidades de que Lisa gane la competición?",
+            "ca": "En aquest escenari: Quines creus que son les probabilitats de que la Lisa guanyi la competició?"
           },
           "type": {
             "step": "10",
@@ -231,8 +253,8 @@
           "id": 2,
           "label": {
             "en": "From Lisa's perspective in this scenario, how desirable would it be for the award application to be a success?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Desde la perspectiva de Lisa en este escenario: ¿Cómo de deseable sería que la aplicación a la competición fuera exitosa?",
+            "ca": "Desde la perspectiva de la Lisa en aquest escenari: Com de desitjable seria que la aplicació a la competició fos exitosa?"
           },
           "type": {
             "step": "1",
@@ -266,8 +288,8 @@
           "id": 3,
           "label": {
             "en": "In this scenario, to what extent has the decision to apply for the award already been made?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, la decisión de aplicar a la competición, ya ha sido realizada?",
+            "ca": "En aquest escenari: Fins a quin punt, la decisió d'aplicar a la competició, ja ha estat realitzada?"
           },
           "type": {
             "step": "10",
@@ -295,8 +317,8 @@
           "id": 4,
           "label": {
             "en": "In this scenario, to what extent would the chances of winning the award be under Lisa’s control?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto están las oportunidades de ganar la competición bajo el control de Lisa?",
+            "ca": "En aquest escenari: Fins a quin punt estàn les oportunitats de guanyar la competició sota el control de la Lisa?"
           },
           "type": {
             "step": "10",
@@ -324,8 +346,8 @@
           "id": 5,
           "label": {
             "en": "In this scenario, to what extent is the decision to apply for the award Lisa’s to make?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, la decisión de aplicar a la competición, es de Lisa?",
+            "ca": "En aquest escenari: Fins a quin punt, la decisió d'aplicar a la competició, es de la Lisa?"
           },
           "type": {
             "step": "10",
@@ -356,43 +378,43 @@
       "questions": [
         {
           "en": "Jane has received an inheritance, and one of the decisions that must be made is whether to invest the inheritance in a new business or to pursue alternative investments.  (The decision of whether to invest in this business will be made by the executor of the estate.)  If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely.  Jane’s role in the business would be passive – she would remain a silent investor without influence over the business.  At the moment, however, the executor has not decided whether to invest in the new business.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que se deben tomar es si invertir la herencia en un nuevo negocio o si buscar otras posibles inversiones. La decisión de si invertir en éste negocio será tomada por el albacea de la finca. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería pasiva - se mantendría sólo como inversora, sin ninguna influencia sobre el negocio. No obstante, por el momento, el albacea no ha decidido si invertir o no en el negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que s'ha de prendre es si invertir l'herència en un nou negoci o si cercar altres possibles inversions. La decisió de si invertir en aquest negoci serà presa per el marmessor de la finca. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà passiva - es mantendrà només com a inversora, sense cap influència sobre el negoci. No obstant, de moment, el marmessor encara no ha decidit si invertir o no en el negoci."
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions that must be made is whether to invest the inheritance in a new business or to pursue alternative investments. (The decision of whether to invest in this business will be made by the executor of the estate.) If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely. Jane’s role in the business would be active – she would have a seat on the board of directors and would have considerable influence over how the business was run. At the moment, however, the executor has not decided whether to invest in the new business.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que se deben tomar es si invertir la herencia en un nuevo negocio o si buscar otras posibles inversiones. La decisión de si invertir en éste negocio será tomada por el albacea de la finca. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería activa - tendría un asiento en el comité de dirección y una influencia considerable en el liderazgo del negocio. No obstante, por el momento, el albacea no ha decidido si invertir o no en el negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que s'ha de prendre es si invertir l'herència en un nou negoci o si cercar altres possibles inversions. La decisió de si invertir en aquest negoci serà presa per el marmessor de la finca. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà activa - tindrà un seient en el comitè de direcció i una influència considerable en el lideratge del negoci. No obstant, de moment, el marmessor no ha decidit si invertir o no en el negoci."
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions she must make is whether to invest the inheritance in a new business or to pursue alternative investments. (The decision of whether to invest in this business is Jane’s to make.)  If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely. Jane’s role in the business would be passive – she would remain a silent investor without influence over the business. At the moment, however, Jane has not decided whether she will invest in the new business.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que debe de tomar es si invertir la herencia en un nuevo negocio o si buscar otras posibles inversiones. La decisión de si invertir en éste negocio será tomada por Jane. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería pasiva - se mantendría sólo como inversora, sin ninguna influencia sobre el negocio. No obstante, por el momento, Jane no ha decidido si invertir o no en el negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que ha de prendre es si invertir l'herència en un nou negoci o si cercar altres possibles inversions. La decisió de si invertir en aquest negoci serà presa per la Jane. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà passiva - es mantendrà només com a inversora, sense cap influència sobre el negoci. No obstant, de moment, la Jane encara no ha decidit si invertir o no en el negoci."
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions she must make is whether to invest the inheritance in a new business or to pursue alternative investments. (The decision of whether to invest in this business is Jane’s to make.) If the business turned out to be successful, the profit would be substantial, but if the business were to fail, Jane would lose the investment entirely. Jane’s role in the business would be active – she would have a seat on the board of directors and would have considerable influence over how the business was run. At the moment, however, Jane has not decided whether she will invest in the new business.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que debe de tomar es si invertir la herencia en un nuevo negocio o si buscar otras posibles inversiones. La decisión de si invertir en éste negocio será tomada por Jane. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería activa - tendría un asiento en el comité de dirección y una influencia considerable en el liderazgo del negocio. No obstante, por el momento, Jane no ha decidido si invertir o no en el negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que ha de prendre es si invertir l'herència en un nou negoci o si cercar altres possibles inversions. La decisió de si invertir en aquest negoci serà presa per la Jane. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà activa - tindrà un seient en el comitè de direcció i una influència considerable en el lideratge del negoci. No obstant, de moment, la Jane encara no ha decidit si invertir o no en el negoci."
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions that has been made is to invest the inheritance in a new business. (The decision to invest in this business was made by the executor of the estate.) If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be passive – she will remain a silent investor without influence over the business.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que se han tomado es la de invertir la herencia en un nuevo negocio. La decisión de si invertir en éste negocio será tomada por el albacea de la finca. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería pasiva - se mantendría sólo como inversora, sin ninguna influencia sobre el negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que s'han près es la d'invertir la herència en un nou negoci. La decisió de si invertir en aquest negoci serà presa per el marmessor de la finca. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà passiva - es mantendrà només com a inversora, sense cap influència sobre el negoci."
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions that has been made is to invest the inheritance in a new business. (The decision to invest in this business was made by the executor of the estate.) If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be active – she will have a seat on the board of directors and will have considerable influence over how the business is run.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que se han tomado es la de invertir la herencia en un nuevo negocio. La decisión de si invertir en éste negocio será tomada por el albacea de la finca. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería activa - tendría un asiento en el comité de dirección y una influencia considerable en el liderazgo del negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que s'han près es la d'invertir la herència en un nou negoci. La decisió de si invertir en aquest negoci serà presa per el marmessor de la finca. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà activa - tindrà un seient en el comitè de direcció i una influència considerable en el lideratge del negoci. "
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions she has made is to invest the inheritance in a new business. (The decision to invest in this business was Jane’s to make.)  If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be passive – she will remain a silent investor without influence over the business.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que ha tomado es la de invertir la herencia en un nuevo negocio. La decisión de si invertir en éste negocio será tomada por Jane. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería pasiva - se mantendría sólo como inversora, sin ninguna influencia sobre el negocio.",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que ha près es la d'invertir l'herència en un nou negoci. La decisió de si invertir en aquest negoci serà presa per la Jane. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà passiva - es mantendrà només com a inversora, sense cap influència sobre el negoci."
         },
         {
           "en": "Jane has received an inheritance, and one of the decisions she has made is to invest the inheritance in a new business. (The decision to invest in this business was Jane’s to make.) If the business is successful, the profit will be substantial, but if the business fails, Jane will lose the investment entirely. Jane’s role in the business will be active – she will have a seat on the board of directors and will have considerable influence over how the business is run.",
-          "es": "",
-          "ca": ""
+          "es": "Jane ha recibido una herencia, y una de las decisiones que ha tomado es la de invertir la herencia en un nuevo negocio. La decisión de si invertir en éste negocio será tomada por Jane. Si el negocio acaba teniendo éxito, los beneficios serán substanciales, pero si el negocio fracasa, Jane perdería toda la inversión. La función de Jane en el negocio sería activa - tendría un asiento en el comité de dirección y una influencia considerable en el liderazgo del negocio. ",
+          "ca": "La Jane ha rebut una herència, i una de les decisions que ha près es la d'invertir l'herència en un nou negoci. La decisió de si invertir en aquest negoci serà presa per la Jane. Si el negoci acaba tinguent èxit, els beneficis seràn substancials, però si el negoci fracassa, la Jane perdrà tota la inversió. La funció de la Jane en el negoci serà activa - tindrà un seient en el comitè de direcció i una influència considerable en el lideratge del negoci. "
         }
       ],
       "responses": [
@@ -400,8 +422,8 @@
           "id": 0,
           "label": {
             "en": "Under the circumstances described in this story, would it be best for Jane to be optimistic or pessimistic about the likelihood of the business succeeding? In other words, what is the ideal prediction for Jane to make? In light of the situation that she is in, it would be best to be:",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Bajo las circunstancias descritas en esta historia: ¿Sería mejor para Jane ser optimista o pesimista acerca de la probabilidad de tener éxito con el negocio? En otras palabras, cuál es la predicción ideal por parte de Jane? Considerando la situación en la que se encuentra, sería mejor ser:",
+            "ca": "Sota les circumstàncies descrites en aquesta història: Seria millor per a la Jane ser optimista o pessimista sobre la probabilitat de tenir èxit amb el negoci? En altres paraules, quina es la predicció ideal, per part de la Jane? Considerant la situació en la que es troba, seria millor ser: "
           },
           "type": {
             "step": "1",
@@ -447,8 +469,8 @@
           "id": 1,
           "label": {
             "en": "In this scenario, what do you think the probability is that the business would succeed?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Cuál crees que es la probabilidad de que el negocio tenga éxito?",
+            "ca": "En aquest escenari: Quina creus que es la probabilitat de que el negoci tingui èxit?"
           },
           "type": {
             "step": "10",
@@ -482,8 +504,8 @@
           "id": 2,
           "label": {
             "en": "From Jane's perspective in this scenario, how desirable would it be for the investment to be a success?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Desde la perspectiva de Jane en este escenario: ¿Cómo de deseable sería que la inversión fuera un éxito?",
+            "ca": "Des de la perspectiva de la Jane en aquest escenari: Com de desitjable seria que la inversió fos un èxit?"
           },
           "type": {
             "step": "1",
@@ -517,8 +539,8 @@
           "id": 3,
           "label": {
             "en": "In this scenario, to what extent has the decision to invest in the new business already been made?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, la decisión de invertir en el nuevo negocio, ya ha sido realizada?",
+            "ca": "En aquest escenari: Fins a quin punt, la decisió d'invertir en el nou negoci, ja ha estat realitzada?"
           },
           "type": {
             "step": "10",
@@ -546,8 +568,8 @@
           "id": 4,
           "label": {
             "en": "In this scenario, to what extent would the success of the new business be under Jane’s control?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta que punto el éxito del nuevo negocio está bajo el control de Jane?",
+            "ca": "En aquest escenari: Fins a quin punt, l'èxit del nou negoci està sota el control de la Jane?"
           },
           "type": {
             "step": "10",
@@ -575,8 +597,8 @@
           "id": 5,
           "label": {
             "en": "In this scenario, to what extent is the decision to invest in the business Jane’s to make?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto la decisión de invertir en el negocio está siendo tomada por Jane?",
+            "ca": "En aquest escenari: Fins a quin punt, la decisió d'invertir en el negoci, està sent presa per la Jane?"
           },
           "type": {
             "step": "10",
@@ -607,43 +629,43 @@
       "questions": [
         {
           "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party. If the group’s President chooses Joe to host the party, Joe would have to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator would be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, and Joe would not be responsible for how this money was used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es un miembro de una organización estudiantil en su universidad. Él és una de varias personas que han sido nominadas para hospedar la fiesta de fin de año de la organización. Si el Presidente del grupo escoje a Joe para hospedar la fiesta, Joe deberá reservar el patio detrás de su apartamento. No obstante, el coordinador de actividades del grupo sería responsable de asegurarse que la fiesta fuera un éxito, decidiendo a quién invitar, pidiendo comida, y eligiendo la música para la fiesta. Los gastos serían cubiertos por la organización, y Joe no sería responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. És una de varies persones que han estat nominades per allotjar la festa de fi d'any de l'organització. Si el President del grup escolleix a en Joe per allotjar la festa, en Joe haurà de reservar el pati darrere el seu apartament. No obstant, el coordinador d'activitats del grup seria el responsable d'assegurar-se que la festa fos un èxit, escollint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos serien coberts per l'organització, i en Joe no seria responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party. If the group’s President chooses Joe to host the party, Joe would have to reserve the courtyard behind his apartment. He would also be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, but Joe would be responsible for how this money was used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es un miembro de una organización estudiantil en su universidad. Él és una de varias personas que han sido nominadas para hospedar la fiesta de fin de año de la organización. Si el Presidente del grupo escoje a Joe para hospedar la fiesta, Joe deberá reservar el patio detrás de su apartamento. También sería responsable de asegurarse que la fiesta fuera un éxito, decidiendo a quien invitar, pidiendo la comida, y eligiendo la música para la fiesta. Los gastos serían cubiertos por la organización, pero Joe sería responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. És una de varies persones que han estat nominades per allotjar la festa de fi d'any de l'organització. Si el President del grup escolleix a en Joe per allotjar la festa, en Joe haurà de reservar el pati darrere el seu apartament. També seria responsable d'assegurar-se que la festa fos un èxit, decidint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos serien coberts per l'organització, però en Joe seria responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, but Joe has not yet decided whether he will agree to do so. If Joe ultimately agrees to host the party, he would have to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator would be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, and Joe would not be responsible for how this money was used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es miembro de una organización estudiantil en su universidad. Le han pedido si hospedaría la fiesta de fin de año de la organización, pero Joe aún no ha decidido si está de acuerdo en hospedarla. Si Joe aceptara hospedar la fiesta, debería reservar el patio detrás de su apartamento. No obstante, el coordinador de actividades del grupo sería responsable de asegurarse que la fiesta fuera un éxito, decidiendo a quién invitar, pidiendo comida, y eligiendo la música para la fiesta. Los gastos serían cubiertos por la organización, y Joe no sería responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. L'hi han demanat si voldria allotjar la festa de fi d'any de l'organització, però en Joe encara no ha decidit si està d'acord amb allotjar-la. Si en Joe acceptès allotjar-la, hauria de reservar el pati del darrere del seu apartament. No obstant, el coordinador d'activitats del grup seria el responsable d'assegurar-se que la festa fos un èxit, escollint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos serien coberts per l'organització, i en Joe no seria responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, but Joe has not yet decided whether he will agree to do so. If Joe ultimately agrees to host the party, he would have to reserve the courtyard behind his apartment. He would also be responsible for making sure the party was a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses would be covered by the student organization’s budget, but Joe would be responsible for how this money was used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es miembro de una organización estudiantil en su universidad. Le han pedido si hospedaría la fiesta de fin de año de la organización, pero Joe aún no ha decidido si está de acuerdo en hospedarla. Si Joe aceptara hospedar la fiesta, debería reservar el patio detrás de su apartamento. También sería responsable de asegurarse que la fiesta fuera un éxito, decidiendo a quien invitar, pidiendo la comida, y eligiendo la música para la fiesta. Los gastos serían cubiertos por la organización, pero Joe sería responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. L'hi han demanat si voldria allotjar la festa de fi d'any de l'organització, però en Joe encara no ha decidit si està d'acord amb allotjar-la. Si en Joe acceptès allotjar-la, hauria de reservar el pati del darrere del seu apartament. També seria el responsable d'assegurar-se que la festa fos un èxit, escollint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos serien coberts per l'organització, però en Joe seria responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party, and the group’s President ultimately chose Joe to host the party. Joe now has to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator is responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, and Joe will not be responsible for how this money is used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es miembro de una organización estudiantil en su universidad. Él és una de varias personas que han sido nominadas para hospedar la fiesta de fin de año de la organización, y el Presidente del grupo a acabado escogiendo a Joe para hospedar la fiesta. Ahora, Joe deberá reservar el patio detrás de su apartamento. No obstante, el coordinador de actividades del grupo será responsable de asegurarse que la fiesta sea un éxito, decidiendo a quién invitar, pidiendo comida, y eligiendo la música para la fiesta. Los gastos serán cubiertos por la organización, y Joe no será responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. És una de varies persones que han estat nominades per allotjar la festa de fi d'any de l'organització, i el President del grup a acabat escollint a en Joe per allotjar la festa. Ara, en Joe haurà de reservar el pati del darrere del seu apartament. No obstant, el coordinador d'activitats del grup serà el responsable d'assegurar-se que la festa sigui un èxit, escollint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos seràn coberts per l'organització, i en Joe no serà responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was one of several people nominated to host the organization’s end-of-the-year party, and the group’s President ultimately chose Joe to host the party. Joe now has to reserve the courtyard behind his apartment. He is also responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, but Joe will be responsible for how this money is used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es miembro de una organización estudiantil en su universidad. Él és una de varias personas que han sido nominadas para hospedar la fiesta de fin de año de la organización, y el Presidente del grupo a acabado escogiendo a Joe para hospedar la fiesta. Ahora, Joe deberá reservar el patio detrás de su apartamento. También será responsable de que la fiesta sea un éxito, decidiendo a quién invitar, pidiendo comida, y eligiendo la música para la fiesta. Los gastos serán cubiertos por la organización, pero Joe será responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. És una de varies persones que han estat nominades per allotjar la festa de fi d'any de l'organització, i el President del grup a acabat escollint a en Joe per allotjar la festa. Ara, en Joe haurà de reservar el pati del darrere del seu apartament. També serà el responsable d'assegurar-se que la festa sigui un èxit, escollint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos seràn coberts per l'organització, però en Joe serà responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, and Joe has agreed to do so. Joe now has to reserve the courtyard behind his apartment. However, the group’s Activity Coordinator is responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, and Joe will not be responsible for how this money is used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es miembro de una organización estudiantil en su universidad. Le pidieron a Joe si aceptaría hospedar la fiesta de fin de año de la organización, y Joe a aceptado. Ahora, Joe deberá reservar el patio detrás de su apartamento. No obstante, el coordinador de actividades del grupo será el responsable de que la fiesta sea un éxito, decidiendo a quién invitar, pidiendo comida, y eligiendo la música para la fiesta. Los gastos serán cubiertos por la organización, y Joe no será responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. L'hi vàren demanar a en Joe si acceptaria allotjar la festa de fi d'any de la organització, i en Joe ha acceptat. Ara, en Joe haurà de reservar el pati del darrere del seu apartament. No obstant, el coordinador d'activitats del grup serà el responsable de que la festa sigui un èxit, decidint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos seràn coberts per l'organització, i en Joe no serà responsable de com s'hagin utilitzat els diners."
         },
         {
           "en": "Joe is a member of a student organization at his university. He was asked if he would host the organization’s end-of-the-year party, and Joe has agreed to do so. Joe now has to reserve the courtyard behind his apartment. He is also responsible for making sure the party is a success by deciding who to invite, ordering food, and selecting the music for the party. Expenses will be covered by the student organization’s budget, but Joe will be responsible for how this money is used.",
-          "es": "",
-          "ca": ""
+          "es": "Joe es miembro de una organización estudiantil en su universidad. Le pidieron a Joe si aceptaría hospedar la fiesta de fin de año de la organización, y Joe a aceptado. Ahora, Joe deberá reservar el patio detrás de su apartamento. Joe también será el responsable de que la fiesta sea un éxito, decidiendo a quién invitar, pidiendo comida, y eligiendo la música para la fiesta. Los gastos serán cubiertos por la organización, pero Joe será responsable de cómo se haya usado el dinero.",
+          "ca": "En Joe es membre d'una organització estudiantil a la seva universitat. L'hi vàren demanar a en Joe si acceptaria allotjar la festa de fi d'any de la organització, i en Joe ha acceptat. Ara, en Joe haurà de reservar el pati del darrere del seu apartament. En Joe també serà el responsable de que la festa sigui un èxit, decidint a qui invitar, demanant el menjar, i escollint la música per a la festa. Els gastos seràn coberts per l'organització, però en Joe serà responsable de com s'hagin utilitzat els diners."
         }
       ],
       "responses": [
@@ -651,8 +673,8 @@
           "id": 0,
           "label": {
             "en": "Under the circumstances described in this story, would it be best for Joe to be optimistic or pessimistic about the likelihood of the party’s success? In other words, what is the ideal prediction for Joe to make? In light of the situation that he is in, it would be best to be:",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Bajo las circunstancias describidas en esta história, sería mejor para Joe ser optimista o pesimista sobre las probabilidades de éxito de la fiesta? En otras palabras: ¿Cuál es la mejor predicción que Joe podría hacer? Teniendo en cuenta la situación en la que se encuentra, sería mejor ser:",
+            "ca": "Sota les circunstàncies descrites en aquesta història, seria millor per a en Joe ser optimista o pessimista sobre les probabilitats d'èxit de la festa? En altres paraules: Quina seria la millor predicció que podria fer en Joe? Tinguent en compte la situació en la que es troba, seria millor ser:"
           },
           "type": {
             "step": "1",
@@ -698,8 +720,8 @@
           "id": 1,
           "label": {
             "en": "In this scenario, what do you think the probability is that the party would be a success?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Cuál crees que es la probabilidad de que la fiesta sea un éxito?",
+            "ca": "En aquest escenari: Quina creus que es la probabilitat de que la festa sigui un èxit?"
           },
           "type": {
             "step": "10",
@@ -733,8 +755,8 @@
           "id": 2,
           "label": {
             "en": "From Joe's perspective in this scenario, how desirable would it be for the party to be a success?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Desde la perspectiva de Joe en este escenario: ¿Cómo de deseable sería que la fiesta fuera un éxito?",
+            "ca": "Desde la perspectiva d'en Joe en aquest escenari: Com de desitjable seria que la festa esdevinguès un èxit?"
           },
           "type": {
             "step": "1",
@@ -768,8 +790,8 @@
           "id": 3,
           "label": {
             "en": "In this scenario, to what extent has the decision to host the dinner party already been made?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, la decisión de celebrar la fiesta, ya ha sido realizada?",
+            "ca": "En aquest escenari: Fins a quin punt, la decisió de celebrar la festa, ja ha estat realitzada?"
           },
           "type": {
             "step": "10",
@@ -797,8 +819,8 @@
           "id": 4,
           "label": {
             "en": "In this scenario, to what extent would the success of the dinner party be under Joe’s control?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, el éxito de la fiesta, estaría bajo el control de Joe?",
+            "ca": "En aquest escenari: Fins a quin punt, l'èxit de la festa, està sota el control d'en Joe?"
           },
           "type": {
             "step": "10",
@@ -826,8 +848,8 @@
           "id": 5,
           "label": {
             "en": "In this scenario, to what extent is the decision to host the dinner party Joe’s to make?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta que punto, la decisión de celebrar la fiesta, está siendo decidida por Joe?",
+            "ca": "En aquest escenari: Fins a quin punt, la decisió de celebrar la festa, està siguent decidida per en Joe?"
           },
           "type": {
             "step": "10",
@@ -902,8 +924,8 @@
           "id": 0,
           "label": {
             "en": "Under the circumstances described in this story, would it be best for Mr. C to be optimistic or pessimistic about the likelihood of the surgery’s success? In other words, what is the ideal prediction for Mr. C to make? In light of the situation that he is in, it would be best for him to be:",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Bajo las circunstancias descritas en la história: ¿Sería mejor para el Sr. C ser optimista o pesimista sobre las probabilidades de éxito de la cirugía? En otras palabras: ¿Cuál es la predicción ideal que debería hacer el Sr. C? Considerando la situación actual en la que se encuentra, sería mejor para él, ser:",
+            "ca": "Sota les circumstàncies descrites a la història, seria millor per el Sr. C ser optimista o pessimista respecte a les probabilitats d'èxit de la cirugia? En altres paraules, quina es la predicció ideal que hauria de fer el Sr. C? Considerant la situació actual en la que es troba, seria millor per a ell que fos:"
           },
           "type": {
             "step": "1",
@@ -949,8 +971,8 @@
           "id": 1,
           "label": {
             "en": "In this scenario, what do you think the probability is that the surgery would be a success?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Cuál crees que és la probabilidad de que la cirugía sea un éxito?",
+            "ca": "En aquest escenari, quines creus que son les probabilitats de que la cirugia sigui un èxit?"
           },
           "type": {
             "step": "10",
@@ -984,8 +1006,8 @@
           "id": 2,
           "label": {
             "en": "From Mr. C's perspective in this scenario, how desirable would it be for the surgery to be a success?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "Desde la perspectiva del Sr. C en este escenario: ¿Cómo de deseable sería que la cirugía fuera un éxito?",
+            "ca": "Desde la perspectiva del Sr. C en aquest escenari, com de desitjable seria que la cirugia fos un èxit?"
           },
           "type": {
             "step": "1",
@@ -1019,8 +1041,8 @@
           "id": 3,
           "label": {
             "en": "In this scenario, to what extent has the decision to pursue open-heart surgery already been made?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, la decisión de realizar la cirugía a corazón abierto, ya ha sido tomada?",
+            "ca": "En aquest escenari, fins a quin punt, la decisió de realitzar la cirugia a cort obert, ja ha estat prèsa?"
           },
           "type": {
             "step": "10",
@@ -1048,8 +1070,8 @@
           "id": 4,
           "label": {
             "en": "In this scenario, to what extent would the success of the procedure be under Mr. C.’s control?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, el éxito de la cirugía, está bajo el control del Sr. C?",
+            "ca": "En aquest escenari, fins a quin punt, l'èxit de la cirugia, està sota el control del Sr. C?"
           },
           "type": {
             "step": "10",
@@ -1077,8 +1099,8 @@
           "id": 5,
           "label": {
             "en": "In this scenario, to what extent is the decision to undergo surgery Mr. C.’s to make?",
-            "es": "[TODO: ES]",
-            "ca": "[TODO: CA]"
+            "es": "En este escenario: ¿Hasta qué punto, la decisión de recibir la cirugía, está hecha por el Sr. C?",
+            "ca": "En aquest escenari, fins a quin punt, la decisió de rebre la cirugia, està feta per el Sr. C?"
           },
           "type": {
             "step": "10",
@@ -1110,32 +1132,32 @@
       "id": "gender",
       "label": {
         "en": "What is your gender?",
-        "es": "",
-        "ca": ""
+        "es": "¿Cual es tu género?",
+        "ca": "Quin és el teu gènere?"
       },
       "options": [
         {
           "id": "female",
           "label": {
             "en": "Female",
-            "es": "",
-            "ca": ""
+            "es": "Mujer",
+            "ca": "Dona"
           }
         },
         {
           "id": "male",
           "label": {
             "en": "Male",
-            "es": "",
-            "ca": ""
+            "es": "Hombre",
+            "ca": "Home"
           }
         },
         {
           "id": "other",
           "label": {
             "en": "Other",
-            "es": "",
-            "ca": ""
+            "es": "Otro",
+            "ca": "Altre"
           }
         }
       ]
@@ -1144,64 +1166,64 @@
       "id": "age",
       "label": {
         "en": "How old are you?",
-        "es": "",
-        "ca": ""
+        "es": "¿Qué edad tienes?",
+        "ca": "Quina edat tens?"
       }
     },
     {
       "id": "ethnicity",
       "label": {
         "en": "To which ethnicity do you identify most?",
-        "es": "",
-        "ca": ""
+        "es": "¿Con qué etnicidad te identificas?",
+        "ca": "Amb quina etnicitat t'identifiques?"
       },
       "options": [
         {
           "id": "white",
           "label": {
             "en": "White",
-            "es": "",
-            "ca": ""
+            "es": "Caucásica",
+            "ca": "Caucàsica"
           }
         },
         {
           "id": "asian",
           "label": {
             "en": "Asian or Pacific Islander",
-            "es": "",
-            "ca": ""
+            "es": "Asiática",
+            "ca": "Asiàtica"
           }
         },
         {
           "id": "black",
           "label": {
             "en": "Black",
-            "es": "",
-            "ca": ""
+            "es": "Africana / Afroamericana",
+            "ca": "Africana / Afroamericana"
           }
         },
         {
           "id": "latino",
           "label": {
             "en": "Latino",
-            "es": "",
-            "ca": ""
+            "es": "Latinoamericana",
+            "ca": "Llatinoamericana"
           }
         },
         {
           "id": "indigenous",
           "label": {
             "en": "Indigenous from North/South American",
-            "es": "",
-            "ca": ""
+            "es": "Indígena Americana",
+            "ca": "Indígena Americana"
           }
         },
         {
           "id": "other",
           "label": {
             "en": "Mixed/Other",
-            "es": "",
-            "ca": ""
+            "es": "Mixta/Otra",
+            "ca": "Mixta/Altra"
           }
         },
         {
@@ -1218,8 +1240,8 @@
       "id": "education",
       "label": {
         "en": "What is your level of education?",
-        "es": "",
-        "ca": ""
+        "es": "¿Cual es tu nivel educativo?",
+        "ca": "Quin és el teu nivell educatiu?"
       },
       "options": [
         {
@@ -1234,16 +1256,16 @@
           "id": "someHighSchool",
           "label": {
             "en": "Some high school",
-            "es": "",
-            "ca": ""
+            "es": "Parte del bachillerato",
+            "ca": "Part del batxillerat"
           }
         },
         {
           "id": "highSchool",
           "label": {
             "en": "High school",
-            "es": "",
-            "ca": ""
+            "es": "Bachillerato",
+            "ca": "Batxillerat"
           }
         },
         {
@@ -1266,48 +1288,48 @@
           "id": "someBA",
           "label": {
             "en": "Part of Bachelor's degree",
-            "es": "",
-            "ca": ""
+            "es": "Parte del Grado universitario",
+            "ca": "Part del Grau universitari"
           }
         },
         {
           "id": "ba",
           "label": {
             "en": "Bachelor's degree",
-            "es": "",
-            "ca": ""
+            "es": "Grado universitario",
+            "ca": "Grau universitari"
           }
         },
         {
           "id": "someMA",
           "label": {
             "en": "Part of Master's degree",
-            "es": "",
-            "ca": ""
+            "es": "Parte del Master (Maestría)",
+            "ca": "Màster"
           }
         },
         {
           "id": "ma",
           "label": {
             "en": "Master's degree",
-            "es": "",
-            "ca": ""
+            "es": "Master (Maestría)",
+            "ca": "Màster"
           }
         },
         {
           "id": "somePhD",
           "label": {
             "en": "Part of PhD",
-            "es": "",
-            "ca": ""
+            "es": "Parte del Doctorado",
+            "ca": "Part del Doctorat"
           }
         },
         {
           "id": "phd",
           "label": {
             "en": "PhD",
-            "es": "",
-            "ca": ""
+            "es": "Doctorado",
+            "ca": "Doctorat"
           }
         }
       ]
@@ -1368,8 +1390,8 @@
       "id": "income",
       "label": {
         "en": "What is the approximate income of your household?",
-        "es": "",
-        "ca": ""
+        "es": "¿Cuál és tu renda familiar anual?",
+        "ca": "¿Quina és la teva renda familiar anual?"
       },
       "options": [
         {
@@ -1414,8 +1436,8 @@
         },
         {
           "en": "Prefer to not respond / Unknown",
-          "es": "Prefer to not respond / Unknown",
-          "ca": "Prefer to not respond / Unknown"
+          "es": "Prefiero no responder / Desconocido",
+          "ca": "Prefereix no respondre / Desconegut"
         }
       ]
     },
@@ -1423,8 +1445,8 @@
       "id": "numPeopleHousehold",
       "label": {
         "en": "How many people live in your household?",
-        "es": "How many people live in your household?",
-        "ca": "How many people live in your household?"
+        "es": "¿A cuántas personas incluyes en tu renda familiar anual?",
+        "ca": "¿A quantes persones inclous dins la teva renda familiar anual?"
       }
     }
   ]
