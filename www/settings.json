@@ -1445,8 +1445,8 @@
       "id": "numPeopleHousehold",
       "label": {
         "en": "How many people live in your household?",
-        "es": "¿A cuántas personas incluyes en tu renda familiar anual?",
-        "ca": "¿A quantes persones inclous dins la teva renda familiar anual?"
+        "es": "¿Cuántas personas viven en tu casa?",
+        "ca": "Quantes persones viuen a casa teva?"
       }
     }
   ]
