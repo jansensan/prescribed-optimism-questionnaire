@@ -1229,9 +1229,9 @@
         {
           "id": "noreply",
           "label": {
-            "en": "Would rather not say",
-            "es": "",
-            "ca": ""
+            "en": "Prefer to not respond",
+            "es": "Prefiero no responder",
+            "ca": "Prefereix no respondre"
           }
         }
       ]

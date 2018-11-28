@@ -130,11 +130,43 @@ class DemographicsQuestionsModel {
     );
   }
 
+  getStudiesResponseLabel(id) {
+    let studiesOptions = _.get(
+      this.getQuestionData('studies'),
+      'options'
+    );
+    let option = _.filter(
+      studiesOptions,
+      {id: id}
+    );
+    let responseLabel = _.get(
+      option[0],
+      'label.' + settingsModel.lang
+    );
+    return responseLabel;
+  }
+
   getWorkQuestionLabel() {
     return _.get(
       this.getQuestionData('work'),
       'label.' + settingsModel.lang
     );
+  }
+
+  getWorkResponseLabel(id) {
+    let workOptions = _.get(
+      this.getQuestionData('work'),
+      'options'
+    );
+    let option = _.filter(
+      workOptions,
+      {id: id}
+    );
+    let responseLabel = _.get(
+      option[0],
+      'label.' + settingsModel.lang
+    );
+    return responseLabel;
   }
 
   setElementsValidity(elementName, isValid) {

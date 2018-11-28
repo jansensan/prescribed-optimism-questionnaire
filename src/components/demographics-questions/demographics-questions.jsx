@@ -159,7 +159,18 @@ export default class DemographicsQuestions extends Component {
               <label htmlFor="ethnicityOther">
                 {demoQuestionsModel.getEthnicityRadioLabel('other')}
               </label>
-          </div>
+            </div>
+            <div className="radio-wrapper">
+              <input
+                type="radio"
+                name="ethnicity"
+                id="ethnicityNoReply"
+                onChange={this.onEthnicityUpdated.bind(this)}
+              />
+              <label htmlFor="ethnicityNoReply">
+                {demoQuestionsModel.getEthnicityRadioLabel('noreply')}
+              </label>
+            </div>
           </section>
 
           <section className="form-section education-section">
@@ -300,14 +311,18 @@ export default class DemographicsQuestions extends Component {
               id="isStudyingYes"
               onChange={this.onStudyStateUpdated.bind(this)}
             />
-            <label htmlFor="isStudyingYes">Yes</label>
+            <label htmlFor="isStudyingYes">
+              {demoQuestionsModel.getWorkResponseLabel('isStudyingYes')}
+            </label>
             <input
               type="radio"
               name="isStudying"
               id="isStudyingNo"
               onChange={this.onStudyStateUpdated.bind(this)}
             />
-            <label htmlFor="isStudyingNo">No</label>
+            <label htmlFor="isStudyingNo">
+              {demoQuestionsModel.getWorkResponseLabel('isStudyingNo')}
+            </label>
           </section>
 
           <section className="form-section work-section">
@@ -318,14 +333,18 @@ export default class DemographicsQuestions extends Component {
               id="isWorkingYes"
               onChange={this.onWorkStateUpdated.bind(this)}
             />
-            <label htmlFor="isWorkingYes">Yes</label>
+            <label htmlFor="isWorkingYes">
+              {demoQuestionsModel.getWorkResponseLabel('isWorkingYes')}
+            </label>
             <input
               type="radio"
               name="isWorking"
               id="isWorkingNo"
               onChange={this.onWorkStateUpdated.bind(this)}
             />
-            <label htmlFor="isWorkingNo">No</label>
+            <label htmlFor="isWorkingNo">
+              {demoQuestionsModel.getWorkResponseLabel('isWorkingNo')}
+            </label>
           </section>
 
           <section className="form-section income-section">
