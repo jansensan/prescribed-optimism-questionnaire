@@ -4,7 +4,7 @@
 
 A web questionnaire built for a research methodologies academic project.
 
-See the [prototype](https://projects.jansensan.net/questionnaire/).
+See the [questionnaire](https://projects.jansensan.net/questionnaire/).
 
 
 ## Context
@@ -23,6 +23,11 @@ See [our presentation slides](https://academia.jansensan.net/30845/presentation-
 
 - Open `www/index.html` in a browser
 - See the current state of the questionnaire 
+
+
+## Responses Data Format
+
+See the [documentation](./responses-data-format.md) for details on how to read the responses data.
 
 
 ## Collaborators
