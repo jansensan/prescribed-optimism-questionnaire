@@ -15,7 +15,6 @@ function downloadAllData(baseURL) {
   return new Promise((resolve, reject) => {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
-    xhr.timeout = 5000;
     xhr.url = url;
 
     xhr.onload = () => {
