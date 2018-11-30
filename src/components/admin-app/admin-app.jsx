@@ -29,12 +29,16 @@ export default class AdminApp extends Component {
 
         <div className="centered admin-content">
           <h1>Data</h1>
-          <p>You can obtain the latest questionnaire data.</p>
+          <p>Obtain the latest questionnaire data.</p>
           <button
-            className="btn-primary"
+            id="downloadButton"
+            className="btn-primary btn-download"
             type="button"
             onClick={this.onDownloadRequested.bind(this)}
-          >Download all data</button>
+          >
+            <span className="active-label">Download all data</span>
+            <span className="disabled-label">⌛</span>
+          </button>
         </div>
 
         <footer>
@@ -56,8 +60,13 @@ export default class AdminApp extends Component {
 
   // methods definitions
   onDownloadRequested() {
+    // disable button while waiting for db
+    var btn = document.getElementById('downloadButton');
+    btn.disabled = true;
+
     DatabaseService.downloadAllData(settingsModel.baseURL)
       .then((response) => {
+        // ready for file download
         let filename = 'poq-data-' + new Date().getTime() + '.json';
 
         let temp = document.createElement('a');
@@ -70,6 +79,9 @@ export default class AdminApp extends Component {
         temp.click();
 
         document.body.removeChild(temp);
+
+        // reenable btn
+        btn.disabled = false;
       });
   }
 

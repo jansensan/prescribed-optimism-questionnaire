@@ -16,9 +16,33 @@
     border-top: 1px solid $paleGrey;
   }
 
-  .btn-primary {
-    // FIXME: jansensan-styles lib should fix that
+  .btn-download {
+    width: 192px;
+    text-align: center;
     cursor: pointer;
+
+    .active-label {
+      display: inline-block;
+    }
+
+    .disabled-label {
+      display: none;
+      position: relative;
+      top: 3px;
+    }
+
+    &:disabled {
+      background-color: $darkGrey;
+      cursor: default;
+
+      .active-label {
+        display: none;
+      }
+      
+      .disabled-label {
+        display: inline-block;
+      }
+    }
   }
 
   .centered {
