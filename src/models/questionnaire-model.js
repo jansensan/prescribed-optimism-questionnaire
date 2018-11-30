@@ -40,7 +40,7 @@ class QuestionnaireModel {
     DatabaseService.saveStartTime(
       settingsModel.baseURL,
       this.startTime.getTime(),
-      settingsModel.isDebugMode
+      settingsModel.isDebugMode()
     );
     this.setState(QuestionnaireSections.LIFE_ORIENTATION_TEST);
   }

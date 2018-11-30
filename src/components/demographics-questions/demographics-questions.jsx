@@ -543,7 +543,7 @@ export default class DemographicsQuestions extends Component {
         settingsModel.baseURL,
         questionnaireModel.startTime.getTime(),
         responsesModel.getResponsesJSON(),
-        settingsModel.isDebugMode
+        settingsModel.isDebugMode()
       ).then(() => {
         // scroll to top
         this.scrollToTop();
