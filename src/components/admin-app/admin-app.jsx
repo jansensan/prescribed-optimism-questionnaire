@@ -82,6 +82,12 @@ export default class AdminApp extends Component {
 
         // reenable btn
         btn.disabled = false;
+      })
+      .catch(() => {
+        // reenable btn
+        btn.disabled = false;
+
+        alert('Unable to download data, please contact admin for assistance.');
       });
   }
 
