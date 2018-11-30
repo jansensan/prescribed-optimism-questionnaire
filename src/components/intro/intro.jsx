@@ -28,8 +28,8 @@ export default class Intro extends Component {
         {
           settingsModel.isLanguageEnglish() &&
           <div lang="en">
+            <p>You will be presented with eight different hypothetical situations. In each of them, you will have to offer your opinion: what should the person in the story should do, what would you do, what is ideal to do, etc. Carefully read each situation, and answer the questions. This survey will only take a few minutes to complete.</p>
             <p>We are a group of students at Universitat Pompeu Fabra conducting a survey in the context of a research course.</p>
-            <p>You will be presented with eight different hypothetical situations. Carefully read each situation and answer the questions. This survey will only take a few minutes to complete.</p>
             <p>We will not collect any nominal data, and please be assured that the information you provide will be kept in the strictest confidentiality, and will not be used for commercial or any other purposes beyond this academic study.</p>
             <p>Thank you for participating in our important survey!</p>
           </div>
@@ -38,8 +38,8 @@ export default class Intro extends Component {
         {
           settingsModel.isLanguageCastillan() &&
           <div lang="es">
-            <p>Somos un grupo de alumnos de la Universidad Pompeu Fabra, llevando a cabo una encuesta en el contexto de una investigación científica.</p>
             <p>Le presentaremos ocho distintas situaciones hipotéticas. Lea cada situación con atención y responda a las preguntas. Tardará pocos minutos en realizar la encuesta.</p>
+            <p>Somos un grupo de alumnos de la Universidad Pompeu Fabra, llevando a cabo una encuesta en el contexto de una investigación científica.</p>
             <p>No vamos a guardar ningún tipo de información nominal, y por esté seguro que la información que aporte será tratada con la más estricta confidencialidad, y no será usada con fines comerciales ni con ningún otro fin, más allá de el presente estudio académico.</p>
             <p>¡Muchas gracias por participar en nuestra encuesta!</p>
           </div>
@@ -48,8 +48,8 @@ export default class Intro extends Component {
         {
           settingsModel.isLanguageCatalan() &&
           <div lang="ca">
-            <p>Som un grup d'alumnes de la Universitat Pompeu Fabra, duent a terme una enquesta en el context d'una investigació científica.</p>
             <p>L'hi presentarem vuit diferents situacions hipotètiques. Llegeixi cada situació amb atenció i respongui a les preguntes. Trigarà pocs minuts en completar l'enquesta.</p>
+            <p>Som un grup d'alumnes de la Universitat Pompeu Fabra, duent a terme una enquesta en el context d'una investigació científica.</p>
             <p>No guardarem cap tipus d'informació nominal, i estigui segur/a que la información que ens aporti serà tractada amb la més estricta confidencialitat, i no serà utilitzada per fins comercials ni cap altre finalitat més enllà del present estudi acadèmic.</p>
             <p>Moltes gràcies per participar en la nostra enquesta!</p>
           </div>
