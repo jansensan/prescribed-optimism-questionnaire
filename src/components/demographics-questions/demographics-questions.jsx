@@ -542,6 +542,7 @@ export default class DemographicsQuestions extends Component {
       DatabaseService.saveData(
         settingsModel.baseURL,
         questionnaireModel.startTime.getTime(),
+        settingsModel.lang,
         responsesModel.getResponsesJSON(),
         settingsModel.isDebugMode()
       ).then(() => {

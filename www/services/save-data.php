@@ -17,9 +17,11 @@
   } else {
     // query to save to db
     $start_time = $_POST["startTime"];
+    $lang = $_POST["lang"];
     $data = $_POST["data"];
     $query_string = "INSERT INTO `" . $table . "`"
-      . " (`start_time`, `data`) " . " VALUES ('" . $start_time . "','" . $data . "')";
+      . " (`start_time`, `lang`, `data`) "
+      . " VALUES ('" . $start_time . "','" . $lang . "','" . $data . "')";
     $result = $db->query($query_string);
 
     echo $result;

@@ -48,7 +48,7 @@ function downloadAllData(baseURL) {
   });
 }
 
-function saveData(baseURL, startTime, data, isDebugMode) {
+function saveData(baseURL, startTime, lang, data, isDebugMode) {
   let url = baseURL + 'services/save-data.php';
 
   // create promise...
@@ -93,7 +93,9 @@ function saveData(baseURL, startTime, data, isDebugMode) {
         );
       };
 
-      let params = 'startTime=' + startTime + '&data=' + data;
+      let params = 'startTime=' + startTime
+        + '&lang=' + lang
+        + '&data=' + data;
       xhr.send(params);
     });
 
