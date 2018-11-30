@@ -27,19 +27,19 @@
     // format response in json array
     $row_index = -1;
     $last_index = $result->num_rows - 1;
-    $json = '[';
+    $json = '{"responses":[';
     while ($row = $result->fetch_assoc()) {
       $row_index++;
 
       $json .= '{' .
 
         '"id": "' . $row['id'] . '",' .
-        '"startTime": "' . $row['start_time'] . '",' .
+        '"lang": "' . $row['lang'] . '",' .
         '"data": ' . $row['data'];
 
       $json .= ($row_index < $last_index) ? '},' : '}';
     }
-    $json .= ']';
+    $json .= ']}';
 
     echo $json;
   }
