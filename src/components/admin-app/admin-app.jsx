@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 
 // services
 import DatabaseService from '../../services/database-service';
+
+// models
 import settingsModel from '../../models/settings-model';
+import adminModel from './admin-app-model';
 
 // styles
 require('./admin-app.scss');
@@ -14,6 +17,12 @@ export default class AdminApp extends Component {
     this.state = {
       isComponentMounted: false,
     };
+
+    // get db data
+    adminModel.fetchData();
+
+    // listen to updates
+    adminModel.updated.add(this.update, this);
   }
 
   // react methods definitions
@@ -22,29 +31,64 @@ export default class AdminApp extends Component {
       <div className="admin-app">
         <header>
           <div className="centered">
-            <div className="title">Questionnaire Admin</div>
-            <div className="description">Manage the questionnaire data</div>
+            <div className="title">Prescribed Optimism</div>
+            <div className="description">Questionnaire Stats</div>
           </div>
         </header>
 
         <div className="centered admin-content">
-          <h1>Data</h1>
-          <p>Obtain the latest questionnaire data.</p>
-          <button
-            id="downloadButton"
-            className="btn-primary btn-download"
-            type="button"
-            onClick={this.onDownloadRequested.bind(this)}
-          >
-            <span className="active-label">Download all data</span>
-            <span className="disabled-label">⌛</span>
-          </button>
+          <section>
+            <h1>Admin</h1>
+            <p>Information about the progress of the <a href="https://github.com/jansensan/prescribed-optimism-questionnaire">experiment</a>.</p>
+          </section>
+
+          <section>
+            <h2>Stats</h2>
+            {
+              (adminModel.hasData) ?
+              <ul>
+                <li>n = {adminModel.getN()}</li>
+                <li>
+                  <span>Gender distribution:</span>
+                    <ul>
+                      <li>Female: {adminModel.getGenderPercentage('female')}</li>
+                      <li>Male: {adminModel.getGenderPercentage('male')}</li>
+                      <li>Other: {adminModel.getGenderPercentage('other')}</li>
+                    </ul>
+                </li>
+                <li>
+                  <span>Language in which questionnaire was filled:</span>
+                  <ul>
+                    <li>EN: {adminModel.getLangPercentage('en')}</li>
+                    <li>ES: {adminModel.getLangPercentage('es')}</li>
+                    <li>CA: {adminModel.getLangPercentage('ca')}</li>
+                  </ul>
+                </li>
+              </ul>
+              :
+              <p>loading data...</p>
+            }
+          </section>
+
+          <section>
+            <h2>Download</h2>
+            <p>Obtain the latest questionnaire data.</p>
+            <button
+              id="downloadButton"
+              className="btn-primary btn-download"
+              type="button"
+              onClick={this.onDownloadRequested.bind(this)}
+            >
+              <span className="active-label">Download all data</span>
+              <span className="disabled-label">⌛</span>
+            </button>
+          </section>
         </div>
 
         <footer>
           <div className="centered">
-            <div className="title">Questionnaire Admin</div>
-            <div className="description">Manage the questionnaire data</div>
+            <div className="title">Prescribed Optimism</div>
+            <div className="description">Questionnaire Stats</div>
           </div>
         </footer>
       </div>

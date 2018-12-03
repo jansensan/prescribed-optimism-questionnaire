@@ -10,10 +10,22 @@
     margin-bottom: 48px;
   }
 
+  section {
+    display: block;
+    position: relative;
+    margin-bottom: 32px;
+  }
+
   h1 {
     font-size: 2em;
     padding-top: 24px;
     border-top: 1px solid $paleGrey;
+  }
+
+  ul {
+    li {
+      margin: 8px 0;
+    }
   }
 
   .btn-download {
