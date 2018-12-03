@@ -312,7 +312,7 @@ export default class DemographicsQuestions extends Component {
               onChange={this.onStudyStateUpdated.bind(this)}
             />
             <label htmlFor="isStudyingYes">
-              {demoQuestionsModel.getWorkResponseLabel('isStudyingYes')}
+              {demoQuestionsModel.getStudiesResponseLabel('isStudyingYes')}
             </label>
             <input
               type="radio"
@@ -321,7 +321,7 @@ export default class DemographicsQuestions extends Component {
               onChange={this.onStudyStateUpdated.bind(this)}
             />
             <label htmlFor="isStudyingNo">
-              {demoQuestionsModel.getWorkResponseLabel('isStudyingNo')}
+              {demoQuestionsModel.getStudiesResponseLabel('isStudyingNo')}
             </label>
           </section>
 
