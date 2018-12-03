@@ -28,8 +28,9 @@ export default class Intro extends Component {
         {
           settingsModel.isLanguageEnglish() &&
           <div lang="en">
-            <p>You will be presented with eight different hypothetical situations. In each of them, you will have to offer your opinion: what should the person in the story should do, what would you do, what is ideal to do, etc. Carefully read each situation, and answer the questions. This survey will only take a few minutes to complete.</p>
-            <p>We are a group of students at Universitat Pompeu Fabra conducting a survey in the context of a research course.</p>
+          <p>We are a group of students at Universitat Pompeu Fabra conducting a survey in the context of a research course.</p>
+            <p>You will be presented with eight different hypothetical situations. In each of them, you will have to offer your opinion: what should the person in the story should do, what would you do, what is ideal to do, etc.</p>
+            <p>This survey will only take a few minutes to complete. Carefully read each situation, and answer all questions. If you wish to provide a neutral answer, ensure to select the neutral response by at least touching the interface element.</p>
             <p>We will not collect any nominal data, and please be assured that the information you provide will be kept in the strictest confidentiality, and will not be used for commercial or any other purposes beyond this academic study.</p>
             <p>Thank you for participating in our important survey!</p>
           </div>
