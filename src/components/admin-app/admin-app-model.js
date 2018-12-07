@@ -12,26 +12,51 @@ import settingsModel from '../../models/settings-model';
 class AdminAppModel {
   constructor() {
     this.data = null;
-    this.hasData = false;
+    this.startTimes = null;
+    this.numDataFetched = 0;
 
     // signals
     this.updated = new signals.Signal();
   }
 
   fetchData() {
+    this.numDataFetched = 0;
+
     DatabaseService.downloadAllData(settingsModel.baseURL)
       .then((response) => {
         this.data = JSON.parse(response).responses;
-        this.hasData = true;
+        this.numDataFetched++;
         this.updated.dispatch();
       })
       .catch(() => {
         console.warn(
           'Warning at adminModel#fetchData: '
-          + 'unable to obtain data.'
+          + 'unable to obtain responses data.'
         );
         this.updated.dispatch();
       });
+
+    DatabaseService.downloadStartTimesData(settingsModel.baseURL)
+      .then((response) => {
+        this.startTimes = JSON.parse(response);
+        this.numDataFetched++;
+        this.updated.dispatch();
+      })
+      .catch(() => {
+        console.warn(
+          'Warning at adminModel#fetchData: '
+          + 'unable to obtain questionnaires started data.'
+        );
+        this.updated.dispatch();
+      });
+  }
+
+  getDropRate() {
+    let numDropped = this.startTimes.length - this.data.length;
+
+    return ((numDropped / this.startTimes.length) * 100)
+      .toFixed(1)
+      .toString() + '%';
   }
 
   getGenderPercentage(gender) {
@@ -62,6 +87,10 @@ class AdminAppModel {
 
   getN() {
     return this.data.length;
+  }
+
+  hasData() {
+    return this.numDataFetched >= 2;
   }
 }
 

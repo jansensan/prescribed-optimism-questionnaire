@@ -45,23 +45,24 @@ export default class AdminApp extends Component {
           <section>
             <h2>Stats</h2>
             {
-              (adminModel.hasData) ?
+              (adminModel.hasData()) ?
               <ul>
-                <li>n = {adminModel.getN()}</li>
+                <li><b>n = {adminModel.getN()}</b></li>
+                <li>Drop rate: <b>{adminModel.getDropRate()}</b></li>
                 <li>
                   <span>Gender distribution:</span>
                     <ul>
-                      <li>Female: {adminModel.getGenderPercentage('female')}</li>
-                      <li>Male: {adminModel.getGenderPercentage('male')}</li>
-                      <li>Other: {adminModel.getGenderPercentage('other')}</li>
+                      <li>Female: <b>{adminModel.getGenderPercentage('female')}</b></li>
+                      <li>Male: <b>{adminModel.getGenderPercentage('male')}</b></li>
+                      <li>Other: <b>{adminModel.getGenderPercentage('other')}</b></li>
                     </ul>
                 </li>
                 <li>
                   <span>Language in which questionnaire was filled:</span>
                   <ul>
-                    <li>EN: {adminModel.getLangPercentage('en')}</li>
-                    <li>ES: {adminModel.getLangPercentage('es')}</li>
-                    <li>CA: {adminModel.getLangPercentage('ca')}</li>
+                    <li>EN: <b>{adminModel.getLangPercentage('en')}</b></li>
+                    <li>ES: <b>{adminModel.getLangPercentage('es')}</b></li>
+                    <li>CA: <b>{adminModel.getLangPercentage('ca')}</b></li>
                   </ul>
                 </li>
               </ul>
@@ -74,12 +75,21 @@ export default class AdminApp extends Component {
             <h2>Download</h2>
             <p>Obtain the latest questionnaire data.</p>
             <button
-              id="downloadButton"
+              id="downloadDataButton"
               className="btn-primary btn-download"
               type="button"
-              onClick={this.onDownloadRequested.bind(this)}
+              onClick={this.onResponseDataDownloadRequested.bind(this)}
             >
-              <span className="active-label">Download all data</span>
+              <span className="active-label">Download responses data</span>
+              <span className="disabled-label">⌛</span>
+            </button>
+            <button
+              id="downloadStartTimesButton"
+              className="btn-primary btn-download"
+              type="button"
+              onClick={this.onStartTimesDataDownloadRequested.bind(this)}
+            >
+              <span className="active-label">Download start times data</span>
               <span className="disabled-label">⌛</span>
             </button>
           </section>
@@ -103,9 +113,9 @@ export default class AdminApp extends Component {
 
 
   // methods definitions
-  onDownloadRequested() {
+  onResponseDataDownloadRequested() {
     // disable button while waiting for db
-    var btn = document.getElementById('downloadButton');
+    var btn = document.getElementById('downloadDataButton');
     btn.disabled = true;
 
     DatabaseService.downloadAllData(settingsModel.baseURL)
@@ -131,7 +141,39 @@ export default class AdminApp extends Component {
         // reenable btn
         btn.disabled = false;
 
-        alert('Unable to download data, please contact admin for assistance.');
+        alert('Unable to download responses data, please contact admin for assistance.');
+      });
+  }
+
+  onStartTimesDataDownloadRequested() {
+     // disable button while waiting for db
+     var btn = document.getElementById('downloadStartTimesButton');
+     btn.disabled = true;
+
+     DatabaseService.downloadStartTimesData(settingsModel.baseURL)
+      .then((response) => {
+        // ready for file download
+        let filename = 'poq-start-times-' + new Date().getTime() + '.json';
+
+        let temp = document.createElement('a');
+        temp.setAttribute('href', 'data:text/json;charset=utf-8,' + response);
+        temp.setAttribute('download', filename);
+
+        temp.style.display = 'none';
+        document.body.appendChild(temp);
+
+        temp.click();
+
+        document.body.removeChild(temp);
+
+        // reenable btn
+        btn.disabled = false;
+      })
+      .catch(() => {
+        // reenable btn
+        btn.disabled = false;
+
+        alert('Unable to download start times data, please contact admin for assistance.');
       });
   }
 
