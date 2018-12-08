@@ -50,6 +50,9 @@
           // Array of 8 different scenarios responses, in same order as prescribed-optimism-appendix.pdf.
           // Each entry ordered like responses in Award_Decision.pdf (and the 3 other PDFs as well).
           "responses": [
+            // commitment: low
+            // agency:     low
+            // control:    low
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -58,6 +61,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: low
+            // agency:     low
+            // control:    high
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -66,6 +72,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: low
+            // agency:     high
+            // control:    low
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -74,6 +83,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: low
+            // agency:     high
+            // control:    high
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -82,6 +94,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: high
+            // agency:     low
+            // control:    low
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -90,6 +105,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: high
+            // agency:     low
+            // control:    high
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -98,6 +116,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: high
+            // agency:     high
+            // control:    low
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
@@ -106,6 +127,9 @@
               [Num. Range] [0 — 100],
               [Num. Range] [0 — 100]
             ],
+            // commitment: high
+            // agency:     high
+            // control:    high
             [
               [Num. Range] [-4 — 4],
               [Num. Range] [0 — 100],
