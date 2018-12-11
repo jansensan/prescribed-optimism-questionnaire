@@ -544,7 +544,7 @@ export default class DemographicsQuestions extends Component {
         questionnaireModel.startTime.getTime(),
         settingsModel.lang,
         responsesModel.getResponsesJSON(),
-        settingsModel.isDebugMode()
+        settingsModel.isDebugMode() || settingsModel.isStudyCompleted()
       ).then(() => {
         // scroll to top
         this.scrollToTop();

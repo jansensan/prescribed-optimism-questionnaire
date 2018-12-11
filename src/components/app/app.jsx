@@ -10,6 +10,7 @@ import DebugBanner from '../debug-banner/debug-banner.jsx';
 import DemographicsQuestions from '../demographics-questions/demographics-questions.jsx';
 import Intro from '../intro/intro.jsx';
 import LifeOrientationTest from '../life-orientation-test/life-orientation-test.jsx';
+import StudyCompletedBanner from '../study-completed-banner/study-completed-banner.jsx';
 import Survey from '../survey/survey.jsx';
 import TranslationSelection from '../translation-selection/translation-selection.jsx';
 
@@ -36,7 +37,12 @@ export default class App extends Component {
     // warn before quitting
     // TODO: add condition for if questionnaire is completed
     window.onbeforeunload = function () {
-      if (!questionnaireModel.isStarted || questionnaireModel.isCompleted) {
+      if (
+        !questionnaireModel.isStarted
+        || questionnaireModel.isCompleted
+        || settingsModel.isDebugMode()
+        || settingsModel.isStudyCompleted()
+      ) {
         return;
       }
       return 'You are about to quit the questionnaire. Are you sure you want to leave?';
@@ -47,7 +53,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-        <DebugBanner/>
+        <StudyCompletedBanner />
+        <DebugBanner />
 
         <header>
           <div className="centered">

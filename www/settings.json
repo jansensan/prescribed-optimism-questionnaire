@@ -28,7 +28,8 @@
       }
     },
     "translationsReady": true,
-    "debug": false
+    "debug": false,
+    "completed": true
   },
   "lifeOrientation": {
     "title": {

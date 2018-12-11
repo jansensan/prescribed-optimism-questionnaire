@@ -105,6 +105,10 @@ class SettingsModel {
     return this.lang === Languages.CA;
   }
 
+  isStudyCompleted() {
+    return _.get(this.data, 'completed');;
+  }
+
   setLanguage(newLanguage) {
     this.lang = newLanguage;
     this.updated.dispatch();
