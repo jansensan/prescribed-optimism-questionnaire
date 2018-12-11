@@ -7,5 +7,7 @@
 ### PROJECT-SPECIFIC FILES ###
 .vscode
 /assets
+/data/**/*.jpg
+/data/**/*.png
 /node_modules
 /www/.htaccess

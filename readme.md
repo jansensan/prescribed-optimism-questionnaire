@@ -14,6 +14,20 @@ We have chosen _Prescribed Optimism — Is it right to be wrong about the future
 > We test the assumption that people desire to be accurate when making predictions about their own future. Results revealed that, across four different scenarios and three manipulated variables (commitment to a decision, agency over the decision, and control over outcomes), participants thought it was better to make optimistically biased predictions than accurate or pessimistically biased predictions. Additionally, participants thought that they and others would be optimistic in the scenarios they read, but insufficiently so. We argue that prescriptions can serve as one standard by which the quality of predictions can be judged, and that this particular standard strongly endorses optimism.
 
 
+## Data
+
+### Responses Data Format
+
+See the [documentation](./data/responses-data-format.md) for details on how to read the responses data.
+
+
+### Data Analysis
+
+See `data/Prescribed Optimism Data Analysis.ipynb`\* for the analyses.
+
+\* This is a [Jupyter Notebook](https://jupyter.org/) file. See also [Anaconda](https://www.anaconda.com/) for information on how to run this type of file.
+
+
 ## Artefacts
 
 - See the [questionnaire](https://projects.jansensan.net/questionnaire/). It is not currently saving any responses to the database, but you can still go through the survey.
@@ -23,25 +37,20 @@ We have chosen _Prescribed Optimism — Is it right to be wrong about the future
 - See [our final presentation slides](https://academia.jansensan.net/30845/prescribed-optimism-replication-report-presentation/).
 
 
-## Usage
-
-- Clone the repository/download the sources from the `master` branch to your computer;
-- Go to the directory of the sources;
-- Open the file `www/index.html` in a browser;
-- See the questionnaire.
-
-
-## Responses Data Format
-
-See the [documentation](./responses-data-format.md) for details on how to read the responses data.
-
-
 ## Collaborators
 
 - Dimitar KARAGEORGIEV
 - Mat JANSON BLANCHET
 - Pol RICART
 - Lida ZACHAROPOULOU
+
+
+## Usage
+
+- Clone the repository/download the sources from the `master` branch to your computer;
+- Go to the directory of the sources;
+- Open the file `www/index.html` in a browser;
+- See the questionnaire.
 
 
 ## Contribution

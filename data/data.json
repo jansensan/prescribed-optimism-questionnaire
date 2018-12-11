@@ -1,0 +1,4414 @@
+{
+  "responses": [
+    {
+      "id": "20",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-11-26T11:04:01.442Z",
+          "end": "2018-11-26T11:29:00.553Z"
+        },
+        "timestamp": {
+          "start": 1543230241442,
+          "end": 1543231740553
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          1,
+          5,
+          4,
+          4,
+          1,
+          5,
+          1,
+          4
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              0,
+              40,
+              6,
+              50,
+              50,
+              100
+            ],
+            [
+              2,
+              50,
+              8,
+              50,
+              50,
+              100
+            ],
+            [
+              2,
+              40,
+              8,
+              50,
+              50,
+              100
+            ],
+            [
+              2,
+              70,
+              8,
+              60,
+              70,
+              100
+            ],
+            [
+              2,
+              70,
+              6,
+              50,
+              60,
+              100
+            ],
+            [
+              2,
+              80,
+              8,
+              60,
+              60,
+              100
+            ],
+            [
+              2,
+              70,
+              7,
+              60,
+              50,
+              100
+            ],
+            [
+              1,
+              60,
+              9,
+              100,
+              50,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "28",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "21",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-11-26T14:24:36.099Z",
+          "end": "2018-11-26T14:35:48.046Z"
+        },
+        "timestamp": {
+          "start": 1543242276099,
+          "end": 1543242948046
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          2,
+          4,
+          5,
+          2,
+          2,
+          4,
+          2,
+          5
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              1,
+              50,
+              6,
+              20,
+              10,
+              10
+            ],
+            [
+              2,
+              60,
+              8,
+              20,
+              10,
+              20
+            ],
+            [
+              2,
+              60,
+              8,
+              60,
+              30,
+              30
+            ],
+            [
+              4,
+              40,
+              10,
+              70,
+              40,
+              60
+            ],
+            [
+              4,
+              40,
+              10,
+              100,
+              20,
+              10
+            ],
+            [
+              4,
+              40,
+              10,
+              100,
+              30,
+              10
+            ],
+            [
+              4,
+              70,
+              10,
+              100,
+              30,
+              40
+            ],
+            [
+              4,
+              60,
+              10,
+              100,
+              40,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "37",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "4",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "22",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-11-26T14:52:24.161Z",
+          "end": "2018-11-26T15:00:10.643Z"
+        },
+        "timestamp": {
+          "start": 1543243944161,
+          "end": 1543244410643
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          2,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              -1,
+              40,
+              4,
+              60,
+              70,
+              60
+            ],
+            [
+              -1,
+              40,
+              5,
+              60,
+              70,
+              60
+            ],
+            [
+              0,
+              60,
+              6,
+              70,
+              30,
+              60
+            ],
+            [
+              -1,
+              40,
+              6,
+              60,
+              60,
+              40
+            ],
+            [
+              0,
+              30,
+              4,
+              40,
+              50,
+              40
+            ],
+            [
+              1,
+              70,
+              5,
+              60,
+              30,
+              70
+            ],
+            [
+              -1,
+              60,
+              6,
+              50,
+              80,
+              40
+            ],
+            [
+              0,
+              50,
+              5,
+              50,
+              40,
+              50
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "other",
+          "age": "34",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "23",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-11-26T14:52:24.161Z",
+          "end": "2018-11-26T15:00:10.977Z"
+        },
+        "timestamp": {
+          "start": 1543243944161,
+          "end": 1543244410977
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          2,
+          4,
+          4,
+          4,
+          2,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              -1,
+              40,
+              4,
+              60,
+              70,
+              60
+            ],
+            [
+              -1,
+              40,
+              5,
+              60,
+              70,
+              60
+            ],
+            [
+              0,
+              60,
+              6,
+              70,
+              30,
+              60
+            ],
+            [
+              -1,
+              40,
+              6,
+              60,
+              60,
+              40
+            ],
+            [
+              0,
+              30,
+              4,
+              40,
+              50,
+              40
+            ],
+            [
+              1,
+              70,
+              5,
+              60,
+              30,
+              70
+            ],
+            [
+              -1,
+              60,
+              6,
+              50,
+              80,
+              40
+            ],
+            [
+              0,
+              50,
+              5,
+              50,
+              40,
+              50
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "other",
+          "age": "34",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "25",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-01T11:47:31.547Z",
+          "end": "2018-12-01T12:00:03.112Z"
+        },
+        "timestamp": {
+          "start": 1543664851547,
+          "end": 1543665603112
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          1,
+          2,
+          4,
+          2,
+          1,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              4,
+              70,
+              10,
+              70,
+              30,
+              30
+            ],
+            [
+              4,
+              70,
+              10,
+              70,
+              70,
+              70
+            ],
+            [
+              4,
+              70,
+              10,
+              70,
+              70,
+              70
+            ],
+            [
+              4,
+              70,
+              10,
+              70,
+              100,
+              70
+            ],
+            [
+              4,
+              70,
+              10,
+              70,
+              70,
+              70
+            ],
+            [
+              4,
+              70,
+              10,
+              90,
+              100,
+              70
+            ],
+            [
+              4,
+              70,
+              10,
+              70,
+              70,
+              70
+            ],
+            [
+              4,
+              70,
+              10,
+              70,
+              30,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "38",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "1",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "26",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T10:26:47.038Z",
+          "end": "2018-12-02T10:38:54.093Z"
+        },
+        "timestamp": {
+          "start": 1543746407038,
+          "end": 1543747134093
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          2,
+          5,
+          5,
+          4,
+          2,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              -1,
+              40,
+              7,
+              30,
+              10,
+              10
+            ],
+            [
+              -1,
+              40,
+              8,
+              20,
+              20,
+              0
+            ],
+            [
+              1,
+              40,
+              8,
+              80,
+              30,
+              100
+            ],
+            [
+              1,
+              70,
+              8,
+              80,
+              70,
+              100
+            ],
+            [
+              -1,
+              40,
+              6,
+              30,
+              20,
+              10
+            ],
+            [
+              1,
+              40,
+              7,
+              100,
+              30,
+              100
+            ],
+            [
+              2,
+              60,
+              7,
+              100,
+              60,
+              100
+            ],
+            [
+              2,
+              60,
+              9,
+              100,
+              60,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "25",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "0",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "27",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T11:24:47.029Z",
+          "end": "2018-12-02T11:43:30.024Z"
+        },
+        "timestamp": {
+          "start": 1543749887029,
+          "end": 1543751010024
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          4,
+          2,
+          5,
+          2,
+          3,
+          1,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              -1,
+              50,
+              10,
+              0,
+              10,
+              0
+            ],
+            [
+              0,
+              50,
+              10,
+              10,
+              60,
+              0
+            ],
+            [
+              0,
+              30,
+              10,
+              10,
+              10,
+              100
+            ],
+            [
+              1,
+              60,
+              10,
+              10,
+              60,
+              90
+            ],
+            [
+              -1,
+              40,
+              10,
+              100,
+              10,
+              0
+            ],
+            [
+              1,
+              50,
+              10,
+              100,
+              60,
+              0
+            ],
+            [
+              0,
+              40,
+              10,
+              80,
+              10,
+              100
+            ],
+            [
+              1,
+              60,
+              10,
+              100,
+              70,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "26",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "28",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T12:03:00.899Z",
+          "end": "2018-12-02T12:18:21.034Z"
+        },
+        "timestamp": {
+          "start": 1543752180899,
+          "end": 1543753101034
+        },
+        "lifeOrientationTest": [
+          2,
+          3,
+          5,
+          4,
+          4,
+          3,
+          4,
+          2,
+          2,
+          3
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              2,
+              60,
+              10,
+              50,
+              10,
+              70
+            ],
+            [
+              3,
+              80,
+              10,
+              30,
+              90,
+              100
+            ],
+            [
+              2,
+              60,
+              10,
+              30,
+              30,
+              80
+            ],
+            [
+              3,
+              80,
+              10,
+              30,
+              90,
+              100
+            ],
+            [
+              3,
+              80,
+              10,
+              90,
+              10,
+              70
+            ],
+            [
+              3,
+              70,
+              10,
+              80,
+              10,
+              20
+            ],
+            [
+              3,
+              60,
+              10,
+              100,
+              20,
+              100
+            ],
+            [
+              3,
+              80,
+              10,
+              90,
+              80,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "25",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "1",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "29",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T12:16:04.489Z",
+          "end": "2018-12-02T12:27:17.178Z"
+        },
+        "timestamp": {
+          "start": 1543752964489,
+          "end": 1543753637178
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          2,
+          3,
+          5,
+          5,
+          3,
+          4,
+          4,
+          3
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              4,
+              20,
+              7,
+              70,
+              30,
+              20
+            ],
+            [
+              4,
+              100,
+              10,
+              30,
+              100,
+              10
+            ],
+            [
+              2,
+              70,
+              7,
+              0,
+              30,
+              100
+            ],
+            [
+              3,
+              100,
+              10,
+              90,
+              100,
+              100
+            ],
+            [
+              3,
+              30,
+              3,
+              100,
+              40,
+              30
+            ],
+            [
+              4,
+              100,
+              10,
+              100,
+              100,
+              70
+            ],
+            [
+              3,
+              20,
+              7,
+              40,
+              20,
+              20
+            ],
+            [
+              4,
+              90,
+              9,
+              50,
+              90,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "24",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "0"
+        }
+      }
+    },
+    {
+      "id": "30",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T12:06:06.410Z",
+          "end": "2018-12-02T12:32:40.011Z"
+        },
+        "timestamp": {
+          "start": 1543752366410,
+          "end": 1543753960011
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          2,
+          5,
+          4,
+          4,
+          2,
+          5,
+          5,
+          5
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              1,
+              70,
+              7,
+              60,
+              70,
+              60
+            ],
+            [
+              2,
+              70,
+              7,
+              60,
+              70,
+              60
+            ],
+            [
+              -2,
+              20,
+              2,
+              30,
+              30,
+              30
+            ],
+            [
+              -1,
+              40,
+              4,
+              30,
+              70,
+              60
+            ],
+            [
+              2,
+              70,
+              7,
+              80,
+              70,
+              100
+            ],
+            [
+              3,
+              80,
+              8,
+              80,
+              80,
+              100
+            ],
+            [
+              1,
+              60,
+              6,
+              70,
+              60,
+              60
+            ],
+            [
+              2,
+              70,
+              7,
+              70,
+              80,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "25",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "0",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "31",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-02T12:32:53.514Z",
+          "end": "2018-12-02T12:49:05.494Z"
+        },
+        "timestamp": {
+          "start": 1543753973514,
+          "end": 1543754945494
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          2,
+          5,
+          5,
+          5,
+          4,
+          2,
+          2,
+          5
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              2,
+              70,
+              8,
+              70,
+              60,
+              70
+            ],
+            [
+              2,
+              70,
+              7,
+              70,
+              70,
+              70
+            ],
+            [
+              2,
+              70,
+              4,
+              70,
+              70,
+              70
+            ],
+            [
+              2,
+              70,
+              7,
+              80,
+              70,
+              60
+            ],
+            [
+              3,
+              70,
+              7,
+              70,
+              60,
+              60
+            ],
+            [
+              2,
+              80,
+              8,
+              80,
+              70,
+              70
+            ],
+            [
+              2,
+              70,
+              4,
+              70,
+              30,
+              80
+            ],
+            [
+              4,
+              80,
+              8,
+              80,
+              70,
+              80
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "26",
+          "ethnicity": "latino",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "32",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T12:56:40.084Z",
+          "end": "2018-12-02T13:15:46.645Z"
+        },
+        "timestamp": {
+          "start": 1543755400084,
+          "end": 1543756546645
+        },
+        "lifeOrientationTest": [
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          2,
+          4,
+          3,
+          3
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              2,
+              70,
+              10,
+              20,
+              30,
+              80
+            ],
+            [
+              2,
+              70,
+              10,
+              20,
+              30,
+              80
+            ],
+            [
+              0,
+              50,
+              10,
+              50,
+              90,
+              90
+            ],
+            [
+              2,
+              70,
+              10,
+              20,
+              30,
+              80
+            ],
+            [
+              2,
+              70,
+              10,
+              20,
+              30,
+              90
+            ],
+            [
+              2,
+              70,
+              10,
+              20,
+              30,
+              80
+            ],
+            [
+              2,
+              60,
+              10,
+              20,
+              30,
+              90
+            ],
+            [
+              2,
+              70,
+              10,
+              20,
+              30,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "25",
+          "ethnicity": "white",
+          "education": "someBA",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "0",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "33",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T13:31:16.790Z",
+          "end": "2018-12-02T13:58:41.542Z"
+        },
+        "timestamp": {
+          "start": 1543757476790,
+          "end": 1543759121542
+        },
+        "lifeOrientationTest": [
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          3,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              2,
+              50,
+              10,
+              0,
+              0,
+              10
+            ],
+            [
+              2,
+              70,
+              10,
+              0,
+              80,
+              0
+            ],
+            [
+              2,
+              60,
+              10,
+              0,
+              0,
+              100
+            ],
+            [
+              2,
+              50,
+              10,
+              80,
+              80,
+              100
+            ],
+            [
+              2,
+              50,
+              10,
+              100,
+              0,
+              0
+            ],
+            [
+              2,
+              80,
+              10,
+              80,
+              80,
+              100
+            ],
+            [
+              2,
+              70,
+              10,
+              80,
+              0,
+              100
+            ],
+            [
+              1,
+              80,
+              10,
+              80,
+              70,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "053",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "02"
+        }
+      }
+    },
+    {
+      "id": "34",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T12:48:40.208Z",
+          "end": "2018-12-02T13:06:41.154Z"
+        },
+        "timestamp": {
+          "start": 1543754920208,
+          "end": 1543756001154
+        },
+        "lifeOrientationTest": [
+          5,
+          2,
+          1,
+          4,
+          4,
+          4,
+          1,
+          1,
+          1,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              3,
+              60,
+              10,
+              0,
+              0,
+              10
+            ],
+            [
+              3,
+              70,
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              70,
+              10,
+              0,
+              10,
+              100
+            ],
+            [
+              3,
+              50,
+              10,
+              0,
+              80,
+              100
+            ],
+            [
+              3,
+              60,
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              50,
+              10,
+              100,
+              80,
+              100
+            ],
+            [
+              3,
+              60,
+              10,
+              0,
+              10,
+              90
+            ],
+            [
+              3,
+              80,
+              10,
+              0,
+              80,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "21",
+          "ethnicity": "white",
+          "education": "someBA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "0",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "35",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-02T15:58:02.543Z",
+          "end": "2018-12-02T16:36:04.332Z"
+        },
+        "timestamp": {
+          "start": 1543766282543,
+          "end": 1543768564332
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          2,
+          3,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              0,
+              90,
+              6,
+              70,
+              30,
+              0
+            ],
+            [
+              0,
+              60,
+              4,
+              100,
+              20,
+              60
+            ],
+            [
+              -1,
+              70,
+              6,
+              60,
+              70,
+              70
+            ],
+            [
+              1,
+              50,
+              5,
+              50,
+              50,
+              50
+            ],
+            [
+              1,
+              60,
+              9,
+              100,
+              50,
+              10
+            ],
+            [
+              1,
+              60,
+              7,
+              10,
+              40,
+              70
+            ],
+            [
+              2,
+              80,
+              10,
+              100,
+              100,
+              0
+            ],
+            [
+              1,
+              50,
+              3,
+              60,
+              50,
+              50
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "other",
+          "age": "25",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "36",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T15:59:34.509Z",
+          "end": "2018-12-02T16:38:38.960Z"
+        },
+        "timestamp": {
+          "start": 1543766374509,
+          "end": 1543768718960
+        },
+        "lifeOrientationTest": [
+          3,
+          2,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              -2,
+              20,
+              10,
+              60,
+              20,
+              60
+            ],
+            [
+              1,
+              20,
+              6,
+              60,
+              60,
+              60
+            ],
+            [
+              -2,
+              20,
+              10,
+              60,
+              20,
+              60
+            ],
+            [
+              -2,
+              20,
+              10,
+              60,
+              20,
+              60
+            ],
+            [
+              1,
+              20,
+              6,
+              60,
+              30,
+              60
+            ],
+            [
+              -2,
+              20,
+              10,
+              60,
+              70,
+              60
+            ],
+            [
+              2,
+              20,
+              6,
+              70,
+              60,
+              30
+            ],
+            [
+              -2,
+              30,
+              3,
+              60,
+              20,
+              30
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "27",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "37",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-02T16:56:22.335Z",
+          "end": "2018-12-02T17:11:49.020Z"
+        },
+        "timestamp": {
+          "start": 1543769782335,
+          "end": 1543770709020
+        },
+        "lifeOrientationTest": [
+          4,
+          2,
+          2,
+          2,
+          5,
+          4,
+          2,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              4,
+              70,
+              10,
+              10,
+              0,
+              0
+            ],
+            [
+              4,
+              60,
+              10,
+              40,
+              70,
+              20
+            ],
+            [
+              2,
+              70,
+              10,
+              60,
+              0,
+              0
+            ],
+            [
+              1,
+              60,
+              10,
+              30,
+              0,
+              40
+            ],
+            [
+              -1,
+              80,
+              7,
+              70,
+              0,
+              10
+            ],
+            [
+              1,
+              70,
+              10,
+              100,
+              0,
+              0
+            ],
+            [
+              4,
+              80,
+              10,
+              100,
+              30,
+              100
+            ],
+            [
+              4,
+              70,
+              8,
+              70,
+              0,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "31",
+          "ethnicity": "latino",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "0",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "38",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-02T16:58:49.519Z",
+          "end": "2018-12-02T17:15:30.817Z"
+        },
+        "timestamp": {
+          "start": 1543769929519,
+          "end": 1543770930817
+        },
+        "lifeOrientationTest": [
+          3,
+          4,
+          2,
+          1,
+          5,
+          4,
+          1,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              3,
+              40,
+              9,
+              70,
+              70,
+              80
+            ],
+            [
+              -3,
+              10,
+              8,
+              30,
+              30,
+              10
+            ],
+            [
+              -1,
+              30,
+              3,
+              30,
+              30,
+              30
+            ],
+            [
+              -1,
+              30,
+              3,
+              30,
+              30,
+              30
+            ],
+            [
+              -2,
+              50,
+              7,
+              70,
+              20,
+              70
+            ],
+            [
+              2,
+              60,
+              7,
+              60,
+              80,
+              60
+            ],
+            [
+              2,
+              60,
+              7,
+              70,
+              70,
+              70
+            ],
+            [
+              1,
+              60,
+              6,
+              40,
+              60,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "26",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "1",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "39",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T08:04:20.408Z",
+          "end": "2018-12-03T08:19:52.553Z"
+        },
+        "timestamp": {
+          "start": 1543824260408,
+          "end": 1543825192553
+        },
+        "lifeOrientationTest": [
+          3,
+          4,
+          1,
+          4,
+          4,
+          4,
+          2,
+          2,
+          1,
+          5
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              0,
+              50,
+              9,
+              10,
+              60,
+              90
+            ],
+            [
+              0,
+              50,
+              7,
+              0,
+              60,
+              60
+            ],
+            [
+              0,
+              50,
+              8,
+              0,
+              50,
+              100
+            ],
+            [
+              0,
+              50,
+              8,
+              0,
+              70,
+              100
+            ],
+            [
+              0,
+              50,
+              7,
+              20,
+              40,
+              40
+            ],
+            [
+              0,
+              50,
+              9,
+              70,
+              80,
+              100
+            ],
+            [
+              0,
+              50,
+              8,
+              0,
+              70,
+              100
+            ],
+            [
+              0,
+              50,
+              9,
+              0,
+              80,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "23",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "5",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "40",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T13:19:53.863Z",
+          "end": "2018-12-03T13:32:47.196Z"
+        },
+        "timestamp": {
+          "start": 1543843193863,
+          "end": 1543843967196
+        },
+        "lifeOrientationTest": [
+          4,
+          3,
+          2,
+          4,
+          3,
+          2,
+          2,
+          3,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              0,
+              30,
+              5,
+              0,
+              10,
+              0
+            ],
+            [
+              2,
+              60,
+              10,
+              50,
+              90,
+              30
+            ],
+            [
+              2,
+              60,
+              7,
+              0,
+              10,
+              100
+            ],
+            [
+              1,
+              80,
+              10,
+              10,
+              90,
+              100
+            ],
+            [
+              2,
+              50,
+              7,
+              90,
+              20,
+              10
+            ],
+            [
+              1,
+              70,
+              9,
+              100,
+              90,
+              20
+            ],
+            [
+              0,
+              50,
+              7,
+              80,
+              20,
+              80
+            ],
+            [
+              3,
+              80,
+              10,
+              60,
+              90,
+              80
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "27",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "1",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "41",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T14:48:56.928Z",
+          "end": "2018-12-03T14:57:45.376Z"
+        },
+        "timestamp": {
+          "start": 1543848536928,
+          "end": 1543849065376
+        },
+        "lifeOrientationTest": [
+          4,
+          5,
+          3,
+          3,
+          5,
+          3,
+          2,
+          2,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              3,
+              80,
+              9,
+              50,
+              30,
+              50
+            ],
+            [
+              3,
+              80,
+              10,
+              100,
+              100,
+              100
+            ],
+            [
+              3,
+              80,
+              9,
+              60,
+              30,
+              40
+            ],
+            [
+              2,
+              90,
+              10,
+              100,
+              100,
+              100
+            ],
+            [
+              3,
+              80,
+              9,
+              60,
+              30,
+              60
+            ],
+            [
+              3,
+              90,
+              10,
+              100,
+              100,
+              100
+            ],
+            [
+              3,
+              80,
+              10,
+              60,
+              30,
+              30
+            ],
+            [
+              3,
+              90,
+              9,
+              50,
+              30,
+              50
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "18",
+          "ethnicity": "white",
+          "education": "someBA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "0",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "42",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T14:34:47.570Z",
+          "end": "2018-12-03T15:08:38.537Z"
+        },
+        "timestamp": {
+          "start": 1543847687570,
+          "end": 1543849718537
+        },
+        "lifeOrientationTest": [
+          2,
+          3,
+          2,
+          1,
+          4,
+          4,
+          3,
+          2,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              -1,
+              50,
+              8,
+              30,
+              30,
+              50
+            ],
+            [
+              1,
+              80,
+              8,
+              20,
+              80,
+              10
+            ],
+            [
+              1,
+              70,
+              6,
+              10,
+              40,
+              80
+            ],
+            [
+              2,
+              80,
+              9,
+              20,
+              80,
+              90
+            ],
+            [
+              -1,
+              50,
+              8,
+              70,
+              30,
+              70
+            ],
+            [
+              3,
+              70,
+              9,
+              80,
+              80,
+              60
+            ],
+            [
+              -1,
+              70,
+              7,
+              90,
+              40,
+              40
+            ],
+            [
+              2,
+              60,
+              9,
+              30,
+              80,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "23",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "43",
+      "lang": "ca",
+      "data": {
+        "time": {
+          "start": "2018-12-03T15:12:05.878Z",
+          "end": "2018-12-03T15:33:25.423Z"
+        },
+        "timestamp": {
+          "start": 1543849925878,
+          "end": 1543851205423
+        },
+        "lifeOrientationTest": [
+          4,
+          2,
+          1,
+          3,
+          4,
+          4,
+          2,
+          2,
+          1,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              2,
+              60,
+              8,
+              70,
+              40,
+              20
+            ],
+            [
+              -1,
+              60,
+              8,
+              50,
+              40,
+              20
+            ],
+            [
+              2,
+              60,
+              9,
+              20,
+              70,
+              70
+            ],
+            [
+              2,
+              30,
+              8,
+              20,
+              80,
+              80
+            ],
+            [
+              1,
+              60,
+              8,
+              80,
+              50,
+              30
+            ],
+            [
+              2,
+              90,
+              9,
+              90,
+              70,
+              40
+            ],
+            [
+              2,
+              80,
+              10,
+              80,
+              70,
+              80
+            ],
+            [
+              2,
+              70,
+              9,
+              60,
+              70,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "55",
+          "ethnicity": "white",
+          "education": "elementary",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "7",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "44",
+      "lang": "ca",
+      "data": {
+        "time": {
+          "start": "2018-12-03T12:22:12.799Z",
+          "end": "2018-12-03T15:51:19.057Z"
+        },
+        "timestamp": {
+          "start": 1543839732799,
+          "end": 1543852279057
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          4,
+          5,
+          4,
+          4,
+          4,
+          2,
+          1,
+          5
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              -1,
+              40,
+              4,
+              40,
+              40,
+              40
+            ],
+            [
+              2,
+              70,
+              7,
+              60,
+              60,
+              70
+            ],
+            [
+              1,
+              60,
+              7,
+              70,
+              60,
+              60
+            ],
+            [
+              2,
+              70,
+              7,
+              60,
+              60,
+              70
+            ],
+            [
+              -1,
+              30,
+              4,
+              70,
+              30,
+              30
+            ],
+            [
+              3,
+              70,
+              6,
+              60,
+              60,
+              70
+            ],
+            [
+              2,
+              60,
+              6,
+              60,
+              70,
+              60
+            ],
+            [
+              1,
+              60,
+              6,
+              60,
+              20,
+              60
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "18",
+          "ethnicity": "",
+          "education": "highSchool",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "6"
+        }
+      }
+    },
+    {
+      "id": "45",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T15:51:19.685Z",
+          "end": "2018-12-03T16:27:42.279Z"
+        },
+        "timestamp": {
+          "start": 1543852279685,
+          "end": 1543854462279
+        },
+        "lifeOrientationTest": [
+          2,
+          4,
+          3,
+          2,
+          4,
+          4,
+          2,
+          2,
+          2,
+          3
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              2,
+              80,
+              10,
+              10,
+              10,
+              10
+            ],
+            [
+              2,
+              80,
+              8,
+              70,
+              70,
+              60
+            ],
+            [
+              2,
+              80,
+              10,
+              20,
+              10,
+              90
+            ],
+            [
+              2,
+              80,
+              10,
+              10,
+              80,
+              90
+            ],
+            [
+              2,
+              70,
+              8,
+              80,
+              60,
+              30
+            ],
+            [
+              1,
+              70,
+              10,
+              90,
+              90,
+              40
+            ],
+            [
+              3,
+              80,
+              10,
+              100,
+              0,
+              90
+            ],
+            [
+              3,
+              80,
+              10,
+              100,
+              90,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "37",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "2",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "46",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-03T16:55:39.479Z",
+          "end": "2018-12-03T17:14:51.928Z"
+        },
+        "timestamp": {
+          "start": 1543856139479,
+          "end": 1543857291928
+        },
+        "lifeOrientationTest": [
+          1,
+          4,
+          1,
+          4,
+          4,
+          5,
+          1,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              3,
+              50,
+              9,
+              70,
+              40,
+              30
+            ],
+            [
+              2,
+              50,
+              8,
+              40,
+              40,
+              40
+            ],
+            [
+              2,
+              50,
+              7,
+              40,
+              30,
+              40
+            ],
+            [
+              2,
+              50,
+              6,
+              40,
+              50,
+              70
+            ],
+            [
+              2,
+              50,
+              8,
+              70,
+              30,
+              50
+            ],
+            [
+              2,
+              50,
+              10,
+              90,
+              80,
+              30
+            ],
+            [
+              2,
+              50,
+              8,
+              80,
+              40,
+              60
+            ],
+            [
+              2,
+              50,
+              10,
+              70,
+              80,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "26",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "0",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "47",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T17:15:38.792Z",
+          "end": "2018-12-03T17:24:57.296Z"
+        },
+        "timestamp": {
+          "start": 1543857338792,
+          "end": 1543857897296
+        },
+        "lifeOrientationTest": [
+          2,
+          1,
+          2,
+          4,
+          2,
+          3,
+          3,
+          3,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              -1,
+              50,
+              4,
+              50,
+              40,
+              40
+            ],
+            [
+              0,
+              50,
+              5,
+              50,
+              50,
+              50
+            ],
+            [
+              1,
+              30,
+              7,
+              60,
+              60,
+              50
+            ],
+            [
+              -4,
+              30,
+              7,
+              60,
+              60,
+              60
+            ],
+            [
+              2,
+              30,
+              3,
+              70,
+              60,
+              40
+            ],
+            [
+              0,
+              50,
+              4,
+              50,
+              50,
+              50
+            ],
+            [
+              -1,
+              70,
+              7,
+              80,
+              40,
+              70
+            ],
+            [
+              -1,
+              70,
+              7,
+              60,
+              60,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "29",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "0",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "48",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T17:24:40.536Z",
+          "end": "2018-12-03T17:35:49.597Z"
+        },
+        "timestamp": {
+          "start": 1543857880536,
+          "end": 1543858549597
+        },
+        "lifeOrientationTest": [
+          4,
+          5,
+          1,
+          5,
+          5,
+          3,
+          2,
+          3,
+          2,
+          5
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              -2,
+              50,
+              10,
+              0,
+              0,
+              0
+            ],
+            [
+              -2,
+              70,
+              10,
+              10,
+              70,
+              0
+            ],
+            [
+              -2,
+              50,
+              10,
+              0,
+              0,
+              100
+            ],
+            [
+              -2,
+              70,
+              10,
+              0,
+              70,
+              100
+            ],
+            [
+              -2,
+              50,
+              10,
+              100,
+              0,
+              0
+            ],
+            [
+              0,
+              70,
+              10,
+              100,
+              80,
+              0
+            ],
+            [
+              -2,
+              50,
+              10,
+              100,
+              0,
+              100
+            ],
+            [
+              0,
+              70,
+              10,
+              100,
+              80,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "27",
+          "ethnicity": "other",
+          "education": "someMA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "0",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "49",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T17:28:17.523Z",
+          "end": "2018-12-03T17:40:18.522Z"
+        },
+        "timestamp": {
+          "start": 1543858097523,
+          "end": 1543858818522
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          3,
+          3,
+          4,
+          5,
+          3,
+          2,
+          3,
+          3
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              0,
+              50,
+              9,
+              50,
+              50,
+              50
+            ],
+            [
+              1,
+              50,
+              9,
+              60,
+              50,
+              90
+            ],
+            [
+              1,
+              50,
+              10,
+              60,
+              50,
+              90
+            ],
+            [
+              0,
+              50,
+              9,
+              50,
+              50,
+              50
+            ],
+            [
+              -1,
+              50,
+              9,
+              50,
+              50,
+              50
+            ],
+            [
+              3,
+              50,
+              9,
+              50,
+              50,
+              50
+            ],
+            [
+              0,
+              50,
+              9,
+              50,
+              50,
+              50
+            ],
+            [
+              0,
+              50,
+              9,
+              50,
+              50,
+              50
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "24",
+          "ethnicity": "",
+          "education": "someMA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "0",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "50",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-03T17:35:30.009Z",
+          "end": "2018-12-03T17:45:56.913Z"
+        },
+        "timestamp": {
+          "start": 1543858530009,
+          "end": 1543859156913
+        },
+        "lifeOrientationTest": [
+          4,
+          3,
+          3,
+          4,
+          3,
+          2,
+          4,
+          4,
+          2,
+          3
+        ],
+        "survey": {
+          "vignette": "surgeryDecision",
+          "responses": [
+            [
+              4,
+              80,
+              8,
+              50,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              8,
+              50,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              8,
+              50,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              8,
+              50,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              8,
+              50,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              10,
+              50,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              9,
+              80,
+              80,
+              100
+            ],
+            [
+              4,
+              80,
+              8,
+              50,
+              70,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "49",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "0",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "51",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-04T13:29:20.701Z",
+          "end": "2018-12-04T13:33:39.566Z"
+        },
+        "timestamp": {
+          "start": 1543930160701,
+          "end": 1543930419566
+        },
+        "lifeOrientationTest": [
+          1,
+          5,
+          3,
+          1,
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              -2,
+              80,
+              2,
+              80,
+              10,
+              70
+            ],
+            [
+              1,
+              40,
+              7,
+              40,
+              60,
+              60
+            ],
+            [
+              1,
+              60,
+              6,
+              60,
+              60,
+              60
+            ],
+            [
+              -1,
+              40,
+              3,
+              40,
+              40,
+              30
+            ],
+            [
+              -1,
+              40,
+              4,
+              40,
+              40,
+              60
+            ],
+            [
+              -1,
+              40,
+              4,
+              40,
+              40,
+              40
+            ],
+            [
+              1,
+              70,
+              3,
+              70,
+              20,
+              30
+            ],
+            [
+              1,
+              40,
+              6,
+              70,
+              40,
+              60
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "22",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "52",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-04T14:15:46.504Z",
+          "end": "2018-12-04T14:47:24.352Z"
+        },
+        "timestamp": {
+          "start": 1543932946504,
+          "end": 1543934844352
+        },
+        "lifeOrientationTest": [
+          3,
+          3,
+          2,
+          2,
+          4,
+          4,
+          2,
+          2,
+          3,
+          3
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              0,
+              50,
+              7,
+              30,
+              10,
+              40
+            ],
+            [
+              0,
+              50,
+              9,
+              30,
+              40,
+              50
+            ],
+            [
+              0,
+              50,
+              5,
+              20,
+              10,
+              70
+            ],
+            [
+              0,
+              50,
+              10,
+              80,
+              30,
+              90
+            ],
+            [
+              0,
+              50,
+              8,
+              80,
+              10,
+              40
+            ],
+            [
+              0,
+              50,
+              9,
+              70,
+              40,
+              50
+            ],
+            [
+              0,
+              50,
+              8,
+              90,
+              10,
+              80
+            ],
+            [
+              0,
+              50,
+              9,
+              80,
+              40,
+              70
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "24",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "53",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-04T16:02:28.817Z",
+          "end": "2018-12-04T16:13:18.815Z"
+        },
+        "timestamp": {
+          "start": 1543939348817,
+          "end": 1543939998815
+        },
+        "lifeOrientationTest": [
+          2,
+          4,
+          2,
+          2,
+          2,
+          5,
+          4,
+          2,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              1,
+              50,
+              8,
+              60,
+              50,
+              60
+            ],
+            [
+              2,
+              60,
+              10,
+              60,
+              30,
+              70
+            ],
+            [
+              3,
+              60,
+              8,
+              30,
+              70,
+              100
+            ],
+            [
+              3,
+              80,
+              10,
+              60,
+              90,
+              90
+            ],
+            [
+              1,
+              40,
+              8,
+              80,
+              30,
+              90
+            ],
+            [
+              4,
+              80,
+              10,
+              60,
+              90,
+              100
+            ],
+            [
+              1,
+              60,
+              8,
+              40,
+              50,
+              80
+            ],
+            [
+              3,
+              80,
+              10,
+              90,
+              90,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "26",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "4",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "54",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-04T16:32:12.728Z",
+          "end": "2018-12-04T16:36:47.233Z"
+        },
+        "timestamp": {
+          "start": 1543941132728,
+          "end": 1543941407233
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          4,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              2,
+              100,
+              1,
+              80,
+              30,
+              80
+            ],
+            [
+              1,
+              60,
+              8,
+              40,
+              60,
+              40
+            ],
+            [
+              1,
+              40,
+              6,
+              60,
+              60,
+              60
+            ],
+            [
+              2,
+              60,
+              6,
+              60,
+              60,
+              60
+            ],
+            [
+              -1,
+              40,
+              6,
+              60,
+              40,
+              60
+            ],
+            [
+              2,
+              60,
+              6,
+              60,
+              60,
+              40
+            ],
+            [
+              1,
+              70,
+              7,
+              60,
+              70,
+              70
+            ],
+            [
+              1,
+              60,
+              7,
+              40,
+              70,
+              60
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "22",
+          "ethnicity": "other",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "1"
+        }
+      }
+    },
+    {
+      "id": "55",
+      "lang": "ca",
+      "data": {
+        "time": {
+          "start": "2018-12-04T20:56:53.077Z",
+          "end": "2018-12-04T21:11:39.050Z"
+        },
+        "timestamp": {
+          "start": 1543957013077,
+          "end": 1543957899050
+        },
+        "lifeOrientationTest": [
+          3,
+          4,
+          2,
+          4,
+          4,
+          4,
+          2,
+          4,
+          1,
+          5
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              -4,
+              0,
+              8,
+              0,
+              0,
+              50
+            ],
+            [
+              -2,
+              50,
+              8,
+              0,
+              0,
+              50
+            ],
+            [
+              2,
+              50,
+              8,
+              0,
+              0,
+              50
+            ],
+            [
+              2,
+              50,
+              8,
+              0,
+              0,
+              50
+            ],
+            [
+              2,
+              50,
+              8,
+              0,
+              0,
+              50
+            ],
+            [
+              2,
+              50,
+              10,
+              0,
+              100,
+              100
+            ],
+            [
+              2,
+              50,
+              10,
+              100,
+              50,
+              50
+            ],
+            [
+              2,
+              50,
+              10,
+              100,
+              0,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "46",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "4",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "56",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-04T22:10:29.880Z",
+          "end": "2018-12-04T22:21:35.869Z"
+        },
+        "timestamp": {
+          "start": 1543961429880,
+          "end": 1543962095869
+        },
+        "lifeOrientationTest": [
+          3,
+          2,
+          4,
+          3,
+          3,
+          2,
+          3,
+          3,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              0,
+              30,
+              5,
+              20,
+              20,
+              10
+            ],
+            [
+              1,
+              70,
+              9,
+              60,
+              80,
+              30
+            ],
+            [
+              -1,
+              50,
+              6,
+              20,
+              20,
+              80
+            ],
+            [
+              1,
+              90,
+              9,
+              10,
+              90,
+              30
+            ],
+            [
+              1,
+              40,
+              8,
+              70,
+              20,
+              10
+            ],
+            [
+              1,
+              60,
+              7,
+              70,
+              80,
+              30
+            ],
+            [
+              1,
+              70,
+              6,
+              50,
+              50,
+              100
+            ],
+            [
+              3,
+              80,
+              10,
+              90,
+              90,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "40",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "57",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-05T09:14:27.460Z",
+          "end": "2018-12-05T09:29:16.244Z"
+        },
+        "timestamp": {
+          "start": 1544001267460,
+          "end": 1544002156244
+        },
+        "lifeOrientationTest": [
+          4,
+          4,
+          4,
+          4,
+          5,
+          4,
+          4,
+          2,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "partyDecision",
+          "responses": [
+            [
+              2,
+              70,
+              10,
+              100,
+              70,
+              30
+            ],
+            [
+              2,
+              70,
+              10,
+              100,
+              60,
+              30
+            ],
+            [
+              2,
+              70,
+              8,
+              80,
+              60,
+              10
+            ],
+            [
+              2,
+              70,
+              10,
+              80,
+              70,
+              30
+            ],
+            [
+              2,
+              80,
+              10,
+              90,
+              60,
+              30
+            ],
+            [
+              2,
+              70,
+              10,
+              100,
+              60,
+              30
+            ],
+            [
+              2,
+              80,
+              8,
+              80,
+              60,
+              30
+            ],
+            [
+              2,
+              70,
+              10,
+              100,
+              60,
+              30
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "034",
+          "ethnicity": "latino",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "3",
+          "numPeopleHousehold": "03"
+        }
+      }
+    },
+    {
+      "id": "58",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-05T15:28:29.074Z",
+          "end": "2018-12-05T15:40:23.295Z"
+        },
+        "timestamp": {
+          "start": 1544023709074,
+          "end": 1544024423295
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          4,
+          4,
+          5,
+          4,
+          2,
+          2,
+          4,
+          4
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              -1,
+              50,
+              7,
+              0,
+              50,
+              20
+            ],
+            [
+              1,
+              70,
+              7,
+              20,
+              70,
+              20
+            ],
+            [
+              2,
+              70,
+              7,
+              70,
+              70,
+              70
+            ],
+            [
+              1,
+              60,
+              6,
+              20,
+              60,
+              30
+            ],
+            [
+              1,
+              70,
+              7,
+              90,
+              70,
+              90
+            ],
+            [
+              2,
+              70,
+              7,
+              60,
+              70,
+              80
+            ],
+            [
+              1,
+              60,
+              7,
+              90,
+              60,
+              90
+            ],
+            [
+              2,
+              70,
+              7,
+              90,
+              70,
+              90
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "19",
+          "ethnicity": "white",
+          "education": "someBA",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "1",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "59",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-05T16:15:52.240Z",
+          "end": "2018-12-05T16:23:31.132Z"
+        },
+        "timestamp": {
+          "start": 1544026552240,
+          "end": 1544027011132
+        },
+        "lifeOrientationTest": [
+          4,
+          2,
+          2,
+          4,
+          4,
+          4,
+          1,
+          2,
+          2,
+          5
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              2,
+              60,
+              10,
+              60,
+              10,
+              10
+            ],
+            [
+              2,
+              50,
+              10,
+              50,
+              70,
+              0
+            ],
+            [
+              2,
+              60,
+              10,
+              60,
+              50,
+              100
+            ],
+            [
+              2,
+              70,
+              10,
+              50,
+              70,
+              100
+            ],
+            [
+              2,
+              60,
+              10,
+              60,
+              10,
+              10
+            ],
+            [
+              1,
+              50,
+              10,
+              60,
+              90,
+              100
+            ],
+            [
+              2,
+              60,
+              10,
+              50,
+              50,
+              90
+            ],
+            [
+              3,
+              80,
+              10,
+              70,
+              90,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "female",
+          "age": "24",
+          "ethnicity": "white",
+          "education": "ba",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "0",
+          "numPeopleHousehold": "4"
+        }
+      }
+    },
+    {
+      "id": "60",
+      "lang": "en",
+      "data": {
+        "time": {
+          "start": "2018-12-05T23:48:24.297Z",
+          "end": "2018-12-05T23:58:42.984Z"
+        },
+        "timestamp": {
+          "start": 1544053704297,
+          "end": 1544054322984
+        },
+        "lifeOrientationTest": [
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          3,
+          3,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              3,
+              50,
+              9,
+              10,
+              0,
+              0
+            ],
+            [
+              1,
+              50,
+              8,
+              20,
+              70,
+              0
+            ],
+            [
+              3,
+              50,
+              9,
+              0,
+              10,
+              90
+            ],
+            [
+              1,
+              50,
+              8,
+              10,
+              60,
+              90
+            ],
+            [
+              1,
+              50,
+              9,
+              100,
+              0,
+              0
+            ],
+            [
+              1,
+              50,
+              7,
+              90,
+              60,
+              0
+            ],
+            [
+              1,
+              50,
+              9,
+              100,
+              0,
+              100
+            ],
+            [
+              0,
+              60,
+              8,
+              80,
+              70,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "38",
+          "ethnicity": "white",
+          "education": "someMA",
+          "isWorking": false,
+          "isStudying": true,
+          "income": "8",
+          "numPeopleHousehold": "3"
+        }
+      }
+    },
+    {
+      "id": "61",
+      "lang": "ca",
+      "data": {
+        "time": {
+          "start": "2018-12-07T13:48:11.045Z",
+          "end": "2018-12-07T14:01:14.320Z"
+        },
+        "timestamp": {
+          "start": 1544190491045,
+          "end": 1544191274320
+        },
+        "lifeOrientationTest": [
+          5,
+          5,
+          1,
+          5,
+          5,
+          2,
+          5,
+          5,
+          1,
+          5
+        ],
+        "survey": {
+          "vignette": "awardDecision",
+          "responses": [
+            [
+              -1,
+              20,
+              9,
+              20,
+              0,
+              10
+            ],
+            [
+              2,
+              80,
+              7,
+              70,
+              80,
+              0
+            ],
+            [
+              2,
+              60,
+              7,
+              90,
+              0,
+              100
+            ],
+            [
+              2,
+              90,
+              8,
+              70,
+              100,
+              100
+            ],
+            [
+              -1,
+              30,
+              4,
+              100,
+              0,
+              0
+            ],
+            [
+              4,
+              90,
+              8,
+              100,
+              100,
+              100
+            ],
+            [
+              2,
+              60,
+              7,
+              100,
+              0,
+              100
+            ],
+            [
+              3,
+              90,
+              7,
+              100,
+              100,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "21",
+          "ethnicity": "white",
+          "education": "highSchool",
+          "isWorking": true,
+          "isStudying": false,
+          "income": "1",
+          "numPeopleHousehold": "2"
+        }
+      }
+    },
+    {
+      "id": "62",
+      "lang": "es",
+      "data": {
+        "time": {
+          "start": "2018-12-07T18:30:08.073Z",
+          "end": "2018-12-07T18:44:14.968Z"
+        },
+        "timestamp": {
+          "start": 1544207408073,
+          "end": 1544208254968
+        },
+        "lifeOrientationTest": [
+          4,
+          2,
+          4,
+          4,
+          4,
+          2,
+          4,
+          4,
+          2,
+          4
+        ],
+        "survey": {
+          "vignette": "investmentDecision",
+          "responses": [
+            [
+              -3,
+              20,
+              10,
+              20,
+              0,
+              0
+            ],
+            [
+              -3,
+              40,
+              10,
+              10,
+              30,
+              10
+            ],
+            [
+              -3,
+              30,
+              10,
+              10,
+              10,
+              100
+            ],
+            [
+              -2,
+              60,
+              6,
+              20,
+              70,
+              70
+            ],
+            [
+              -2,
+              30,
+              10,
+              10,
+              0,
+              10
+            ],
+            [
+              -2,
+              40,
+              10,
+              20,
+              60,
+              10
+            ],
+            [
+              -3,
+              40,
+              10,
+              0,
+              0,
+              100
+            ],
+            [
+              -2,
+              60,
+              10,
+              20,
+              90,
+              100
+            ]
+          ]
+        },
+        "demographics": {
+          "gender": "male",
+          "age": "41",
+          "ethnicity": "white",
+          "education": "ma",
+          "isWorking": true,
+          "isStudying": true,
+          "income": "1",
+          "numPeopleHousehold": "4"
+        }
+      }
+    }
+  ]
+}
